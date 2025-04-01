@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Azul
+  - Rojo
+  - Amarillo
+  - Blanco
+  - Verde
+  - Cocina
+  - Dormitorio
+  - "Ba\xF1o"
+  - Juguetes
+  - Vestidor
+  - Salon
+  - Excursion
+  - Taller
+  - Cocina1
+  - Cocina2
+  - Cocina3
+  - Cocina4
+  - Cocina5
+  - Taller1
+  - Taller2
+  - Taller3
+  - Taller4
+  - Taller5
+  - Vestidor1
+  - Vestidor2
+  - Vestidor3
+  - Vestidor4
+  - Vestidor5
+  - Excursion1
+  - Excursion2
+  - Excursion3
+  - Excursion4
+  - Excursion5
+  - Salon1
+  - Salon2
+  - Salon3
+  - Salon4
+  - Salon5
+  - "Ba\xF1o1"
+  - "Ba\xF1o2"
+  - "Ba\xF1o3"
+  - "Ba\xF1o4"
+  - "Ba\xF1o5"
+  - Morado
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

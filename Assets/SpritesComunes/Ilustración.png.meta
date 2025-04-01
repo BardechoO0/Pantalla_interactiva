@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: ac2d61bd76401fb438f8c006e3690602
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Ilustraci\xF3n_6"
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 125
+        width: 530
+        height: 884
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc42771a54ee87d46b7a222def4d6917
+      internalID: -1254410839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustraci\xF3n_9"
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 102
+        width: 558
+        height: 894
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6479f0703109044b7f4793a229abb4
+      internalID: 1701865753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustraci\xF3n_10"
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 192
+        width: 666
+        height: 816
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3cfe10b41082443845486f7bcb5caf
+      internalID: 566480427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "Ilustraci\xF3n_0": 1570656555
+      "Ilustraci\xF3n_1": 415357915
+      "Ilustraci\xF3n_10": 566480427
+      "Ilustraci\xF3n_11": 2045084400
+      "Ilustraci\xF3n_12": 911436942
+      "Ilustraci\xF3n_13": -1993293655
+      "Ilustraci\xF3n_14": 1929852595
+      "Ilustraci\xF3n_15": -1382887
+      "Ilustraci\xF3n_16": 458304085
+      "Ilustraci\xF3n_17": 1270777050
+      "Ilustraci\xF3n_18": -877686338
+      "Ilustraci\xF3n_19": 1049173262
+      "Ilustraci\xF3n_2": 1127943297
+      "Ilustraci\xF3n_20": 464619087
+      "Ilustraci\xF3n_21": -1312123043
+      "Ilustraci\xF3n_22": 1013545823
+      "Ilustraci\xF3n_23": 2052173328
+      "Ilustraci\xF3n_24": 1861128846
+      "Ilustraci\xF3n_25": -402894775
+      "Ilustraci\xF3n_26": 681980576
+      "Ilustraci\xF3n_27": 498410259
+      "Ilustraci\xF3n_28": 1559420358
+      "Ilustraci\xF3n_29": 862050953
+      "Ilustraci\xF3n_3": -1220126030
+      "Ilustraci\xF3n_30": 432282094
+      "Ilustraci\xF3n_31": -1081165898
+      "Ilustraci\xF3n_32": -1760402639
+      "Ilustraci\xF3n_33": -782644146
+      "Ilustraci\xF3n_34": 1945096833
+      "Ilustraci\xF3n_35": -705791960
+      "Ilustraci\xF3n_36": 1518324567
+      "Ilustraci\xF3n_37": 1504675175
+      "Ilustraci\xF3n_38": 266259172
+      "Ilustraci\xF3n_39": -648129117
+      "Ilustraci\xF3n_4": 1495112020
+      "Ilustraci\xF3n_40": 1385251189
+      "Ilustraci\xF3n_41": 54056070
+      "Ilustraci\xF3n_5": -1734639557
+      "Ilustraci\xF3n_6": -1254410839
+      "Ilustraci\xF3n_7": 2129038162
+      "Ilustraci\xF3n_8": -1153603926
+      "Ilustraci\xF3n_9": 1701865753
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
