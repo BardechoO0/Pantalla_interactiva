@@ -8,16 +8,16 @@ using UnityEngine.UI;
 
 public class EleccionNumero : MonoBehaviour
 {
-    
+
     [SerializeField] public int NumeroDeObjetos;
     [SerializeField] public GameObject[] Objetos12 = new GameObject[12];
     [SerializeField] public GameObject[] Objetos20 = new GameObject[20];
     [SerializeField] public GameObject[] Objetos28 = new GameObject[28];
     [SerializeField] public GameObject[] Objetos40 = new GameObject[40];
 
-    /// <summary>
-    /// Te quedaste aquí payaso
-    /// </summary>
+   
+    // Te quedaste aquí payaso
+
     [SerializeField] public GameObject[] Objetos122 = new GameObject[12];
     [SerializeField] public GameObject[] Objetos202 = new GameObject[20];
     [SerializeField] public GameObject[] Objetos282 = new GameObject[28];
@@ -73,7 +73,7 @@ public class EleccionNumero : MonoBehaviour
     int randomNumber;
     // Start is called before the first frame update
 
-
+    
 
     //NUEVAS VARIABLES CAMBIO DE DISEÑO
 
@@ -749,6 +749,7 @@ public class EleccionNumero : MonoBehaviour
                 }
                  // convierte esto en una funcion payaso
 
+
                 numbersToChooseFrom.Remove(0 + Comodin);
                 numbersToChooseFrom.Remove(1 + Comodin);
                 numbersToChooseFrom.Remove(2 + Comodin);
@@ -801,6 +802,7 @@ public class EleccionNumero : MonoBehaviour
                     lista.RemoveAt(Numero);
                     Objetos122[i].SetActive(false);
                 }
+                PuntosNecesarios = 8;
             }
             if (NumeroDeObjetos == 20)
             {
@@ -862,6 +864,7 @@ public class EleccionNumero : MonoBehaviour
                     lista.RemoveAt(Numero);
                     Objetos202[i].SetActive(false);
                 }
+                PuntosNecesarios = 14;
             }
             if (NumeroDeObjetos == 28)
             {
@@ -923,6 +926,7 @@ public class EleccionNumero : MonoBehaviour
                     lista.RemoveAt(Numero);
                     Objetos282[i].SetActive(false);
                 }
+                PuntosNecesarios = 18;
             }
             if (NumeroDeObjetos == 40)
             {
@@ -984,6 +988,7 @@ public class EleccionNumero : MonoBehaviour
                     lista.RemoveAt(Numero);
                     Objetos402[i].SetActive(false);
                 }
+                PuntosNecesarios = 20;
             }
         }
         // TRES HABITACIONES
@@ -1224,6 +1229,13 @@ public class EleccionNumero : MonoBehaviour
                         }
                     }
                 }
+                if (NumeroDeHabitaciones == 4)
+                {
+                    PuntosNecesarios = 12;
+                }else if (NumeroDeHabitaciones == 3)
+                {
+                    PuntosNecesarios = 9;
+                }
             }
 
 
@@ -1335,6 +1347,12 @@ public class EleccionNumero : MonoBehaviour
                         }
                     }
                 }
+                if (NumeroDeHabitaciones == 4)
+                {
+                    PuntosNecesarios = 20;
+                }else if(NumeroDeHabitaciones == 3) {
+                    PuntosNecesarios = 15;
+                }
             }
 
             else if (NumeroDeObjetos == 28)
@@ -1445,6 +1463,12 @@ public class EleccionNumero : MonoBehaviour
                         }
                     }
                 }
+                if (NumeroDeHabitaciones == 4)
+                {
+                    PuntosNecesarios = 24;
+                }else if (NumeroDeHabitaciones == 3){
+                    PuntosNecesarios = (24/4)*3;
+                }
             }
 
             else if (NumeroDeObjetos == 40)
@@ -1491,7 +1515,15 @@ public class EleccionNumero : MonoBehaviour
                         }
                     }
                 }
+                if (NumeroDeHabitaciones == 4)
+                {
+                    PuntosNecesarios = 40;
+                }else if (NumeroDeHabitaciones == 3){
+
+                    PuntosNecesarios = 30;
+                }
             }
+            
         }
 
         BotonJugar.SetActive(false);
