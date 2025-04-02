@@ -37419,11 +37419,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1671312077675399528, guid: ef314dbaed33ded41b27f2c44205c1ee, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.014913949
+      value: 0.008058007
       objectReference: {fileID: 0}
     - target: {fileID: 1671312077675399528, guid: ef314dbaed33ded41b27f2c44205c1ee, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.014913949
+      value: 0.008377165
       objectReference: {fileID: 0}
     - target: {fileID: 1671312077675399528, guid: ef314dbaed33ded41b27f2c44205c1ee, type: 3}
       propertyPath: m_LocalScale.z
@@ -37431,11 +37431,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1671312077675399528, guid: ef314dbaed33ded41b27f2c44205c1ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.005000174
+      value: 0.069
       objectReference: {fileID: 0}
     - target: {fileID: 1671312077675399528, guid: ef314dbaed33ded41b27f2c44205c1ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0039999112
+      value: 0.2782
       objectReference: {fileID: 0}
     - target: {fileID: 1671312077675399528, guid: ef314dbaed33ded41b27f2c44205c1ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -90380,7 +90380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 28 Objetos
+  m_text: 24 Objetos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f51e5ca255c3d1c4c9807dfc6890be3a, type: 2}
   m_sharedMaterial: {fileID: 5279404726111245902, guid: f51e5ca255c3d1c4c9807dfc6890be3a, type: 2}
