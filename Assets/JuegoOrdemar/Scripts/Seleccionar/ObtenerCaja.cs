@@ -11,12 +11,15 @@ public class ObtenerCaja : MonoBehaviour, IDropHandler
     {
         if (eventData.pointerDrag != null)
         {
-            Debug.Log("No todo bien :(");
+            
             if (eventData.pointerDrag.tag == "Cocina")
             {
                 eventData.pointerDrag.GetComponent<Caja>().EstaEnZonaCarga = true;
                
                 Debug.Log("todo bien :)");
+            }else if (eventData.pointerDrag.tag != "Cocina")
+            {
+                Debug.Log("No todo bien :(");
             }
         }
     }
