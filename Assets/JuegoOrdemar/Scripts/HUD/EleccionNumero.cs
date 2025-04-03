@@ -1465,9 +1465,9 @@ public class EleccionNumero : MonoBehaviour
                 }
                 if (NumeroDeHabitaciones == 4)
                 {
-                    PuntosNecesarios = 24;
+                    PuntosNecesarios = 28;
                 }else if (NumeroDeHabitaciones == 3){
-                    PuntosNecesarios = (24/4)*3;
+                    PuntosNecesarios = (28/4)*3;
                 }
             }
 
