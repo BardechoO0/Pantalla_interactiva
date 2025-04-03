@@ -466,7 +466,7 @@ public class EleccionNumero : MonoBehaviour
             }
             else if (NumeroDeObjetos == 28)
             {
-                PuntosNecesarios = 10;
+                PuntosNecesarios = 9;
                 for (int i = 0; i < NumeroDeObjetos; i++)
                 {
                     list.Add(Objetos281[i]);

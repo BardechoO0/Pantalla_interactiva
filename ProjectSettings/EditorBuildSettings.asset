@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OrdenarObjetos.unity
     guid: 0929600a4dba63d4188c6206b5c133e6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/JuegoActividades.unity
     guid: ed3e7da59f0ffd04c8960c5f4804e5bd
   m_configObjects: {}
