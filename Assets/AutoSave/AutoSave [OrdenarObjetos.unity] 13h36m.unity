@@ -95190,12 +95190,6 @@ MonoBehaviour:
   Juguetes20: 0
   Juguetes28: 0
   Juguetes40: 0
-  CheckerImagenes12: 0
-  CheckerImagenes20: 0
-  CheckerImagenes28: 0
-  CheckerImagenes40: 0
-  z: 0
-  x: 0
   CocinaPadre: {fileID: 557320792}
   "Ba\xF1oPadre": {fileID: 593540826}
   DormitorioPadre: {fileID: 269721245}

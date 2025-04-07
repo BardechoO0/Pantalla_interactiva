@@ -15,8 +15,8 @@ public class EleccionNumero : MonoBehaviour
     [SerializeField] public GameObject[] Objetos28 = new GameObject[28];
     [SerializeField] public GameObject[] Objetos40 = new GameObject[40];
 
+
    
-    // Te quedaste aquí payaso
 
     [SerializeField] public GameObject[] Objetos122 = new GameObject[12];
     [SerializeField] public GameObject[] Objetos202 = new GameObject[20];
@@ -29,104 +29,157 @@ public class EleccionNumero : MonoBehaviour
     [SerializeField] public GameObject BotonJugar;
     [SerializeField] public bool CheckerBotonJugar;
     [SerializeField] public GameObject BotonesNumeroObjetos;
+
+    //Botones de selecion de Objetos
+
     [SerializeField] public Button Color12;
     [SerializeField] public Button Color20;
     [SerializeField] public Button Color28;
     [SerializeField] public Button Color40;
+
+
+    
+
     [SerializeField] public int Cocina12;
     [SerializeField] public int Cocina20;
     [SerializeField] public int Cocina28;
     [SerializeField] public int Cocina40;
+
+
     [SerializeField] public int Dormitorio12;
     [SerializeField] public int Dormitorio20;
     [SerializeField] public int Dormitorio28;
     [SerializeField] public int Dormitorio40;
+
+
     [SerializeField] public int Baño12;
     [SerializeField] public int Baño20;
     [SerializeField] public int Baño28;
     [SerializeField] public int Baño40;
+
+
     [SerializeField] public int Juguetes12;
     [SerializeField] public int Juguetes20;
     [SerializeField] public int Juguetes28;
     [SerializeField] public int Juguetes40;
+
+    /*
     [SerializeField] public bool CheckerImagenes12;
     [SerializeField] public bool CheckerImagenes20;
     [SerializeField] public bool CheckerImagenes28;
     [SerializeField] public bool CheckerImagenes40;
     [SerializeField] public int z;
     [SerializeField] public int x;
+    */
+
+
+    // Imagennes de los cuartos
+
     [SerializeField] public GameObject CocinaPadre;
     [SerializeField] public GameObject BañoPadre;
     [SerializeField] public GameObject DormitorioPadre;
     [SerializeField] public GameObject JuguetesPadre;
+
+
+    //Botones Ajuestes & Ganar
+    [SerializeField] public GameObject FondoPause;
     [SerializeField] public GameObject VolverAlMenu;
     [SerializeField] public GameObject ContinuarJugando;
+
+
+    //Posiciones de imagenes para 4 o 3 habitaciones
+
     [SerializeField] public GameObject MarcosRecogidosCocina;
     [SerializeField] public GameObject MarcosRecogidosBaño;
     [SerializeField] public GameObject MarcosRecogidosJuguetes;
     [SerializeField] public GameObject MarcosRecogidosDormitorio;
+
+
     //POSICIONES 0-9 COCINA, 10-19 DORMITORIO, 20-29 BAÑO, 30-39 JUGUETES
     [SerializeField] public GameObject[] ConjuntoObjetos = new GameObject[40];
     [SerializeField] public int[] ObjetoAnterior = new int[40];
     public List<int> numbersToChooseFrom = new List<int>(); // Lista de números posibles
     private List<int> chosenNumbers = new List<int>(); // Lista de números ya elegidos
     int randomNumber;
-    // Start is called before the first frame update
+    
 
     
 
     //NUEVAS VARIABLES CAMBIO DE DISEÑO
 
     [SerializeField] public int NumeroDeHabitaciones;
+
+
     [SerializeField] public bool OpcionCocina;
     [SerializeField] public bool OpcionBaño;
     [SerializeField] public bool OpcionDormitorio;
     [SerializeField] public bool OpcionJuguetes;
+
+
     [SerializeField] public GameObject MarcaCocina;
     [SerializeField] public GameObject MarcaBaño;
     [SerializeField] public GameObject MarcaDormitorio;
     [SerializeField] public GameObject MarcaJuguetes;
+
+
     [SerializeField] public GameObject Habitacion1;
     [SerializeField] public GameObject Checkers;
     [SerializeField] public GameObject Bordes1Habitacion;
     [SerializeField] public GameObject Bordes2Habitaciones;
     [SerializeField] public GameObject Bordes34Habitaciones;
+
+
     [SerializeField] public GameObject PasarAlSiguiente;
     [SerializeField] public GameObject Ticks;
     [SerializeField] public GameObject Ajustes;
+
+
     [SerializeField] public GameObject Ajustes1Habitacion;
     [SerializeField] public GameObject BordeAjustes1;
+
+
     [SerializeField] public GameObject[] Habitacion2 = new GameObject[2];
     [SerializeField] public GameObject[] Habitaciones34 = new GameObject[4];
+
+
     public List<GameObject> ListaAuxiliar = new List<GameObject>();
     public List<GameObject> ListaAuxiliarTexto = new List<GameObject>();
+
+
     [SerializeField] public GameObject CocinaTexto;
     [SerializeField] public GameObject BañoTexto;
     [SerializeField] public GameObject DormitorioTexto;
     [SerializeField] public GameObject JuguetesTexto;
+
+
     [SerializeField] public GameObject SpawnTexto1;
     [SerializeField] public GameObject SpawnTexto21;
     [SerializeField] public GameObject SpawnTexto22;
+
+
     int Comodin = 0;
     int Comodin2 = 0;
     int Velocidad = 0;
+
+
     [SerializeField] public GameObject[] Objetos121 = new GameObject[12];
     [SerializeField] public GameObject[] Objetos201 = new GameObject[20];
     [SerializeField] public GameObject[] Objetos281 = new GameObject[28];
     [SerializeField] public GameObject[] Objetos401 = new GameObject[40];
+
+
     [SerializeField] public GameObject CortinaIzquierda;
     [SerializeField] public GameObject CortinaDerecha;
+
+
     [SerializeField] public GameObject Ganaste;
 
-    
-
-
-
-    
         public bool CocinaHab1Pos1Num = false;
         public bool BañoHab1Pos1Num = false;
         public bool DormitorioHab1Pos1Num = false;
         public bool JuguetesHab1Pos1Num = false;
+
+
         public bool CocinaHab2Pos1Num = false;
         public bool CocinaHab2Pos2Num = false;
         public bool BañoHab2Pos1Num = false;
@@ -135,6 +188,8 @@ public class EleccionNumero : MonoBehaviour
         public bool DormitorioHab2Pos2Num = false;
         public bool JuguetesHab2Pos1Num = false;
         public bool JuguetesHab2Pos2Num = false;
+
+
         public bool CocinaHab34Pos2Num = false;
         public bool BañoHab34Pos1Num = false;
         public bool DormitorioHab34Pos4Num = false;
@@ -159,6 +214,7 @@ public class EleccionNumero : MonoBehaviour
     {
         Time.timeScale = 1;
         Ganaste.SetActive(false);
+        FondoPause.SetActive(false);
         VolverAlMenu.SetActive(false);
         ContinuarJugando.SetActive(false);
         for (int i = 0; i <= 39; i++)
@@ -185,10 +241,11 @@ public class EleccionNumero : MonoBehaviour
         OpcionJuguetes = false;
         OpcionCocina = false;
     }
-    // Update is called once per frame
+    
+
     void Update()
     {
-        
+        // Mueve las cortinas hasta cierta posicion y luego para
         Vector2 Izq = new Vector2(-1f, 0f) * Velocidad * Time.deltaTime;
         CortinaIzquierda.transform.Translate(Izq);
         Vector2 Der = new Vector2(1f, 0f) * Velocidad * Time.deltaTime;
@@ -199,13 +256,16 @@ public class EleccionNumero : MonoBehaviour
         }
 
 
+        //Mira contantemente cuatos puntos necesitas, si llegas al indicado pasa lo que hay dentro del if
         if (PuntosNecesarios == ObjetosAcertados && PuntosNecesarios > 1)
         {
             Ganaste.SetActive(true);
-
+            FondoPause.SetActive(true);
 
         }
     }
+
+    //Selecionas 12 objetos para jugar
     public void Seleccion12()
     {
         NumeroDeObjetos = 12;
@@ -220,6 +280,8 @@ public class EleccionNumero : MonoBehaviour
             CheckerBotonJugar = true;
         }
     }
+
+    //Selecionas 20 objetos para jugar
     public void Seleccion20()
     {
         NumeroDeObjetos = 20;
@@ -234,6 +296,8 @@ public class EleccionNumero : MonoBehaviour
             CheckerBotonJugar = true;
         }
     }
+
+    //Selecionas 28 objetos para jugar
     public void Seleccion28()
     {
         NumeroDeObjetos = 28;
@@ -248,6 +312,8 @@ public class EleccionNumero : MonoBehaviour
             CheckerBotonJugar = true;
         }
     }
+
+    //Selecionas 40 objetos para jugar
     public void Seleccion40()
     {
         NumeroDeObjetos = 40;
@@ -262,6 +328,9 @@ public class EleccionNumero : MonoBehaviour
             CheckerBotonJugar = true;
         }
     }
+
+
+    //Selecionas las "areas" de juego
     public void SeleccionCocina()
     {
         if (OpcionCocina == false)
@@ -281,6 +350,7 @@ public class EleccionNumero : MonoBehaviour
             ListaAuxiliarTexto.Remove(CocinaTexto);
         }
     }
+
     public void SeleccionBaño()
     {
         if (OpcionBaño == false)
@@ -300,6 +370,7 @@ public class EleccionNumero : MonoBehaviour
             ListaAuxiliarTexto.Remove(BañoTexto);
         }
     }
+
     public void SeleccionDormitorio()
     {
         if (OpcionDormitorio == false)
@@ -319,6 +390,7 @@ public class EleccionNumero : MonoBehaviour
             ListaAuxiliarTexto.Remove(DormitorioTexto);
         }
     }
+
     public void SeleccionJuguetes()
     {
         if (OpcionJuguetes == false)
@@ -338,6 +410,8 @@ public class EleccionNumero : MonoBehaviour
             ListaAuxiliarTexto.Remove(JuguetesTexto);
         }
     }
+
+    //Comienza el juego creo
     public void siguiente()
     {
         if (NumeroDeHabitaciones > 0)
@@ -350,19 +424,38 @@ public class EleccionNumero : MonoBehaviour
         }
     }
        
-    
+    // Es el menu de pausa, solo se activa cuando le das al engranaje
+
     public void Engranaje()
     {
-        Time.timeScale = 0;
-        VolverAlMenu.SetActive(true);
-        ContinuarJugando.SetActive(true);
+        if (Time.timeScale == 1)
+        {
+            Time.timeScale = 0;
+            VolverAlMenu.SetActive(true);
+            ContinuarJugando.SetActive(true);
+            FondoPause.SetActive(true);
+        }
+        else if (Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+            VolverAlMenu.SetActive(false);
+            ContinuarJugando.SetActive(false);
+            FondoPause.SetActive(false);
+        }
     }
+
+    //El boton de continuar, la otra opcion de dar para quitar el pause
+
     public void Continuar()
     {
         Time.timeScale = 1;
         VolverAlMenu.SetActive(false);
+        FondoPause.SetActive(false);
         ContinuarJugando.SetActive(false);
     }
+
+    // Metodo rápido para quitar elementos de importancia y no se dubliquen en la lista
+
     public void RemoverDeLista()
     {
         numbersToChooseFrom.Remove(0 + Comodin);
@@ -377,22 +470,29 @@ public class EleccionNumero : MonoBehaviour
         numbersToChooseFrom.Remove(9 + Comodin);
     }
 
+
+    //El Metodo importante, todo el juego en resumida cuenta.
     public void PickRandomNumber2()
     {
-        
+        //Velocidad de inicio para las cortinas
+
             Velocidad = 2;
             
         
         
-        // UNA HABITACION
+        //Para una habitacion
+
         if (NumeroDeHabitaciones == 1)
         {
-            
+            //Colocacion de donde se genera la zona de recogida de los objetos
+
             BordeAjustes1.SetActive(true);
             Ajustes1Habitacion.SetActive(true);
             Bordes1Habitacion.SetActive(true);
             Habitacion1.SetActive(true);
             SpawnTexto1.SetActive(true);
+
+            // El "Area" selecionada de juego y pone nuemro a comodin para proteger sus objetos importantes
             if (OpcionCocina == true)
             {
                 Comodin = 0;
@@ -441,10 +541,19 @@ public class EleccionNumero : MonoBehaviour
                 SpawnTexto1.SetActive(false);
 
             }
+
+            // Generacion de la lista
             List<GameObject> list = new List<GameObject>();
+
+
+            // numeros de objetos selecionados, aui estas los puntos necesacios para ganar
+
             if (NumeroDeObjetos == 12)
             {
                 PuntosNecesarios = 6;
+
+                // Se eliminan algunos sitios de colocacion
+
                 CuentaBaño.ReferenciaCuentaBaño.RecogidosHab1[6].SetActive(false);
                 CuentaBaño.ReferenciaCuentaBaño.RecogidosHab1[7].SetActive(false);
                 CuentaBaño.ReferenciaCuentaBaño.RecogidosHab1[8].SetActive(false);
@@ -459,6 +568,8 @@ public class EleccionNumero : MonoBehaviour
             {
 
                 PuntosNecesarios = 10;
+
+
                 for (int i = 0; i < NumeroDeObjetos; i++)
                 {
                     list.Add(Objetos201[i]);
@@ -466,7 +577,9 @@ public class EleccionNumero : MonoBehaviour
             }
             else if (NumeroDeObjetos == 28)
             {
-                PuntosNecesarios = 9;
+                PuntosNecesarios = 10;
+
+
                 for (int i = 0; i < NumeroDeObjetos; i++)
                 {
                     list.Add(Objetos281[i]);
@@ -482,6 +595,8 @@ public class EleccionNumero : MonoBehaviour
             }
 
 
+            //Generacion de los objetos importantes 
+
             if (NumeroDeObjetos == 12 || NumeroDeObjetos == 20)
             {
                 List<GameObject> lista = new List<GameObject>();
@@ -492,25 +607,34 @@ public class EleccionNumero : MonoBehaviour
 
                 }
 
+
+                
+                //Quita los objetos importantes de la "Area" selecionada
                 RemoverDeLista();
+
+
+                //Genera los objetos de "Estorbo" teniendo en cunata el nuevo numero de objetos debido a que ahora se han quitado los objetos impotantes de la "Area"
 
                 for (int i = Comodin; i < Comodin + (NumeroDeObjetos / 2); i++)
                 {
                     if (numbersToChooseFrom.Count > 0)
                     {
+                        //Genera un numero aleatorio de 0 a numero total de la lista de los numeros posibles
 
                         int randomIndex = Random.Range(0, numbersToChooseFrom.Count);
 
+
+                        //Luego iguala el randomNuber al numero obtenido, para que la consola lo comente y lo añanda a la lista de chosenNumbers
                         randomNumber = numbersToChooseFrom[randomIndex];
-
                         Debug.Log("Número elegido: " + randomNumber);
-
                         chosenNumbers.Add(randomNumber);
 
+                        //Una vez que se añada a la lista de chosenNumbers se quita de numbersToChooseFrom para reducir el if y se añade a lista
                         numbersToChooseFrom.RemoveAt(randomIndex);
-
                         lista.Add(ConjuntoObjetos[randomNumber]);
                     }
+
+                    //Me quiero morir
                 }
                 for (int i = 0; i < NumeroDeObjetos; i++)
                 {
@@ -525,6 +649,8 @@ public class EleccionNumero : MonoBehaviour
             {
                 CuentaBaño.ReferenciaCuentaBaño.RecogidosHab1[9].SetActive(false);
 
+
+                //Genera los numeros de las lista
                 List<GameObject> lista = new List<GameObject>();
                 for (int i = Comodin; i < 9 + Comodin; i++)
                 {
@@ -1530,6 +1656,10 @@ public class EleccionNumero : MonoBehaviour
         BotonesNumeroObjetos.SetActive(false);
     }
 }
+
+
+
+// Script anterior, Insevible
 /*public void PickRandomNumber()
 {
 
