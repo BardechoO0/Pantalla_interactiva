@@ -18,7 +18,7 @@ public class Acciones : MonoBehaviour
             Debug.Log("Muy bien");
             Conteo = 0;
             Actividades.InstanceActividades.CheckerDestinoAcertado = false;
-            JugarDeNuevo.ReferenciaJugarDeNuevo.Juego.SetActive(false);
+            //JugarDeNuevo.ReferenciaJugarDeNuevo.Juego.SetActive(false);
             JugarDeNuevo.ReferenciaJugarDeNuevo.Botones.SetActive(true);
             
             

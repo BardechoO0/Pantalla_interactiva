@@ -27,6 +27,8 @@ public class GeneradorActividades : MonoBehaviour
     [SerializeField] public bool VestidorChecker;
     [SerializeField] public bool TallerChecker;
     [SerializeField] public string[] TagsSpawnAcciones = new string[6];
+
+    [SerializeField] public GameObject FondoPause;
     [SerializeField] public GameObject VolverAlMenu;
     [SerializeField] public GameObject ContinuarJugando;
     [SerializeField] public GameObject Reiniciar;
@@ -40,7 +42,6 @@ public class GeneradorActividades : MonoBehaviour
     [SerializeField] public GameObject FondoSalon;
     [SerializeField] public GameObject FondoExcurion;
     [SerializeField] public GameObject FondoTaller;
-    // Start is called before the first frame update
 
     public void Awake()
     {
@@ -52,6 +53,7 @@ public class GeneradorActividades : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1;
+        FondoPause.SetActive(false);
         VolverAlMenu.SetActive(false);
         ContinuarJugando.SetActive(false);
         Reiniciar.SetActive(false);
@@ -72,22 +74,9 @@ public class GeneradorActividades : MonoBehaviour
         }
         SpawnActividad();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    //modificado para test
-    
+ 
     int support2;
     int support3;
-     
-
-    //modificado para test
-   
-
-    //modificado para test
 
     public void SpawnAccionesConTP()
     {
@@ -632,10 +621,21 @@ public class GeneradorActividades : MonoBehaviour
     }
     public void Engranaje()
     {
-        Time.timeScale = 0;
-        VolverAlMenu.SetActive(true);
-        ContinuarJugando.SetActive(true);
-        Reiniciar.SetActive(true);
+        if (Time.timeScale == 1)
+        {
+            Time.timeScale = 0;
+            VolverAlMenu.SetActive(true);
+            ContinuarJugando.SetActive(true);
+            Reiniciar.SetActive(true);
+            FondoPause.SetActive(true);
+        }else if (Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+            VolverAlMenu.SetActive(false);
+            ContinuarJugando.SetActive(false);
+            Reiniciar.SetActive(false);
+            FondoPause.SetActive(false);
+        }
     }
     public void Continuar()
     {
@@ -643,5 +643,6 @@ public class GeneradorActividades : MonoBehaviour
         VolverAlMenu.SetActive(false);
         ContinuarJugando.SetActive(false);
         Reiniciar.SetActive(false);
+        FondoPause.SetActive(false);
     }
 }
