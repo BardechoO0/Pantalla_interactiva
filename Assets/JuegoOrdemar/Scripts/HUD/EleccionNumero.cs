@@ -87,7 +87,7 @@ public class EleccionNumero : MonoBehaviour
     [SerializeField] public GameObject ContinuarJugando;
 
 
-    //Posiciones de imagenes para 4 o 3 habitaciones
+    //Posiciones de los objeos para 4 o 3 habitaciones
 
     [SerializeField] public GameObject MarcosRecogidosCocina;
     [SerializeField] public GameObject MarcosRecogidosBaño;
@@ -764,7 +764,7 @@ public class EleccionNumero : MonoBehaviour
             //Afirma que los ajustes son acesibles
             Ajustes.SetActive(true);
 
-            //Se genera los bordes donde ban a estar las habitaciones instaciadas
+            //Se genera los bordes donde van a estar las habitaciones instaciadas
             Bordes2Habitaciones.SetActive(true);
 
             if (OpcionCocina && OpcionBaño)
@@ -1306,80 +1306,101 @@ public class EleccionNumero : MonoBehaviour
 
         if (NumeroDeHabitaciones >= 3)
         {
+            //Comprueva que el boton de ajuste este activo
             Ajustes.SetActive(true);
+
+
+            //Se genera los bordes donde ban a estar las habitaciones instaciadas
             Bordes34Habitaciones.SetActive(true);
+
+
+            //tres habitaciones
             if (NumeroDeHabitaciones == 3)
             {
+                //Posicion de las habitaciones
                 Habitaciones34[0].SetActive(true);
                 Habitaciones34[1].SetActive(true);
                 Habitaciones34[2].SetActive(true);
                 Habitaciones34[3].SetActive(true);
 
+
+                //Comprueba que habitacion no se va a generar
                 if (OpcionCocina == false)
                 {
-                    for (int i = 0; i < 10; i++)
-                    {
+                    //oculta el lugar de los objetos colocados
                         MarcosRecogidosCocina.SetActive(false);
-
-                    }
+                    
+                    //Muestra la imagen
                     BañoPadre.SetActive(true);
                     DormitorioPadre.SetActive(true);
                     JuguetesPadre.SetActive(true);
+
+                    //Colocacion de imgen 
                     BañoPadre.transform.position = Habitaciones34[0].transform.position;
                     JuguetesPadre.transform.position = Habitaciones34[2].transform.position;
                     DormitorioPadre.transform.position = Habitaciones34[3].transform.position;
+
+                    //0culta la zona de colocacion de la imagen
                     Habitaciones34[0].SetActive(false);
                     Habitaciones34[1].SetActive(false);
                     Habitaciones34[2].SetActive(false);
                     Habitaciones34[3].SetActive(false);
+
+
+                    //Comprueba si las habitaciones estan colocadas
                     BañoHab34Pos1Num = true;
                     JuguetesHab34Pos3Num = true;
                     DormitorioHab34Pos4Num = true;
-
-
-
                 }
                 else if (OpcionBaño == false)
                 {
-                    for (int i = 0; i < 10; i++)
-                    {
-                        MarcosRecogidosBaño.SetActive(false);
+                    //oculta el lugar de los objetos colocados
+                    MarcosRecogidosBaño.SetActive(false);
 
-                    }
+
+                    //Muestra la imagen
                     CocinaPadre.SetActive(true);
                     DormitorioPadre.SetActive(true);
                     JuguetesPadre.SetActive(true);
+
+                    //Colocacion de imgen 
                     CocinaPadre.transform.position = Habitaciones34[1].transform.position;
                     JuguetesPadre.transform.position = Habitaciones34[2].transform.position;
                     DormitorioPadre.transform.position = Habitaciones34[3].transform.position;
+
+                    //0culta la zona de colocacion de la imagen
                     Habitaciones34[0].SetActive(false);
                     Habitaciones34[1].SetActive(false);
                     Habitaciones34[2].SetActive(false);
                     Habitaciones34[3].SetActive(false);
+
+                    //Comprueba si las habitaciones estan colocadas
                     CocinaHab34Pos2Num = true;
                     JuguetesHab34Pos3Num = true;
                     DormitorioHab34Pos4Num = true;
-
-
-
                 }
                 else if (OpcionDormitorio == false)
                 {
-                    for (int i = 0; i < 10; i++)
-                    {
-                        MarcosRecogidosDormitorio.SetActive(false);
+                    //oculta el lugar de los objetos colocados
+                    MarcosRecogidosDormitorio.SetActive(false);
 
-                    }
+                    //Muestra la imagen
                     BañoPadre.SetActive(true);
                     CocinaPadre.SetActive(true);
                     JuguetesPadre.SetActive(true);
+
+                    //Colocacion de imgen 
                     BañoPadre.transform.position = Habitaciones34[0].transform.position;
                     CocinaPadre.transform.position = Habitaciones34[1].transform.position;
                     JuguetesPadre.transform.position = Habitaciones34[2].transform.position;
+
+                    //0culta la zona de colocacion de la imagen
                     Habitaciones34[0].SetActive(false);
                     Habitaciones34[1].SetActive(false);
                     Habitaciones34[2].SetActive(false);
                     Habitaciones34[3].SetActive(false);
+
+                    //Comprueba si las habitaciones estan colocadas
                     BañoHab34Pos1Num = true;
                     CocinaHab34Pos2Num = true;
                     JuguetesHab34Pos3Num = true;
@@ -1388,19 +1409,26 @@ public class EleccionNumero : MonoBehaviour
                 }
                 else if (OpcionJuguetes == false)
                 {
-
+                    //oculta el lugar de los objetos colocados
                     MarcosRecogidosJuguetes.SetActive(false);
 
+                    //Muestra la imagen
                     BañoPadre.SetActive(true);
                     CocinaPadre.SetActive(true);
                     DormitorioPadre.SetActive(true);
+
+                    //Colocacion de imgen 
                     BañoPadre.transform.position = Habitaciones34[0].transform.position;
                     CocinaPadre.transform.position = Habitaciones34[1].transform.position;
                     DormitorioPadre.transform.position = Habitaciones34[3].transform.position;
+
+                    //0culta la zona de colocacion de la imagen
                     Habitaciones34[0].SetActive(false);
                     Habitaciones34[1].SetActive(false);
                     Habitaciones34[2].SetActive(false);
                     Habitaciones34[3].SetActive(false);
+
+                    //Comprueba si las habitaciones estan colocadas
                     BañoHab34Pos1Num = true;
                     CocinaHab34Pos2Num = true;
                     DormitorioHab34Pos4Num = true;
@@ -1410,25 +1438,37 @@ public class EleccionNumero : MonoBehaviour
 
             if (NumeroDeHabitaciones == 4)
             {
+
+                //Se genera los bordes donde ban a estar las habitaciones instaciadas
                 Bordes34Habitaciones.SetActive(true);
+
+                //Muestra la imagen
                 DormitorioPadre.SetActive(true);
                 CocinaPadre.SetActive(true);
                 BañoPadre.SetActive(true);
                 JuguetesPadre.SetActive(true);
+
+                //Colocacion de imgen 
                 CocinaPadre.transform.position = Habitaciones34[1].transform.position;
                 BañoPadre.transform.position = Habitaciones34[0].transform.position;
                 JuguetesPadre.transform.position = Habitaciones34[2].transform.position;
                 DormitorioPadre.transform.position = Habitaciones34[3].transform.position;
+
+                //0culta la zona de colocacion de la imagen
                 Habitaciones34[0].SetActive(false);
                 Habitaciones34[1].SetActive(false);
                 Habitaciones34[2].SetActive(false);
                 Habitaciones34[3].SetActive(false);
+
+                //Comprueba si las habitaciones estan colocadas
                 BañoHab34Pos1Num = true;
                 CocinaHab34Pos2Num = true;
                 JuguetesHab34Pos3Num = true;
                 DormitorioHab34Pos4Num = true;
 
             }
+
+
             if (NumeroDeObjetos == 12)
             {
                 Imagenes12.SetActive(true);
