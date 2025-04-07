@@ -972,7 +972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &22898248
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10816,7 +10816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &252953227
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11909,7 +11909,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269721245}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97f9bc890b6f48241b207826028ab8bb, type: 3}
   m_Name: 
@@ -23442,7 +23442,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557320792}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97f9bc890b6f48241b207826028ab8bb, type: 3}
   m_Name: 
@@ -24215,7 +24215,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579576612}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97f9bc890b6f48241b207826028ab8bb, type: 3}
   m_Name: 
@@ -25065,7 +25065,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593540826}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97f9bc890b6f48241b207826028ab8bb, type: 3}
   m_Name: 
@@ -41776,7 +41776,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 8626cf2258876ed42a18088ed3c4e4cb, type: 3}
     - target: {fileID: 5612177471095045748, guid: 4a763f59af9837740a213dee4afb9047, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5612177471095045748, guid: 4a763f59af9837740a213dee4afb9047, type: 3}
       propertyPath: m_LocalScale.x
@@ -49943,7 +49943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1121481070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59451,8 +59451,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 269721257}
   - {fileID: 579576624}
+  - {fileID: 269721257}
   - {fileID: 593540838}
   - {fileID: 557320799}
   m_Father: {fileID: 1774866829}
@@ -76544,7 +76544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 888156099412006973, guid: 328c1d24eebc8f94d99e03168bb2fcf5, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 888156099412006973, guid: 328c1d24eebc8f94d99e03168bb2fcf5, type: 3}
       propertyPath: m_LocalScale.x
@@ -76552,7 +76552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 888156099412006973, guid: 328c1d24eebc8f94d99e03168bb2fcf5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.41051972
+      value: 0.41051975
       objectReference: {fileID: 0}
     - target: {fileID: 888156099412006973, guid: 328c1d24eebc8f94d99e03168bb2fcf5, type: 3}
       propertyPath: m_LocalScale.z
@@ -85436,7 +85436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1832022666
 RectTransform:
   m_ObjectHideFlags: 0
@@ -95190,16 +95190,11 @@ MonoBehaviour:
   Juguetes20: 0
   Juguetes28: 0
   Juguetes40: 0
-  CheckerImagenes12: 0
-  CheckerImagenes20: 0
-  CheckerImagenes28: 0
-  CheckerImagenes40: 0
-  z: 0
-  x: 0
   CocinaPadre: {fileID: 557320792}
   "Ba\xF1oPadre": {fileID: 593540826}
   DormitorioPadre: {fileID: 269721245}
   JuguetesPadre: {fileID: 579576612}
+  FondoPause: {fileID: 22898247}
   VolverAlMenu: {fileID: 1121481069}
   ContinuarJugando: {fileID: 252953226}
   MarcosRecogidosCocina: {fileID: 443460661}

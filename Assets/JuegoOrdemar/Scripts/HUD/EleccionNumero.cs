@@ -141,10 +141,10 @@ public class EleccionNumero : MonoBehaviour
     [SerializeField] public GameObject[] Habitacion2 = new GameObject[2];
     [SerializeField] public GameObject[] Habitaciones34 = new GameObject[4];
 
-
+    /*
     public List<GameObject> ListaAuxiliar = new List<GameObject>();
     public List<GameObject> ListaAuxiliarTexto = new List<GameObject>();
-
+    */
 
     [SerializeField] public GameObject CocinaTexto;
     [SerializeField] public GameObject BañoTexto;
@@ -338,16 +338,12 @@ public class EleccionNumero : MonoBehaviour
             NumeroDeHabitaciones++;
             MarcaCocina.SetActive(true);
             OpcionCocina = true;
-            ListaAuxiliar.Add(CocinaPadre);
-            ListaAuxiliarTexto.Add(CocinaTexto);
         }
         else
         {
             NumeroDeHabitaciones--;
             MarcaCocina.SetActive(false);
             OpcionCocina = false;
-            ListaAuxiliar.Remove(CocinaPadre);
-            ListaAuxiliarTexto.Remove(CocinaTexto);
         }
     }
 
@@ -358,16 +354,12 @@ public class EleccionNumero : MonoBehaviour
             NumeroDeHabitaciones++;
             MarcaBaño.SetActive(true);
             OpcionBaño = true;
-            ListaAuxiliar.Add(BañoPadre);
-            ListaAuxiliarTexto.Add(BañoTexto);
         }
         else
         {
             NumeroDeHabitaciones--;
             MarcaBaño.SetActive(false);
             OpcionBaño = false;
-            ListaAuxiliar.Remove(BañoPadre);
-            ListaAuxiliarTexto.Remove(BañoTexto);
         }
     }
 
@@ -378,16 +370,12 @@ public class EleccionNumero : MonoBehaviour
             NumeroDeHabitaciones++;
             MarcaDormitorio.SetActive(true);
             OpcionDormitorio = true;
-            ListaAuxiliar.Add(DormitorioPadre);
-            ListaAuxiliarTexto.Add(DormitorioTexto);
         }
         else
         {
             NumeroDeHabitaciones--;
             MarcaDormitorio.SetActive(false);
             OpcionDormitorio = false;
-            ListaAuxiliar.Remove(DormitorioPadre);
-            ListaAuxiliarTexto.Remove(DormitorioTexto);
         }
     }
 
@@ -398,16 +386,12 @@ public class EleccionNumero : MonoBehaviour
             NumeroDeHabitaciones++;
             MarcaJuguetes.SetActive(true);
             OpcionJuguetes = true;
-            ListaAuxiliar.Add(JuguetesPadre);
-            ListaAuxiliarTexto.Add(JuguetesTexto);
         }
         else
         {
             NumeroDeHabitaciones--;
             MarcaJuguetes.SetActive(false);
             OpcionJuguetes = false;
-            ListaAuxiliar.Remove(JuguetesPadre);
-            ListaAuxiliarTexto.Remove(JuguetesTexto);
         }
     }
 
@@ -546,7 +530,7 @@ public class EleccionNumero : MonoBehaviour
             List<GameObject> list = new List<GameObject>();
 
 
-            // numeros de objetos selecionados, aui estas los puntos necesacios para ganar
+            // numeros de objetos selecionados, aqui estas los puntos necesacios para ganar
 
             if (NumeroDeObjetos == 12)
             {
@@ -601,6 +585,9 @@ public class EleccionNumero : MonoBehaviour
             {
                 List<GameObject> lista = new List<GameObject>();
 
+
+                //Coloca los objtos importantes en la lista
+
                 for (int i = Comodin; i < Comodin + (NumeroDeObjetos / 2); i++)
                 {
                     lista.Add(ConjuntoObjetos[i]);
@@ -613,7 +600,7 @@ public class EleccionNumero : MonoBehaviour
                 RemoverDeLista();
 
 
-                //Genera los objetos de "Estorbo" teniendo en cunata el nuevo numero de objetos debido a que ahora se han quitado los objetos impotantes de la "Area"
+                //Genera los objetos de "Estorbo" teniendo en encunta el nuevo numero de objetos debido a que ahora se han quitado los objetos impotantes de la "Area"
 
                 for (int i = Comodin; i < Comodin + (NumeroDeObjetos / 2); i++)
                 {
@@ -636,10 +623,17 @@ public class EleccionNumero : MonoBehaviour
 
                     //Me quiero morir
                 }
+
+                //Intanciar los objetos
                 for (int i = 0; i < NumeroDeObjetos; i++)
                 {
+                    //Genera el numero
                     int Numero = Random.Range(0, lista.Count);
+
+                    //Instancia el numero
                     Instantiate(lista[Numero], list[i].transform.position, Quaternion.identity);
+
+                    //Destrulle el numero para que no vuelva a salir
                     lista.RemoveAt(Numero);
                     
                 }
@@ -650,37 +644,60 @@ public class EleccionNumero : MonoBehaviour
                 CuentaBaño.ReferenciaCuentaBaño.RecogidosHab1[9].SetActive(false);
 
 
-                //Genera los numeros de las lista
+                
                 List<GameObject> lista = new List<GameObject>();
+
+
+                //Coloca los objtos importantes en la lista
+
                 for (int i = Comodin; i < 9 + Comodin; i++)
                 {
                     lista.Add(ConjuntoObjetos[i]);
                 }
 
+
+                //Quita los objetos importantes de la "Area" selecionada
                 RemoverDeLista();
+
+
+                //Genera los objetos de "Estorbo" teniendo en encunta el nuevo numero de objetos debido a que ahora se han quitado los objetos impotantes de la "Area"
 
                 for (int i = 0; i < 19; i++)
                 {
+
+
                     if (numbersToChooseFrom.Count > 0)
                     {
-
+                        //Genera un numero aleatorio de 0 a numero total de la lista de los numeros posibles
                         int randomIndex = Random.Range(0, numbersToChooseFrom.Count);
 
+
+                        //Luego iguala el randomNuber al numero obtenido, para que la consola lo comente y lo añanda a la lista de chosenNumbers
+
                         randomNumber = numbersToChooseFrom[randomIndex];
-
                         Debug.Log("Número elegido: " + randomNumber);
-
                         chosenNumbers.Add(randomNumber);
 
-                        numbersToChooseFrom.RemoveAt(randomIndex);
 
+                        //Una vez que se añada a la lista de chosenNumbers se quita de numbersToChooseFrom para reducir el if y se añade a lista
+
+                        numbersToChooseFrom.RemoveAt(randomIndex);
                         lista.Add(ConjuntoObjetos[randomNumber]);
                     }
                 }
+
+                //Intanciar los objetos
                 for (int i = 0; i < 28; i++)
                 {
+                    //Genera el numero
                     int Numero = Random.Range(0, lista.Count);
+
+                    //Instancia el numero
                     Instantiate(lista[Numero], list[i].transform.position, Quaternion.identity);
+
+
+                    //Destrulle el numero para que no vuelva a salir y se asegura que no vuelva a salir
+
                     lista.RemoveAt(Numero);
                     Objetos281[i].SetActive(false);
 
@@ -689,35 +706,50 @@ public class EleccionNumero : MonoBehaviour
             else if (NumeroDeObjetos == 40)
             {
                 List<GameObject> lista = new List<GameObject>();
+
+                //Coloca los objtos importantes en la lista
+
                 for (int i = 0 + Comodin; i < 10 + Comodin; i++)
                 {
                     lista.Add(ConjuntoObjetos[i]);
                 }
 
+                //Quita los objetos importantes de la "Area" selecionada
                 RemoverDeLista();
+
+
+                //Genera los objetos de "Estorbo" teniendo en encunta el nuevo numero de objetos debido a que ahora se han quitado los objetos impotantes de la "Area"
 
                 for (int i = 0; i < 30; i++)
                 {
                     if (numbersToChooseFrom.Count > 0)
                     {
 
+                        //Genera un numero aleatorio de 0 a numero total de la lista de los numeros posibles
                         int randomIndex = Random.Range(0, numbersToChooseFrom.Count);
 
+
+                        //Luego iguala el randomNuber al numero obtenido, para que la consola lo comente y lo añanda a la lista de chosenNumbers
+
                         randomNumber = numbersToChooseFrom[randomIndex];
-
                         Debug.Log("Número elegido: " + randomNumber);
-
                         chosenNumbers.Add(randomNumber);
 
-                        numbersToChooseFrom.RemoveAt(randomIndex);
 
+                        //Una vez que se añada a la lista de chosenNumbers se quita de numbersToChooseFrom para reducir el if y se añade a lista
+                        numbersToChooseFrom.RemoveAt(randomIndex);
                         lista.Add(ConjuntoObjetos[randomNumber]);
                     }
                 }
                 for (int i = 0; i < 40; i++)
                 {
+                    //Genera el numero
                     int Numero = Random.Range(0, lista.Count);
+
+                    //Instancia el numero
                     Instantiate(lista[Numero], list[i].transform.position, Quaternion.identity);
+
+                    //Destrulle el numero para que no vuelva a salir y se asegura que no vuelva a salir
                     lista.RemoveAt(Numero);
                     Objetos401[i].SetActive(false);
                 }
@@ -725,156 +757,241 @@ public class EleccionNumero : MonoBehaviour
             
         }
 
-        // DOS HABITACIONES
+        // Para dos habitaciones
+     
         if (NumeroDeHabitaciones == 2)
         {
+            //Afirma que los ajustes son acesibles
             Ajustes.SetActive(true);
+
+            //Se genera los bordes donde ban a estar las habitaciones instaciadas
             Bordes2Habitaciones.SetActive(true);
-            Habitacion2[0].SetActive(true);
-            Habitacion2[1].SetActive(true);
-            SpawnTexto21.SetActive(true);
-            SpawnTexto22.SetActive(true);
-            ListaAuxiliar[0].gameObject.SetActive(true);
-            ListaAuxiliar[1].gameObject.SetActive(true);
-            ListaAuxiliar[0].transform.position = Habitacion2[0].transform.position;
-            ListaAuxiliar[1].transform.position = Habitacion2[1].transform.position;
-            ListaAuxiliarTexto[0].gameObject.SetActive(true);
-            ListaAuxiliarTexto[1].gameObject.SetActive(true);
-            ListaAuxiliarTexto[0].transform.position = SpawnTexto21.transform.position;
-            ListaAuxiliarTexto[1].transform.position = SpawnTexto22.transform.position;
-            Habitacion2[0].SetActive(false);
-            Habitacion2[1].SetActive(false);
-            SpawnTexto21.SetActive(false);
-            SpawnTexto22.SetActive(false);
 
             if (OpcionCocina && OpcionBaño)
             {
-
+                //Valores de los comodines
                 Comodin = 0;
                 Comodin2 = 20;
+
+                //Imgen y Texto de la habitacion 1
                 CocinaTexto.SetActive(true);
                 CocinaPadre.SetActive(true);
+
+                //Imgen y Texto de la habitacion 2
                 BañoTexto.SetActive(true);
                 BañoPadre.SetActive(true);
+
+                //Colocacion de imgen y texto de la habitación 1
                 CocinaPadre.transform.position = Habitacion2[0].transform.position;
                 CocinaTexto.transform.position = SpawnTexto21.transform.position;
+
+                //Colocacion de imgen y texto de la habitación 2
                 BañoPadre.transform.position= Habitacion2[1].transform.position;
                 BañoTexto.transform.position = SpawnTexto22.transform.position;
+
+                //0culta la zona de colocacion de la habitacion 1 tanto el texto como la imagen
                 Habitacion2[0].SetActive(false);
                 SpawnTexto21.SetActive(false);
+
+                //Oculta la zona de colocacion de la habitacion 2 tanto el texto como la imagen
                 Habitacion2[1].SetActive(false);
                 SpawnTexto22.SetActive(false);
+
+                //Comprueba si las habitaciones estan colocadas
                 CocinaHab2Pos1Num = true;
                 BañoHab2Pos2Num = true;
 
             }
 
+            //Las opciones distintas que puedes tomar
             else if (OpcionCocina && OpcionDormitorio)
             {
-
+                //Valores de los comodines
                 Comodin = 0;
                 Comodin2 = 10;
+
+                //Imgen y Texto de la habitacion 1
                 CocinaTexto.SetActive(true);
                 CocinaPadre.SetActive(true);
+
+                //Imgen y Texto de la habitacion 2
                 DormitorioTexto.SetActive(true);
                 DormitorioPadre.SetActive(true);
+
+                //Colocacion de imgen y texto de la habitación 1
                 CocinaPadre.transform.position = Habitacion2[0].transform.position;
                 CocinaTexto.transform.position = SpawnTexto21.transform.position;
+
+                //Colocacion de imgen y texto de la habitación 2
                 DormitorioPadre.transform.position = Habitacion2[1].transform.position;
                 DormitorioTexto.transform.position = SpawnTexto22.transform.position;
+
+                //0culta la zona de colocacion de la habitacion 1 tanto el texto como la imagen
                 Habitacion2[0].SetActive(false);
                 SpawnTexto21.SetActive(false);
+
+                //0culta la zona de colocacion de la habitacion 2 tanto el texto como la imagen
                 Habitacion2[1].SetActive(false);
                 SpawnTexto22.SetActive(false);
+
+                //Comprueba si las habitaciones estan colocadas
                 CocinaHab2Pos1Num = true;
                 DormitorioHab2Pos2Num = true;
 
             }
             else if (OpcionCocina && OpcionJuguetes)
             {
+                //Valores de los comodines
                 Comodin = 0;
                 Comodin2 = 30;
+
+                //Imgen y Texto de la habitacion 1
                 CocinaTexto.SetActive(true);
                 CocinaPadre.SetActive(true);
+
+                //Imgen y Texto de la habitacion 2
                 JuguetesTexto.SetActive(true);
                 JuguetesPadre.SetActive(true);
+
+                //Colocacion de imgen y texto de la habitación 1
                 CocinaPadre.transform.position = Habitacion2[0].transform.position;
                 CocinaTexto.transform.position = SpawnTexto21.transform.position;
+
+                //Colocacion de imgen y texto de la habitación 2
                 JuguetesPadre.transform.position = Habitacion2[1].transform.position;
                 JuguetesTexto.transform.position = SpawnTexto22.transform.position;
+
+                //0culta la zona de colocacion de la habitacion 1 tanto el texto como la imagen
                 Habitacion2[0].SetActive(false);
                 SpawnTexto21.SetActive(false);
+
+                //0culta la zona de colocacion de la habitacion 2 tanto el texto como la imagen
                 Habitacion2[1].SetActive(false);
                 SpawnTexto22.SetActive(false);
+
+                //Comprueba si las habitaciones estan colocadas
                 CocinaHab2Pos1Num = true;
                 JuguetesHab2Pos2Num = true;
             }
             else if (OpcionBaño && OpcionDormitorio)
             {
+                //Valores de los comodines
                 Comodin = 20;
                 Comodin2 = 10;
+
+                //Imgen y Texto de la habitacion 1
                 BañoTexto.SetActive(true);
                 BañoPadre.SetActive(true);
+
+                //Imgen y Texto de la habitacion 2
                 DormitorioTexto.SetActive(true);
                 DormitorioPadre.SetActive(true);
+
+                //Colocacion de imgen y texto de la habitación 1
                 BañoPadre.transform.position = Habitacion2[0].transform.position;
                 BañoTexto.transform.position = SpawnTexto21.transform.position;
+
+                //Colocacion de imgen y texto de la habitación 2
                 DormitorioPadre.transform.position = Habitacion2[1].transform.position;
                 DormitorioTexto.transform.position = SpawnTexto22.transform.position;
+
+                //0culta la zona de colocacion de la habitacion 1 tanto el texto como la imagen
                 Habitacion2[0].SetActive(false);
                 SpawnTexto21.SetActive(false);
+
+                //0culta la zona de colocacion de la habitacion 2 tanto el texto como la imagen
                 Habitacion2[1].SetActive(false);
                 SpawnTexto22.SetActive(false);
+
+                //Comprueba si las habitaciones estan colocadas
                 BañoHab2Pos1Num = true;
                 DormitorioHab2Pos2Num = true;
             }
             else if (OpcionBaño && OpcionJuguetes)
             {
+                //Valores de los comodines
                 Comodin = 20;
                 Comodin2 = 30;
+
+                //Imgen y Texto de la habitacion 1
                 BañoTexto.SetActive(true);
                 BañoPadre.SetActive(true);
+
+                //Imgen y Texto de la habitacion 2
                 JuguetesTexto.SetActive(true);
                 JuguetesPadre.SetActive(true);
+
+                //Colocacion de imgen y texto de la habitación 1
                 BañoPadre.transform.position = Habitacion2[0].transform.position;
                 BañoTexto.transform.position = SpawnTexto21.transform.position;
+
+                //Colocacion de imgen y texto de la habitación 2
                 JuguetesPadre.transform.position = Habitacion2[1].transform.position;
                 JuguetesTexto.transform.position = SpawnTexto22.transform.position;
+
+                //0culta la zona de colocacion de la habitacion 1 tanto el texto como la imagen
                 Habitacion2[0].SetActive(false);
                 SpawnTexto21.SetActive(false);
+
+                //0culta la zona de colocacion de la habitacion 2 tanto el texto como la imagen
                 Habitacion2[1].SetActive(false);
                 SpawnTexto22.SetActive(false);
+
+                //Comprueba si las habitaciones estan colocadas
                 BañoHab2Pos1Num = true;
                 JuguetesHab2Pos2Num = true;
             }
             else if (OpcionDormitorio && OpcionJuguetes)
             {
+                //Valores de los comodines
                 Comodin = 10;
                 Comodin2 = 30;
+
+                //Imgen y Texto de la habitacion 1
                 DormitorioTexto.SetActive(true);
                 DormitorioPadre.SetActive(true);
+
+                //Imgen y Texto de la habitacion 2
                 JuguetesTexto.SetActive(true);
                 JuguetesPadre.SetActive(true);
+
+                //Colocacion de imgen y texto de la habitación 1
                 DormitorioPadre.transform.position = Habitacion2[0].transform.position;
                 DormitorioTexto.transform.position = SpawnTexto21.transform.position;
+
+                //Colocacion de imgen y texto de la habitación 2
                 JuguetesPadre.transform.position = Habitacion2[1].transform.position;
                 JuguetesTexto.transform.position = SpawnTexto22.transform.position;
+
+                //0culta la zona de colocacion de la habitacion 1 tanto el texto como la imagen
                 Habitacion2[0].SetActive(false);
                 SpawnTexto21.SetActive(false);
+
+                //0culta la zona de colocacion de la habitacion 2 tanto el texto como la imagen
                 Habitacion2[1].SetActive(false);
                 SpawnTexto22.SetActive(false);
+
+                //Comprueba si las habitaciones estan colocadas
                 DormitorioHab2Pos1Num = true;
                 JuguetesHab2Pos2Num = true;
             }
+
+            
             if (NumeroDeObjetos == 12)
             {
+                //Crea una nueva lista
                 List<GameObject> lista = new List<GameObject>();
+                
+                //Coloca los objeos importantes de la primera habitacion en lista creada
                 for (int i = 0 + Comodin; i < 4 + Comodin; i++)
                 {
                     lista.Add(ConjuntoObjetos[i]);
                 }
-                 // convierte esto en una funcion payaso
 
+                // Comentario del autor original del script : convierte esto en una funcion payaso
+                
+
+                //Elimina los objetos importantes da primera habitacion de la lista para que se puedan repetir
 
                 numbersToChooseFrom.Remove(0 + Comodin);
                 numbersToChooseFrom.Remove(1 + Comodin);
@@ -887,11 +1004,15 @@ public class EleccionNumero : MonoBehaviour
                 numbersToChooseFrom.Remove(8 + Comodin);
                 numbersToChooseFrom.Remove(9 + Comodin);
 
+
+                //Coloca los objeos importantes de la segunda habitacion en lista creada
                 for (int i = 0 + Comodin2; i < 4 + Comodin2; i++)
                 {
                     lista.Add(ConjuntoObjetos[i]);
                 }
 
+                //Elimina los objetos importantes da sedunda habitacion de la lista para que se puedan repetir
+
                 numbersToChooseFrom.Remove(0 + Comodin2);
                 numbersToChooseFrom.Remove(1 + Comodin2);
                 numbersToChooseFrom.Remove(2 + Comodin2);
@@ -903,41 +1024,53 @@ public class EleccionNumero : MonoBehaviour
                 numbersToChooseFrom.Remove(8 + Comodin2);
                 numbersToChooseFrom.Remove(9 + Comodin2);
 
+
+                //Genera los objetos de "Estorbo" teniendo en encunta el nuevo numero de objetos debido a que ahora se han quitado los objetos impotantes de la "Area"
                 for (int i = 0; i < 4; i++)
                 {
                     if (numbersToChooseFrom.Count > 0)
                     {
-
+                        //Genera un numero aleatorio de 0 a numero total de la lista de los numeros posibles
                         int randomIndex = Random.Range(0, numbersToChooseFrom.Count);
 
+                        //Luego iguala el randomNuber al numero obtenido, para que la consola lo comente y lo añanda a la lista de chosenNumbers
                         randomNumber = numbersToChooseFrom[randomIndex];
-
                         Debug.Log("Número elegido: " + randomNumber);
-
                         chosenNumbers.Add(randomNumber);
 
+                        //Una vez que se añada a la lista de chosenNumbers se quita de numbersToChooseFrom para reducir el if y se añade a lista
                         numbersToChooseFrom.RemoveAt(randomIndex);
-
                         lista.Add(ConjuntoObjetos[randomNumber]);
                     }
                 }
                 for (int i = 0; i < 12; i++)
                 {
+                    //Genera el numero
                     int Numero = Random.Range(0, lista.Count);
+
+                    //Instancia el numero
                     Instantiate(lista[Numero], Objetos122[i].transform.position, Quaternion.identity);
+
+                    //Destrulle el numero para que no vuelva a salir y se asegura que no vuelva a salir
                     lista.RemoveAt(Numero);
                     Objetos122[i].SetActive(false);
                 }
+
+                //Puntos necesarios para ganar
                 PuntosNecesarios = 8;
             }
             if (NumeroDeObjetos == 20)
             {
+                //Crea una nueva lista
                 List<GameObject> lista = new List<GameObject>();
+
+                //Coloca los objeos importantes de la primera habitacion en lista creada
                 for (int i = 0 + Comodin; i < 7 + Comodin; i++)
                 {
                     lista.Add(ConjuntoObjetos[i]);
                 }
 
+                //Elimina los objetos importantes da primera habitacion de la lista para que se puedan repetir
                 numbersToChooseFrom.Remove(0 + Comodin);
                 numbersToChooseFrom.Remove(1 + Comodin);
                 numbersToChooseFrom.Remove(2 + Comodin);
@@ -949,11 +1082,15 @@ public class EleccionNumero : MonoBehaviour
                 numbersToChooseFrom.Remove(8 + Comodin);
                 numbersToChooseFrom.Remove(9 + Comodin);
 
+
+                //Coloca los objeos importantes de la 2º habitacion en lista creada
                 for (int i = 0 + Comodin2; i < 7 + Comodin2; i++)
                 {
                     lista.Add(ConjuntoObjetos[i]);
                 }
 
+
+                //Elimina los objetos importantes da 2º habitacion de la lista para que se puedan repetir
                 numbersToChooseFrom.Remove(0 + Comodin2);
                 numbersToChooseFrom.Remove(1 + Comodin2);
                 numbersToChooseFrom.Remove(2 + Comodin2);
@@ -965,41 +1102,57 @@ public class EleccionNumero : MonoBehaviour
                 numbersToChooseFrom.Remove(8 + Comodin2);
                 numbersToChooseFrom.Remove(9 + Comodin2);
 
+
+                //Genera los objetos de "Estorbo" teniendo en encunta el nuevo numero de objetos debido a que ahora se han quitado los objetos impotantes de la "Area"
                 for (int i = 0; i < 6; i++)
                 {
                     if (numbersToChooseFrom.Count > 0)
                     {
 
+                        //Genera un numero aleatorio de 0 a numero total de la lista de los numeros posibles
                         int randomIndex = Random.Range(0, numbersToChooseFrom.Count);
 
+
+                        //Luego iguala el randomNuber al numero obtenido, para que la consola lo comente y lo añanda a la lista de chosenNumbers
                         randomNumber = numbersToChooseFrom[randomIndex];
-
                         Debug.Log("Número elegido: " + randomNumber);
-
                         chosenNumbers.Add(randomNumber);
 
+                        //Una vez que se añada a la lista de chosenNumbers se quita de numbersToChooseFrom para reducir el if y se añade a lista
                         numbersToChooseFrom.RemoveAt(randomIndex);
-
                         lista.Add(ConjuntoObjetos[randomNumber]);
                     }
                 }
                 for (int i = 0; i < 20; i++)
                 {
+                    //Genera el numero
                     int Numero = Random.Range(0, lista.Count);
+
+                    //Instancia el numero
                     Instantiate(lista[Numero], Objetos202[i].transform.position, Quaternion.identity);
+
+                    //Destrulle el numero para que no vuelva a salir y se asegura que no vuelva a salir
                     lista.RemoveAt(Numero);
                     Objetos202[i].SetActive(false);
                 }
+
+                //Puntos necesarios para ganar
                 PuntosNecesarios = 14;
             }
             if (NumeroDeObjetos == 28)
             {
+
+                //Generar una nueva lista
                 List<GameObject> lista = new List<GameObject>();
+
+                //Coloca los objeos importantes de la primera habitacion en lista creada
                 for (int i = 0 + Comodin; i < 9 + Comodin; i++)
                 {
                     lista.Add(ConjuntoObjetos[i]);
                 }
 
+
+                //Elimina los objetos importantes da primera habitacion de la lista para que se puedan repetir
                 numbersToChooseFrom.Remove(0 + Comodin);
                 numbersToChooseFrom.Remove(1 + Comodin);
                 numbersToChooseFrom.Remove(2 + Comodin);
@@ -1011,11 +1164,15 @@ public class EleccionNumero : MonoBehaviour
                 numbersToChooseFrom.Remove(8 + Comodin);
                 numbersToChooseFrom.Remove(9 + Comodin);
 
+
+                //Coloca los objeos importantes de la segunda habitacion en lista creada
                 for (int i = 0 + Comodin2; i < 9 + Comodin2; i++)
                 {
                     lista.Add(ConjuntoObjetos[i]);
                 }
 
+
+                //Elimina los objetos importantes da segunda habitacion de la lista para que se puedan repetir
                 numbersToChooseFrom.Remove(0 + Comodin2);
                 numbersToChooseFrom.Remove(1 + Comodin2);
                 numbersToChooseFrom.Remove(2 + Comodin2);
@@ -1027,41 +1184,55 @@ public class EleccionNumero : MonoBehaviour
                 numbersToChooseFrom.Remove(8 + Comodin2);
                 numbersToChooseFrom.Remove(9 + Comodin2);
 
+
+                //Genera los objetos de "Estorbo" teniendo en encunta el nuevo numero de objetos debido a que ahora se han quitado los objetos impotantes de la "Area"
                 for (int i = 0; i < 10; i++)
                 {
                     if (numbersToChooseFrom.Count > 0)
                     {
-
+                        //Genera un numero aleatorio de 0 a numero total de la lista de los numeros posibles
                         int randomIndex = Random.Range(0, numbersToChooseFrom.Count);
 
+                        //Luego iguala el randomNuber al numero obtenido, para que la consola lo comente y lo añanda a la lista de chosenNumbers
                         randomNumber = numbersToChooseFrom[randomIndex];
-
                         Debug.Log("Número elegido: " + randomNumber);
-
                         chosenNumbers.Add(randomNumber);
 
+                        //Una vez que se añada a la lista de chosenNumbers se quita de numbersToChooseFrom para reducir el if y se añade a lista
                         numbersToChooseFrom.RemoveAt(randomIndex);
-
                         lista.Add(ConjuntoObjetos[randomNumber]);
                     }
                 }
                 for (int i = 0; i < 28; i++)
                 {
+                    //Genera el numero
                     int Numero = Random.Range(0, lista.Count);
+
+                     //Instancia el numero
                     Instantiate(lista[Numero], Objetos282[i].transform.position, Quaternion.identity);
+
+                    //Destrulle el numero para que no vuelva a salir y se asegura que no vuelva a salir
                     lista.RemoveAt(Numero);
                     Objetos282[i].SetActive(false);
                 }
+
+                //Puntos necesarios para ganar
                 PuntosNecesarios = 18;
             }
             if (NumeroDeObjetos == 40)
             {
+
+                //Generar una lista
                 List<GameObject> lista = new List<GameObject>();
+
+                //Coloca los objeos importantes de la primera habitacion en lista creada
                 for (int i = 0 + Comodin; i < 10 + Comodin; i++)
                 {
                     lista.Add(ConjuntoObjetos[i]);
                 }
 
+
+                //Elimina los objetos importantes da primera habitacion de la lista para que se puedan repetir
                 numbersToChooseFrom.Remove(0 + Comodin);
                 numbersToChooseFrom.Remove(1 + Comodin);
                 numbersToChooseFrom.Remove(2 + Comodin);
@@ -1073,11 +1244,15 @@ public class EleccionNumero : MonoBehaviour
                 numbersToChooseFrom.Remove(8 + Comodin);
                 numbersToChooseFrom.Remove(9 + Comodin);
 
+
+                //Coloca los objeos importantes de la segunda habitacion en lista creada
                 for (int i = 0 + Comodin2; i < 10 + Comodin2; i++)
                 {
                     lista.Add(ConjuntoObjetos[i]);
                 }
 
+
+                //Elimina los objetos importantes da primera habitacion de la lista para que se puedan repetir
                 numbersToChooseFrom.Remove(0 + Comodin2);
                 numbersToChooseFrom.Remove(1 + Comodin2);
                 numbersToChooseFrom.Remove(2 + Comodin2);
@@ -1089,35 +1264,46 @@ public class EleccionNumero : MonoBehaviour
                 numbersToChooseFrom.Remove(8 + Comodin2);
                 numbersToChooseFrom.Remove(9 + Comodin2);
 
+
+                //Genera los objetos de "Estorbo" teniendo en encunta el nuevo numero de objetos debido a que ahora se han quitado los objetos impotantes de la "Area"
                 for (int i = 0; i < 20; i++)
                 {
                     if (numbersToChooseFrom.Count > 0)
                     {
-
+                        //Genera un numero aleatorio de 0 a numero total de la lista de los numeros posibles
                         int randomIndex = Random.Range(0, numbersToChooseFrom.Count);
 
+                        //Luego iguala el randomNuber al numero obtenido, para que la consola lo comente y lo añanda a la lista de chosenNumbers
                         randomNumber = numbersToChooseFrom[randomIndex];
-
                         Debug.Log("Número elegido: " + randomNumber);
-
                         chosenNumbers.Add(randomNumber);
 
+                        //Una vez que se añada a la lista de chosenNumbers se quita de numbersToChooseFrom para reducir el if y se añade a lista
                         numbersToChooseFrom.RemoveAt(randomIndex);
-
                         lista.Add(ConjuntoObjetos[randomNumber]);
                     }
                 }
                 for (int i = 0; i < 40; i++)
                 {
+                    //Genera el numero
                     int Numero = Random.Range(0, lista.Count);
+
+                    //Instancia el numero
                     Instantiate(lista[Numero], Objetos402[i].transform.position, Quaternion.identity);
+
+                    //Destrulle el numero para que no vuelva a salir y se asegura que no vuelva a salir
                     lista.RemoveAt(Numero);
                     Objetos402[i].SetActive(false);
                 }
+
+                //Puntos necesarios para ganar
                 PuntosNecesarios = 20;
             }
         }
-        // TRES HABITACIONES
+
+
+        // Para tres y cuatro habitaciones
+
         if (NumeroDeHabitaciones >= 3)
         {
             Ajustes.SetActive(true);
