@@ -9,7 +9,7 @@ public class Seleccionar : MonoBehaviour
     
     void Start()
     {
-        gameManager.Instance.HabitacionPedida = "Cocina";
+        //gameManager.Instance.HabitacionPedida = "Cocina";
     }
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class Seleccionar : MonoBehaviour
 
     }
 
-    
+    /*
     void OnMouseDown()
     {
 
@@ -67,7 +67,7 @@ public class Seleccionar : MonoBehaviour
                 
             
     }
-
+    */
             /*if (gameObject.tag == "Cocina")
             {
                 gameManager.Instance.ObjetosCocina++;

@@ -7,10 +7,6 @@ using UnityEngine.UI;
 
 public class gameManager : MonoBehaviour
 {
-
-
-    //JUEGO COLORES
-
     [SerializeField] public float Points;
     public static gameManager Instance;
     [SerializeField] public TextMeshProUGUI ColorTexto;
@@ -35,6 +31,7 @@ public class gameManager : MonoBehaviour
     [SerializeField] public float LimitesY;
     [SerializeField] public GameObject VolverAlMenu;
     [SerializeField] public GameObject ContinuarJugando;
+
     //VIEJA X
     [SerializeField] public float PosicionVerdeX;
     [SerializeField] public float PosicionRojoX;
@@ -42,6 +39,8 @@ public class gameManager : MonoBehaviour
     [SerializeField] public float PosicionAmarilloX;
     [SerializeField] public float PosicionBlancoX;
     [SerializeField] public float[] PosicionesX = new float[5];
+
+
     //VIEJA Y
     [SerializeField] public float PosicionVerdeY;
     [SerializeField] public float PosicionRojoY;
@@ -77,33 +76,9 @@ public class gameManager : MonoBehaviour
     [SerializeField] public bool TeleportCheckerBlancoY;
     [SerializeField] public bool TeleportCheckerY;
 
-    //JUEGO ORDENAR
 
-    [SerializeField] GameObject[] ConjuntoObjetos = new GameObject[40];
-    [SerializeField] public float SpawnX;
-    [SerializeField] public float SpawnY;
-    [SerializeField] public float[] ViejaX = new float[40];
-    [SerializeField] public float[] ViejaY = new float[40];
-    [SerializeField] public float MaxX;
-    [SerializeField] public float MaxY;
-    [SerializeField] public bool SpawnChecker;
-    [SerializeField] public int z;
-    [SerializeField] public int x;
-    [SerializeField] public string HabitacionPedida;
-    [SerializeField] public string HabitacionProvisional;
-    [SerializeField] public string[] Habitaciones = new string[4];
-    [SerializeField] public int ObjetosCocina;
-    [SerializeField] public int ObjetosDormitorio;
-    [SerializeField] public int ObjetosJuguetes;
-    [SerializeField] public int ObjetosBaño;
-    [SerializeField] public string[] AuxiliarHabitaciones = new string[5];
-    [SerializeField] public bool CheckerHabitaciones;
 
-    // Start is called before the first frame update
-
-    //ANIMACIONABUELA
-
-    
+    //ANIMACIONABUELA  
     [SerializeField] public GameObject[] ArrayAbuela;
     [SerializeField] public int NumeroAbuela = 1;
 
@@ -144,18 +119,7 @@ public class gameManager : MonoBehaviour
         BotonesRejugar.SetActive(false);
         VolverAlMenu.SetActive(false);
         ContinuarJugando.SetActive(false);
-
-
-        //JUEGO ORDENAR
-
-        Habitaciones[0] = "Cocina";
-        Habitaciones[1] = "Dormitorio";
-        Habitaciones[2] = "Juguetes";
-        Habitaciones[3] = "Baño";
-        ViejaX[0] = 0f;
-        ViejaY[0] = 0f;
-
-        
+    
         Time.timeScale = 0;
         PedirColor();
     }
@@ -196,32 +160,6 @@ public class gameManager : MonoBehaviour
         {
             QuieresJugarAOtro();
         }
-
-        /*if (FormaPedida == 0)
-        {
-            ColorSolicitado.color = Color.red;
-            ColorPedido = "Rojo";
-        }
-        else if (FormaPedida == 1)
-        {
-            ColorSolicitado.color = Color.blue;
-            ColorPedido = "Azul";
-        }
-        else if (ColorPedido2 == 2)
-        {
-            ColorSolicitado.color = Color.green;
-            ColorPedido = "Verde";
-        }
-        else if (ColorPedido2 == 3)
-        {
-            ColorSolicitado.color = Color.white;
-            ColorPedido = "Blanco";
-        }
-        else if (ColorPedido2 == 4)
-        {
-            ColorSolicitado.color = Color.yellow;
-            ColorPedido = "Amarillo";
-        }*/
     }
     public void SumarPuntos()
     {
@@ -509,90 +447,7 @@ public class gameManager : MonoBehaviour
     }
 
 
-    public void InicioCocina()
-    {
-
-        if (ObjetosCocina == 10 && ObjetosBaño == 10 && ObjetosDormitorio == 10 && ObjetosJuguetes == 10)
-        {
-            Debug.Log("JuegoTerminado");
-        }
-        else if (ObjetosCocina == 10 && ObjetosBaño == 10 && ObjetosDormitorio == 10)
-        {
-            HabitacionPedida = "Juguetes";
-        }
-        else if (ObjetosCocina == 10 && ObjetosBaño == 10)
-        {
-            HabitacionPedida = "Dormitorio";
-        }
-        else if (ObjetosCocina == 10)
-        {
-            HabitacionPedida = "Baño";
-        }
-    }
-    public void SpawnObjetos()
-    {
-        for (int i = 0; i < 40; i++)
-        {
-            SpawnChecker = true;
-
-            while(SpawnChecker == true)
-            {
-                SpawnX = Random.Range(-8f, 8f);
-                SpawnY = Random.Range(-4f, 4f);
-                
-
-                for (int j = 0;  j <= i;)
-                {
-                    if ( i == 0)
-                    {
-                        Vector2 PosSpawn1 = new Vector2(SpawnX, SpawnY);
-                        Instantiate(ConjuntoObjetos[0], PosSpawn1, Quaternion.identity);
-                        j = 43;
-                        z = j;
-                    }
-
-                    else if 
-                    (
-                   (SpawnX < ViejaX[j] + Diferencia && SpawnX > ViejaX[j] - Diferencia) && (SpawnY < ViejaY[j] + Diferencia && SpawnY > ViejaY[j] - Diferencia)
-                    )
-                    {
-                        j = 42;
-                        z = j;
-                        
-
-                    }
-                    else
-                    {
-                        z = j;
-                        j++;
-                        
-                    }
-                }
-
-                if ( z == 42)
-                {
-                    SpawnChecker = true;
-                }
-                else
-                {
-                    SpawnChecker = false;
-                }
-            }
-
-            Vector2 PosSpawn = new Vector2(SpawnX, SpawnY);
-
-            ViejaX[i] = SpawnX;
-            ViejaY[i] = SpawnY;
-
-            if ( i > 0)
-            {
-                Instantiate(ConjuntoObjetos[i], PosSpawn, Quaternion.identity);
-            }
-            
-
-        }
-    }
-
+    //Particulas
     IEnumerator ParticulasDelayAzul()
     {
         SpawnParticulas.ReferenciaParticulas.PlayParticulasAzul();
@@ -628,12 +483,16 @@ public class gameManager : MonoBehaviour
         SpawnParticulas.ReferenciaParticulas.StopParticulasRojo();
         SpawnParticulas.ReferenciaParticulas.ParticulasRojo.transform.position = Rojo.transform.position;
     }
+
+    //Ajustes
     public void Engranaje()
     { 
         Time.timeScale = 0;
         VolverAlMenu.SetActive(true);
         ContinuarJugando.SetActive(true);
     }
+
+    //Boton continuar
     public void Continuar()
     {
         Time.timeScale = 1;
