@@ -10,28 +10,29 @@ public class EleccionNumero : MonoBehaviour
 {
 
     [SerializeField] public int NumeroDeObjetos;
+
+    //Posicion de la zona para donde se colouen los objetos
     [SerializeField] public GameObject[] Objetos12 = new GameObject[12];
     [SerializeField] public GameObject[] Objetos20 = new GameObject[20];
     [SerializeField] public GameObject[] Objetos28 = new GameObject[28];
     [SerializeField] public GameObject[] Objetos40 = new GameObject[40];
-
-
-   
-
     [SerializeField] public GameObject[] Objetos122 = new GameObject[12];
     [SerializeField] public GameObject[] Objetos202 = new GameObject[20];
     [SerializeField] public GameObject[] Objetos282 = new GameObject[28];
     [SerializeField] public GameObject[] Objetos402 = new GameObject[40];
+
+    //Zona de posicinamiento para las imagenes de las habitaciones
     [SerializeField] public GameObject Imagenes12;
     [SerializeField] public GameObject Imagenes20;
     [SerializeField] public GameObject Imagenes28;
     [SerializeField] public GameObject Imagenes40;
+
+    //Botones de selecion
     [SerializeField] public GameObject BotonJugar;
     [SerializeField] public bool CheckerBotonJugar;
     [SerializeField] public GameObject BotonesNumeroObjetos;
 
     //Botones de selecion de Objetos
-
     [SerializeField] public Button Color12;
     [SerializeField] public Button Color20;
     [SerializeField] public Button Color28;
@@ -39,30 +40,24 @@ public class EleccionNumero : MonoBehaviour
 
 
     
-
+    //variables de conteo para saber los objetos a intanciar
     [SerializeField] public int Cocina12;
     [SerializeField] public int Cocina20;
     [SerializeField] public int Cocina28;
     [SerializeField] public int Cocina40;
-
-
     [SerializeField] public int Dormitorio12;
     [SerializeField] public int Dormitorio20;
     [SerializeField] public int Dormitorio28;
     [SerializeField] public int Dormitorio40;
-
-
     [SerializeField] public int Baño12;
     [SerializeField] public int Baño20;
     [SerializeField] public int Baño28;
     [SerializeField] public int Baño40;
-
-
     [SerializeField] public int Juguetes12;
     [SerializeField] public int Juguetes20;
     [SerializeField] public int Juguetes28;
     [SerializeField] public int Juguetes40;
-
+    
     /*
     [SerializeField] public bool CheckerImagenes12;
     [SerializeField] public bool CheckerImagenes20;
@@ -109,35 +104,42 @@ public class EleccionNumero : MonoBehaviour
 
     [SerializeField] public int NumeroDeHabitaciones;
 
-
+    //Lugar de check
     [SerializeField] public bool OpcionCocina;
     [SerializeField] public bool OpcionBaño;
     [SerializeField] public bool OpcionDormitorio;
     [SerializeField] public bool OpcionJuguetes;
 
-
+    //Imagen de las marcas del check
     [SerializeField] public GameObject MarcaCocina;
     [SerializeField] public GameObject MarcaBaño;
     [SerializeField] public GameObject MarcaDormitorio;
     [SerializeField] public GameObject MarcaJuguetes;
 
-
+    //Zona de la Imgen
     [SerializeField] public GameObject Habitacion1;
+
+    //Botones del bool
     [SerializeField] public GameObject Checkers;
+
+    //Border de las habitaciones
     [SerializeField] public GameObject Bordes1Habitacion;
     [SerializeField] public GameObject Bordes2Habitaciones;
     [SerializeField] public GameObject Bordes34Habitaciones;
 
 
+    //Boton para seguir
     [SerializeField] public GameObject PasarAlSiguiente;
+
+    //Zona de los ticks
     [SerializeField] public GameObject Ticks;
+
+    //Ajustes
     [SerializeField] public GameObject Ajustes;
-
-
     [SerializeField] public GameObject Ajustes1Habitacion;
     [SerializeField] public GameObject BordeAjustes1;
 
-
+    //Zona de las habitaciones
     [SerializeField] public GameObject[] Habitacion2 = new GameObject[2];
     [SerializeField] public GameObject[] Habitaciones34 = new GameObject[4];
 
@@ -146,40 +148,46 @@ public class EleccionNumero : MonoBehaviour
     public List<GameObject> ListaAuxiliarTexto = new List<GameObject>();
     */
 
+    //Texto de las habitaciones
     [SerializeField] public GameObject CocinaTexto;
     [SerializeField] public GameObject BañoTexto;
     [SerializeField] public GameObject DormitorioTexto;
     [SerializeField] public GameObject JuguetesTexto;
 
 
+    //Zona de texto
     [SerializeField] public GameObject SpawnTexto1;
     [SerializeField] public GameObject SpawnTexto21;
     [SerializeField] public GameObject SpawnTexto22;
 
-
+    //Conte para la eliminacion de objetos para que no duplicen los objetos necesarios
     int Comodin = 0;
     int Comodin2 = 0;
+
+    //Velocidad de movimineto de las cortinas
     int Velocidad = 0;
 
-
+    //Posicion de la zona para donde se colouen los objetos
     [SerializeField] public GameObject[] Objetos121 = new GameObject[12];
     [SerializeField] public GameObject[] Objetos201 = new GameObject[20];
     [SerializeField] public GameObject[] Objetos281 = new GameObject[28];
     [SerializeField] public GameObject[] Objetos401 = new GameObject[40];
 
-
+    //Cortinas
     [SerializeField] public GameObject CortinaIzquierda;
     [SerializeField] public GameObject CortinaDerecha;
 
-
+    //Texto ganaste
     [SerializeField] public GameObject Ganaste;
 
+
+    //posicion de las habitaciones cuando hay 1
         public bool CocinaHab1Pos1Num = false;
         public bool BañoHab1Pos1Num = false;
         public bool DormitorioHab1Pos1Num = false;
         public bool JuguetesHab1Pos1Num = false;
 
-
+    //posicion de las habitaciones cuando hay 2
         public bool CocinaHab2Pos1Num = false;
         public bool CocinaHab2Pos2Num = false;
         public bool BañoHab2Pos1Num = false;
@@ -189,13 +197,15 @@ public class EleccionNumero : MonoBehaviour
         public bool JuguetesHab2Pos1Num = false;
         public bool JuguetesHab2Pos2Num = false;
 
-
+    //posicion de las habitaciones cuando hay 3 o 4
         public bool CocinaHab34Pos2Num = false;
         public bool BañoHab34Pos1Num = false;
         public bool DormitorioHab34Pos4Num = false;
         public bool JuguetesHab34Pos3Num = false;
 
 
+
+    //Puntaje y puntos necesarios
     [SerializeField] public int ObjetosAcertados;
     [SerializeField] public int PuntosNecesarios;
 
@@ -1472,6 +1482,8 @@ public class EleccionNumero : MonoBehaviour
             if (NumeroDeObjetos == 12)
             {
                 Imagenes12.SetActive(true);
+
+
                 for (int i = 0; i < 12; i++)
                 {
                     if (numbersToChooseFrom.Count > 0)
@@ -1491,13 +1503,22 @@ public class EleccionNumero : MonoBehaviour
                         // Remueve el número elegido de la lista de números posibles
                         numbersToChooseFrom.RemoveAt(randomIndex);
 
+
+                        //Selecona los objetos de cada una de las "Areas", debido a que los objetos de cada uno estan puestos de 10 en diez, significa que del 1 a 10 son para una "area", del 11 al 20 otra y a si sucesivamente
+
                         if (randomNumber >= 0 && randomNumber <= 9)
                         {
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Cocina";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos12[i].transform.position, Quaternion.identity);
+
+                            //El lugar de intancia se ocuta para nu verlo y se suma una a una variable
                             Objetos12[i].SetActive(false);
                             Cocina12++;
 
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Cocina12 == 3)
                             {
                                 numbersToChooseFrom.Remove(0);
@@ -1515,11 +1536,18 @@ public class EleccionNumero : MonoBehaviour
                         }
                         else if (randomNumber >= 10 && randomNumber <= 19)
                         {
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Dormitorio";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos12[i].transform.position, Quaternion.identity);
+
+                            //El lugar de intancia se ocuta para nu verlo y se suma una a una variable
                             Objetos12[i].SetActive(false);
                             Dormitorio12++;
 
+
+                            // Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Dormitorio12 == 3)
                             {
                                 numbersToChooseFrom.Remove(10);
@@ -1537,11 +1565,19 @@ public class EleccionNumero : MonoBehaviour
                         }
                         else if (randomNumber >= 20 && randomNumber <= 29)
                         {
+
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Baño";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos12[i].transform.position, Quaternion.identity);
+
+                            //El lugar de intancia se ocuta para nu verlo y se suma una a una variable
                             Objetos12[i].SetActive(false);
                             Baño12++;
 
+
+                            // Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Baño12 == 3)
                             {
                                 numbersToChooseFrom.Remove(20);
@@ -1559,11 +1595,19 @@ public class EleccionNumero : MonoBehaviour
                         }
                         else if (randomNumber >= 30 && randomNumber <= 39)
                         {
+
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Juguetes";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos12[i].transform.position, Quaternion.identity);
+
+                            //El lugar de intancia se ocuta para nu verlo y se suma una a una variable
                             Objetos12[i].SetActive(false);
                             Juguetes12++;
 
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Juguetes12 == 3)
                             {
                                 numbersToChooseFrom.Remove(30);
@@ -1581,6 +1625,8 @@ public class EleccionNumero : MonoBehaviour
                         }
                     }
                 }
+
+                //Puntos necesarios para ganar
                 if (NumeroDeHabitaciones == 4)
                 {
                     PuntosNecesarios = 12;
@@ -1593,33 +1639,48 @@ public class EleccionNumero : MonoBehaviour
 
             else if (NumeroDeObjetos == 20)
             {
+
+
                 Imagenes20.SetActive(true);
+
+
                 for (int i = 0; i < 20; i++)
                 {
                     if (numbersToChooseFrom.Count > 0)
                     {
-                        
+
+
+                        // Genera un índice aleatorio dentro del rango de la lista de números posibles
                         int randomIndex = Random.Range(0, numbersToChooseFrom.Count);
 
-                        
+                        // Obtiene el número correspondiente al índice aleatorio
                         randomNumber = numbersToChooseFrom[randomIndex];
 
-                        
+                        // Procesa el número elegido (en este caso, solo lo imprime)
                         Debug.Log("Número elegido: " + randomNumber);
 
-                       
+                        // Agrega el número a la lista de números elegidos
                         chosenNumbers.Add(randomNumber);
 
-                       
+                        // Remueve el número elegido de la lista de números posibles
                         numbersToChooseFrom.RemoveAt(randomIndex);
+
+
+                        //Seleciona los objetos de cada una de las "Areas", debido a que los objetos de cada uno estan puestos de 10 en diez, significa que del 1 a 10 son para una "area", del 11 al 20 otra y a si sucesivamente
 
                         if (randomNumber >= 0 && randomNumber <= 9)
                         {
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Cocina";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos20[i].transform.position, Quaternion.identity);
+
+                            //El lugar de intancia se ocuta para nu verlo y se suma una a una variable
                             Objetos20[i].SetActive(false);
                             Cocina20++;
 
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Cocina20 == 5)
                             {
                                 numbersToChooseFrom.Remove(0);
@@ -1636,11 +1697,18 @@ public class EleccionNumero : MonoBehaviour
                         }
                         else if (randomNumber >= 10 && randomNumber <= 19)
                         {
+
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Dormitorio";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos20[i].transform.position, Quaternion.identity);
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             Objetos20[i].SetActive(false);
                             Dormitorio20++;
 
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Dormitorio20 == 5)
                             {
                                 numbersToChooseFrom.Remove(10);
@@ -1657,11 +1725,17 @@ public class EleccionNumero : MonoBehaviour
                         }
                         else if (randomNumber >= 20 && randomNumber <= 29)
                         {
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Baño";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos20[i].transform.position, Quaternion.identity);
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             Objetos20[i].SetActive(false);
                             Baño20++;
 
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Baño20 == 5)
                             {
                                 numbersToChooseFrom.Remove(20);
@@ -1678,11 +1752,17 @@ public class EleccionNumero : MonoBehaviour
                         }
                         else if (randomNumber >= 30 && randomNumber <= 39)
                         {
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Juguetes";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos20[i].transform.position, Quaternion.identity);
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             Objetos20[i].SetActive(false);
                             Juguetes20++;
 
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Juguetes20 == 5)
                             {
                                 numbersToChooseFrom.Remove(30);
@@ -1699,6 +1779,8 @@ public class EleccionNumero : MonoBehaviour
                         }
                     }
                 }
+
+                //Puntos necesarios para ganar
                 if (NumeroDeHabitaciones == 4)
                 {
                     PuntosNecesarios = 20;
@@ -1714,28 +1796,39 @@ public class EleccionNumero : MonoBehaviour
                 {
                     if (numbersToChooseFrom.Count > 0)
                     {
-                        
+
+                        // Genera un índice aleatorio dentro del rango de la lista de números posibles
                         int randomIndex = Random.Range(0, numbersToChooseFrom.Count);
 
-                    
+                        // Obtiene el número correspondiente al índice aleatorio
                         randomNumber = numbersToChooseFrom[randomIndex];
 
-                     
+                        // Procesa el número elegido (en este caso, solo lo imprime)
                         Debug.Log("Número elegido: " + randomNumber);
 
-                
+                        // Agrega el número a la lista de números elegidos
                         chosenNumbers.Add(randomNumber);
 
-                     
+                        // Remueve el número elegido de la lista de números posibles
                         numbersToChooseFrom.RemoveAt(randomIndex);
+
+
+                        //Seleciona los objetos de cada una de las "Areas", debido a que los objetos de cada uno estan puestos de 10 en diez, significa que del 1 a 10 son para una "area", del 11 al 20 otra y a si sucesivamente
 
                         if (randomNumber >= 0 && randomNumber <= 9)
                         {
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Cocina";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos28[i].transform.position, Quaternion.identity);
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             Objetos28[i].SetActive(false);
                             Cocina28++;
 
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Cocina28 == 7)
                             {
                                 numbersToChooseFrom.Remove(0);
@@ -1752,11 +1845,18 @@ public class EleccionNumero : MonoBehaviour
                         }
                         else if (randomNumber >= 10 && randomNumber <= 19)
                         {
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Dormitorio";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos28[i].transform.position, Quaternion.identity);
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             Objetos28[i].SetActive(false);
                             Dormitorio28++;
 
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Dormitorio28 == 7)
                             {
                                 numbersToChooseFrom.Remove(10);
@@ -1773,11 +1873,18 @@ public class EleccionNumero : MonoBehaviour
                         }
                         else if (randomNumber >= 20 && randomNumber <= 29)
                         {
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Baño";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos28[i].transform.position, Quaternion.identity);
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             Objetos28[i].SetActive(false);
                             Baño28++;
 
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Baño28 == 7)
                             {
                                 numbersToChooseFrom.Remove(20);
@@ -1794,11 +1901,18 @@ public class EleccionNumero : MonoBehaviour
                         }
                         else if (randomNumber >= 30 && randomNumber <= 39)
                         {
+                            //El objeto selecionado ahora tiene la tag de la area para que pueda puntuar
                             ConjuntoObjetos[randomNumber].tag = "Juguetes";
+
+                            //Se intacia el objeto con la tag nueva
                             Instantiate(ConjuntoObjetos[randomNumber], Objetos28[i].transform.position, Quaternion.identity);
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             Objetos28[i].SetActive(false);
                             Juguetes28++;
 
+
+                            //Cuando esta variable llega a los objetos  necesarios para cada area los remueve para que no se generen más
                             if (Juguetes28 == 7)
                             {
                                 numbersToChooseFrom.Remove(30);
@@ -1815,6 +1929,8 @@ public class EleccionNumero : MonoBehaviour
                         }
                     }
                 }
+
+                //Puntos para ganar
                 if (NumeroDeHabitaciones == 4)
                 {
                     PuntosNecesarios = 28;
@@ -1830,25 +1946,26 @@ public class EleccionNumero : MonoBehaviour
                 {
                     if (numbersToChooseFrom.Count > 0)
                     {
-                       
+                        // Genera un índice aleatorio dentro del rango de la lista de números posibles
                         int randomIndex = Random.Range(0, numbersToChooseFrom.Count);
 
-                       
+                        // Obtiene el número correspondiente al índice aleatorio
                         randomNumber = numbersToChooseFrom[randomIndex];
 
-                       
+                        // Procesa el número elegido (en este caso, solo lo imprime)
                         Debug.Log("Número elegido: " + randomNumber);
 
-                       
+                        // Agrega el número a la lista de números elegidos
                         chosenNumbers.Add(randomNumber);
 
-                       
+                        // Remueve el número elegido de la lista de números posibles
                         numbersToChooseFrom.RemoveAt(randomIndex);
 
-
+                        //Intancia el objeto y oculta el lugar donde se ha instanciado
                         Instantiate(ConjuntoObjetos[randomNumber], Objetos40[i].transform.position, Quaternion.identity);
                         Objetos40[i].SetActive(false);
 
+                        // Al objeto instanciado le ponen la tag necesaria
                         if (randomNumber >= 0 && randomNumber <= 9)
                         {
                             ConjuntoObjetos[randomNumber].tag = "Cocina";
@@ -1867,6 +1984,8 @@ public class EleccionNumero : MonoBehaviour
                         }
                     }
                 }
+
+                //Puntos para ganar
                 if (NumeroDeHabitaciones == 4)
                 {
                     PuntosNecesarios = 40;
@@ -1878,6 +1997,7 @@ public class EleccionNumero : MonoBehaviour
             
         }
 
+        // Desactivar botones
         BotonJugar.SetActive(false);
         BotonesNumeroObjetos.SetActive(false);
     }

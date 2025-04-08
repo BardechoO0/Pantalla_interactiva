@@ -78,12 +78,6 @@ public class GeneradorActividades : MonoBehaviour
     int support2;
     int support3;
 
-    public void SpawnAccionesConTP()
-    {
-        
-    }
-    
-    
     public void SpawnAccionesOptimizao3()
     {
         Destroy(JugadorAlInicio);

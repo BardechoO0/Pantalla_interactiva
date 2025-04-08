@@ -95271,8 +95271,6 @@ MonoBehaviour:
   - {fileID: 1165740067}
   - {fileID: 256004974}
   - {fileID: 1005023380}
-  ListaAuxiliar: []
-  ListaAuxiliarTexto: []
   CocinaTexto: {fileID: 316827203}
   "Ba\xF1oTexto": {fileID: 773542647}
   DormitorioTexto: {fileID: 209766033}
