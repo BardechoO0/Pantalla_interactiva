@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class DragPlayer : MonoBehaviour
 {
     [SerializeField] public GameObject Player2;
@@ -34,6 +35,7 @@ public class DragPlayer : MonoBehaviour
     {
         transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - difference;
     }
+    
 
     private void OnMouseUp()
     {

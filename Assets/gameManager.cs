@@ -9,26 +9,43 @@ public class gameManager : MonoBehaviour
 {
     [SerializeField] public float Points;
     public static gameManager Instance;
+
+
     [SerializeField] public TextMeshProUGUI ColorTexto;
     [SerializeField] public int ColorPedido2;
     [SerializeField] public string ColorPedido;
     [SerializeField] public string[] Colores = new string[5];
+
+
     [SerializeField] public float Diferencia = 1f;
+
+    
+
     [SerializeField] GameObject Azul;
     [SerializeField] GameObject Rojo;
     [SerializeField] GameObject Verde;
     [SerializeField] GameObject Amarillo;
     [SerializeField] GameObject Blanco;
     [SerializeField] public Image ColorSolicitado;
+
+
     [SerializeField] public int FormaPedida;
+
+
     [SerializeField] public GameObject BotonesRejugar;
+
+
     [SerializeField] public Vector2 VectorVerde;
     [SerializeField] public Vector2 VectorRojo;
     [SerializeField] public Vector2 VectorAmarillo;
     [SerializeField] public Vector2 VectorAzul;
     [SerializeField] public Vector2 VectorBlanco;
+
+
     [SerializeField] public float LimitesX;
     [SerializeField] public float LimitesY;
+
+
     [SerializeField] public GameObject VolverAlMenu;
     [SerializeField] public GameObject ContinuarJugando;
 
@@ -55,12 +72,16 @@ public class gameManager : MonoBehaviour
     [SerializeField] public float NuevaPosicionAzulX;
     [SerializeField] public float NuevaPosicionAmarilloX;
     [SerializeField] public float NuevaPosicionBlancoX;
+
+
     //NUEVA Y
     [SerializeField] public float NuevaPosicionVerdeY;
     [SerializeField] public float NuevaPosicionRojoY;
     [SerializeField] public float NuevaPosicionAzulY;
     [SerializeField] public float NuevaPosicionAmarilloY;
     [SerializeField] public float NuevaPosicionBlancoY;
+
+
     //CHECKERS X
     [SerializeField] public bool TeleportCheckerVerdeX;
     [SerializeField] public bool TeleportCheckerRojoX;
@@ -68,6 +89,8 @@ public class gameManager : MonoBehaviour
     [SerializeField] public bool TeleportCheckerAmarilloX;
     [SerializeField] public bool TeleportCheckerBlancoX;
     [SerializeField] public bool TeleportCheckerX;
+
+
     //CHECKERS Y
     [SerializeField] public bool TeleportCheckerVerdeY;
     [SerializeField] public bool TeleportCherckerRojoY;
@@ -111,15 +134,20 @@ public class gameManager : MonoBehaviour
         Colores[3] = "Verde";
         Colores[4] = "Morado";
 
+
+        //Posicion al principio de los colores
         VectorVerde = new Vector2(-2.72f, 3.3f);
         VectorRojo = new Vector2(3.28f, 3.3f);
         VectorAmarillo = new Vector2(0.28f, -3.7f);
         VectorAzul = new Vector2(-4.72f, 0.7f);
         VectorBlanco = new Vector2(5.28f, -0.7f);
+
+        //Botones en false
         BotonesRejugar.SetActive(false);
         VolverAlMenu.SetActive(false);
         ContinuarJugando.SetActive(false);
     
+       //Poner el tiempo en 0 para que el contador no continue contando cuando comencemos
         Time.timeScale = 0;
         PedirColor();
     }
@@ -199,12 +227,15 @@ public class gameManager : MonoBehaviour
         
     }
 
+    //Color que te pide para darle click encima
     public void PedirColor()
     {
         ColorPedido2 =Random.Range(0, Colores.Length);
 
         
     }
+
+
     public void QuieresJugarAOtro()
     {
         
@@ -213,6 +244,10 @@ public class gameManager : MonoBehaviour
         
     }
    
+
+
+    //Generar las nuevas posiciones aleatorias primro hace la posicion de la X y luego el de la Y
+
     public void TeleportVerde()
     {
         TeleportCheckerVerdeX = true;
@@ -399,6 +434,7 @@ public class gameManager : MonoBehaviour
         StartCoroutine(ParticulasDelayRojo());
 
     }
+
     public void TeleportBlanco()
     {
         TeleportCheckerBlancoX = true;
