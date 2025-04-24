@@ -10,24 +10,30 @@ public class GeneradorActividades : MonoBehaviour
     public static GeneradorActividades Referencia;
     [SerializeField] public GameObject ActividadSolicitada;
     [SerializeField] public GameObject[] DestinosGenerados;
+
     [SerializeField] public GameObject[] AccionesPosibles = new GameObject[120];
     [SerializeField] public GameObject[] AccionesPosiblesTP = new GameObject[120];
+
     [SerializeField] public GameObject Ex51;
     [SerializeField] public GameObject Ex52;
     [SerializeField] public GameObject Ex53;
     [SerializeField] public GameObject Ex54;
+
     [SerializeField] public bool CheckerSpawnAcciones;
+
     [SerializeField] public GameObject[] AccionesGeneradas = new GameObject[8];
     [SerializeField] public GameObject[] AccionesFinales = new GameObject[8];
     [SerializeField] public Vector2[] ArrayPosSpawn = new Vector2[8];
+
     [SerializeField] public int ForAuxiliar;
     [SerializeField] public bool CocinaChecker;
     [SerializeField] public bool SalonChecker;
     [SerializeField] public bool BañoChecker;
     [SerializeField] public bool VestidorChecker;
     [SerializeField] public bool TallerChecker;
-    [SerializeField] public string[] TagsSpawnAcciones = new string[6];
 
+    [SerializeField] public string[] TagsSpawnAcciones = new string[6];
+    
     [SerializeField] public GameObject FondoPause;
     [SerializeField] public GameObject VolverAlMenu;
     [SerializeField] public GameObject ContinuarJugando;

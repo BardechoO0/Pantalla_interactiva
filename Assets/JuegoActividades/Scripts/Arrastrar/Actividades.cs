@@ -42,7 +42,7 @@ public class Actividades : MonoBehaviour
             if (GeneradorActividades.Referencia.ConjuntoActividades[GeneradorActividades.Referencia.randomNumber].gameObject.tag == collision.gameObject.tag)
             {
                 SpawnParticulas.ReferenciaParticulas.SpawnParticles();
-                Debug.Log("Coñoooooooooooooooooooo");
+                Debug.Log("yt6");
                     GrupoDestinos.SetActive(false);
                     GrupoAcciones.SetActive(true);
                     GeneradorActividades.Referencia.SpawnAccionesOptimizao3();
