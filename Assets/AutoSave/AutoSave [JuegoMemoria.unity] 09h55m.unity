@@ -2635,7 +2635,6 @@ MonoBehaviour:
   objetos_memoria_aliados: []
   EstaBien: 1
   Tempo: 30
-  objeto_Varra_tiempo: {fileID: 0}
   Varra_tiempo: {fileID: 1900029694}
   reloj:
   - {fileID: 21300000, guid: 393270d987f58c74f8da7a1b8b29c029, type: 3}
