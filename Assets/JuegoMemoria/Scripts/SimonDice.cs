@@ -54,6 +54,8 @@ public class SimonDice : MonoBehaviour
 
     public GameObject panel_enemigo;
     public GameObject panel_aliados;
+
+    int fail;
     void Start()
     {
           
@@ -215,6 +217,10 @@ public class SimonDice : MonoBehaviour
             }
             else
             {
+                if (EstaBien)
+                {
+                    fail = i;
+                }
                 EstaBien = false;
             }
 
@@ -223,9 +229,23 @@ public class SimonDice : MonoBehaviour
         if (EstaBien)
         {
             Debug.Log("El print esta bien basado");
+        }else if (!EstaBien)
+        {
+            Fallo();
         }
     }
     
+    public void Fallo()
+    {
+        conteo2 -= (listaDeNumerosAlidaos.Length - fail);
+
+        for(int i = fail;i <= listaDeNumerosAlidaos.Length-1; i++)
+        {
+            listaDeNumerosAlidaos[i] = 0;
+            Destroy(objetos_memoria_aliados[i]);
+        }
+        EstaBien = true;
+    }
     public void triangulo()
     {
         conteo2++;
