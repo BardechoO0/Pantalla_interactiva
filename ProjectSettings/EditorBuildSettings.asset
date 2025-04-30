@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JuegoActividades 1.unity
     guid: 6c5602425d0750b48a3af5f2c46280a6
+  - enabled: 1
+    path: Assets/Scenes/JuegoMemoria.unity
+    guid: c3686e4ff3dcb0845924d2983b79fc39
   m_configObjects: {}

@@ -13,6 +13,9 @@ public class Botones_menu : MonoBehaviour
 
     [SerializeField] SimonDice Em;
 
+    public GameObject ajustes;
+    bool X = true;
+
     public void Tiempo_limite()
     {
         if (Convert.ToInt32(Tempo.text.ToString()) <= 5)
@@ -40,9 +43,26 @@ public class Botones_menu : MonoBehaviour
     {
         Em.Empezar_2();
     }
+
+    public void Ajustes()
+    {
+        if (X)
+        {
+            ajustes.SetActive(true);
+
+            X = false;
+        }
+        else if (!X) 
+        {
+            ajustes.SetActive(!true);
+
+            X = !false;
+        }
+    }
+
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame

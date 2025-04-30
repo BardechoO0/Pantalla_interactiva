@@ -6,7 +6,6 @@ public class CambioDeEscena : MonoBehaviour
    
     public static CambioDeEscena ReferenciaCambioDeEscena;
 
-    // Start is called before the first frame update
 
     private void Awake()
     {
@@ -15,31 +14,10 @@ public class CambioDeEscena : MonoBehaviour
             ReferenciaCambioDeEscena = this;
         }
     }
-    void Start()
+
+     public void CambioDeEscena_2(int x)
     {
-        
+        SceneManager.LoadScene(x);
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void Volver()
-    {
-        
-        SceneManager.LoadScene(0);        
-    }
-    public void CargarJuegoColores()
-    {
-        
-        SceneManager.LoadScene(1);        
-    }
-    public void CargarJuegoOrdenar()
-    {
-        SceneManager.LoadScene(2);
-    }
-    public void CargarJuegoActividades()
-    {
-        SceneManager.LoadScene(3);
-    }
+
 }

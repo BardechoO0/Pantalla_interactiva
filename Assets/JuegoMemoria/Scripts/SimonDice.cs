@@ -16,7 +16,8 @@ public class SimonDice : MonoBehaviour
     public GameObject[] Juego;
 
     public GameObject Menu;
-
+    public GameObject Pantalla_Victoria;
+    
     public Button triangulo_enemigos;
     public Button cuadrado_enemigos;
     public Button circulo_enemigos;
@@ -157,11 +158,7 @@ public class SimonDice : MonoBehaviour
     IEnumerator Conteo()
     {
         botonSelecinado = UnityEngine.Random.Range(1, 5);
-
-       
-
-       
-        
+      
         conteo1++;
 
         if (botonSelecinado == 1) 
@@ -229,7 +226,17 @@ public class SimonDice : MonoBehaviour
         if (EstaBien)
         {
             Debug.Log("El print esta bien basado");
-        }else if (!EstaBien)
+
+            for (int x = 0; x <= Juego.Length - 1; x++)
+            {
+                print("Gyro, Gyro, Gyro Zeppeli");
+                Juego[x].SetActive(false);
+            }
+
+            Pantalla_Victoria.SetActive(true);
+
+        }
+        else if (!EstaBien)
         {
             Fallo();
         }
