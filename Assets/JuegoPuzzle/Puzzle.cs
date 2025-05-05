@@ -11,11 +11,10 @@ public class Puzzle : MonoBehaviour
     public Vector2 WS;
     void Start()
     {
-        
 
-        WS = Sp1.sprite.textureRect.position;
+        Sp2.sprite.textureRect.height.ToString();
 
-        Sp2.sprite.vertices.GetLength(Sp1.sprite.vertices.Length);
+        print(Sp2.sprite.textureRect.height.ToString());
     }
 
     // Update is called once per frame
