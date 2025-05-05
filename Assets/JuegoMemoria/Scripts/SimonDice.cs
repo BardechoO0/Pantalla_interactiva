@@ -59,8 +59,8 @@ public class SimonDice : MonoBehaviour
     int fail;
     void Start()
     {
-          
-        
+
+        print("https://packaged-media.redd.it/fdhasfw8udfe1/pb/m2-res_1280p.mp4?m=DASHPlaylist.mpd&v=1&e=1746021600&s=e11b5b68ec0f0e202075d97fab89ab2669d297ec");
     }
 
     public void Empezar_2()
@@ -233,6 +233,17 @@ public class SimonDice : MonoBehaviour
                 Juego[x].SetActive(false);
             }
 
+            for (int i = 0; i <= listaDeNumerosAlidaos.Length - 1; i++)
+            {
+                listaDeNumerosAlidaos[i] = 0;
+                Destroy(objetos_memoria_aliados[i]);
+                Destroy(objetos_memoria_enemigos[i]);
+                
+                Bt.ajustes.SetActive(false);
+            }
+
+
+
             Pantalla_Victoria.SetActive(true);
 
         }
@@ -248,6 +259,7 @@ public class SimonDice : MonoBehaviour
 
         for(int i = fail;i <= listaDeNumerosAlidaos.Length-1; i++)
         {
+            print("Miku, Miku, You can call me Miku");
             listaDeNumerosAlidaos[i] = 0;
             Destroy(objetos_memoria_aliados[i]);
         }
