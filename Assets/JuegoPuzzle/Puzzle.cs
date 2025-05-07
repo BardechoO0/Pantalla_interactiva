@@ -1,20 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
+using UnityEngine.UIElements;
+
+
+
 
 public class Puzzle : MonoBehaviour
 {
-    public SpriteRenderer Sp1;
-    public SpriteRenderer Sp2;
 
-    public Vector2 WS;
+    public WebCamTexture Sp1;
+
+    
+
+    public Material re;
+
+    public SpriteRenderer s;
+
+    
+   
     void Start()
     {
 
-        Sp2.sprite.textureRect.height.ToString();
+        Sp1 = new WebCamTexture();
 
-        print(Sp2.sprite.textureRect.height.ToString());
+        if(re != null)
+        {
+            re.mainTexture = Sp1;
+
+            s.material.mainTexture = Sp1;
+
+            
+            
+        }
+
+        Sp1.Play();
+    
     }
 
     // Update is called once per frame

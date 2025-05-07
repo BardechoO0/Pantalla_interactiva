@@ -17084,8 +17084,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sp1: {fileID: 0}
-  re: {fileID: 0}
-  s: {fileID: 250160298}
+  Sp2: {fileID: 0}
+  Sp3: {fileID: 2800000, guid: 7c173492b16d3c541ba7a2107344af1e, type: 3}
+  Sp4: {fileID: 2800000, guid: 264668b8ef9e01e44a3342b71a57cafd, type: 3}
+  Sp5: {fileID: 0}
+  Sp6: {fileID: 0}
 --- !u!4 &1667219561
 Transform:
   m_ObjectHideFlags: 0

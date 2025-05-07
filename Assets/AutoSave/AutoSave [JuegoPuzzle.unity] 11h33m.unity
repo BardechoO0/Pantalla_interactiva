@@ -17084,8 +17084,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sp1: {fileID: 0}
-  re: {fileID: 0}
+  re: {fileID: 2100000, guid: 3bb3253a24edda949868b76ab06ae174, type: 2}
   s: {fileID: 250160298}
+  X: {fileID: 0}
 --- !u!4 &1667219561
 Transform:
   m_ObjectHideFlags: 0
