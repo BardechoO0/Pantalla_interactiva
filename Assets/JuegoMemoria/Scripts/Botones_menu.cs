@@ -11,6 +11,8 @@ public class Botones_menu : MonoBehaviour
 
     public TMP_InputField Objetos;
 
+    public TMP_InputField Tiempo_botones;
+
     [SerializeField] SimonDice Em;
 
     public GameObject ajustes;
@@ -39,6 +41,16 @@ public class Botones_menu : MonoBehaviour
         }
     }
 
+    public void Tiempo_pulsaciones()
+    {
+        if (Convert.ToInt32(Tiempo_botones.text.ToString()) <= 0.5f)
+        {
+            Tiempo_botones.text = "0.5";
+        }else if(Convert.ToInt32(Tiempo_botones.text.ToString()) >= 5f)
+        {
+            Tiempo_botones.text = "5";
+        }   
+    }
     public void Empezar_juego()
     {
         Em.Empezar_2();

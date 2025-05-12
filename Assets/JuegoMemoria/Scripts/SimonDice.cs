@@ -56,7 +56,12 @@ public class SimonDice : MonoBehaviour
     public GameObject panel_enemigo;
     public GameObject panel_aliados;
 
+    public AudioSource Error;
+    public AudioSource Acierto;
+
     int fail;
+
+    public int Tiempo_botnes;
     void Start()
     {
 
@@ -67,6 +72,7 @@ public class SimonDice : MonoBehaviour
     {
         Tempo = Convert.ToInt32(Bt.Tempo.text.ToString());
         longitudDelJuego = Convert.ToInt32(Bt.Objetos.text.ToString());
+        Tiempo_botnes = Convert.ToInt32(Bt.Tiempo_botones.text.ToString());
 
         Menu.SetActive(false);
 
@@ -108,7 +114,7 @@ public class SimonDice : MonoBehaviour
     public void Simon()
     {
         //Instantiate(objetosDeMemoria[0], memoria_enemigos[conteo].gameObject.transform.position, Quaternion.identity);
-
+         
 
         if (cuantoLeQueda > 0) 
         {
@@ -157,9 +163,11 @@ public class SimonDice : MonoBehaviour
     }
     IEnumerator Conteo()
     {
-        botonSelecinado = UnityEngine.Random.Range(1, 5);
       
+        botonSelecinado = UnityEngine.Random.Range(1, 5);
+        
         conteo1++;
+      
 
         if (botonSelecinado == 1) 
         {
@@ -181,8 +189,8 @@ public class SimonDice : MonoBehaviour
         {
             print("Ella me dice ola y yo le digo godbye");
         }
-
-        yield return new WaitForSeconds(1f);
+        
+        yield return new WaitForSeconds(Tiempo_botnes);
 
         cuantoLeQueda--;
         Simon();
@@ -271,7 +279,15 @@ public class SimonDice : MonoBehaviour
         listaDeNumerosAlidaos[conteo2] = 1;
         objetos_memoria_aliados[conteo2] = Instantiate(objetosDeMemoria[0], memoria_aliados[conteo2].gameObject.transform.position, Quaternion.identity);
 
-        if (conteo2 == conteo1) 
+        if (listaDeNumerosAlidaos[conteo2] == listaDeNumerosEnemigos[conteo2]) 
+        {
+            Acierto.Play();
+        }else if (listaDeNumerosAlidaos[conteo2] != listaDeNumerosEnemigos[conteo2])
+        {
+            Error.Play();   
+        }
+       
+        if (conteo2 == conteo1)
         {
             checker();
             print("Y allá en el tambo todo el mundo me decía ¡Ya te vas a mejorar!");
@@ -283,7 +299,16 @@ public class SimonDice : MonoBehaviour
         conteo2++;
         listaDeNumerosAlidaos[conteo2] = 2;
         objetos_memoria_aliados[conteo2] = Instantiate(objetosDeMemoria[1], memoria_aliados[conteo2].gameObject.transform.position, Quaternion.identity);
-
+       
+        if (listaDeNumerosAlidaos[conteo2] == listaDeNumerosEnemigos[conteo2])
+        {
+            Acierto.Play();
+        }
+        else if (listaDeNumerosAlidaos[conteo2] != listaDeNumerosEnemigos[conteo2])
+        {
+            Error.Play();
+        }
+        
         if (conteo2 == conteo1)
         {
             checker();
@@ -296,6 +321,15 @@ public class SimonDice : MonoBehaviour
         conteo2++;
         listaDeNumerosAlidaos[conteo2] = 3;
         objetos_memoria_aliados[conteo2] = Instantiate(objetosDeMemoria[2], memoria_aliados[conteo2].gameObject.transform.position, Quaternion.identity);
+       
+        if (listaDeNumerosAlidaos[conteo2] == listaDeNumerosEnemigos[conteo2])
+        {
+            Acierto.Play();
+        }
+        else if (listaDeNumerosAlidaos[conteo2] != listaDeNumerosEnemigos[conteo2])
+        {
+            Error.Play();
+        }
 
         if (conteo2 == conteo1)
         {
@@ -309,6 +343,15 @@ public class SimonDice : MonoBehaviour
         conteo2++;
         listaDeNumerosAlidaos[conteo2] = 4;
         objetos_memoria_aliados[conteo2] = Instantiate(objetosDeMemoria[3], memoria_aliados[conteo2].gameObject.transform.position, Quaternion.identity);
+
+        if (listaDeNumerosAlidaos[conteo2] == listaDeNumerosEnemigos[conteo2])
+        {
+            Acierto.Play();
+        }
+        else if (listaDeNumerosAlidaos[conteo2] != listaDeNumerosEnemigos[conteo2])
+        {
+            Error.Play();
+        }
 
         if (conteo2 == conteo1)
         {
