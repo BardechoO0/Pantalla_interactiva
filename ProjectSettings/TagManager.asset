@@ -48,6 +48,15 @@ TagManager:
   - "Ba\xF1o4"
   - "Ba\xF1o5"
   - Morado
+  - Bano
+  - Habitacion
+  - Social
+  - Act1
+  - Act2
+  - Act3
+  - Act4
+  - Act5
+  - Act6
   layers:
   - Default
   - TransparentFX

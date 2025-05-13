@@ -36,26 +36,37 @@ public class JuegoActividadesRemake : MonoBehaviour
     public void IrALugar(int Lugar)
     {
         x = Lugar;
+        print(x);
+        
+        
+        Lugares[x].SetActive(true);
+
+
+        Actividades = new GameObject[Lugares[x].transform.childCount];
+        //Cojo a los hijos del Lugar selecionado para saber las actividades que hay que dar para la seleción
+        for (int i = 0; i < Lugares[x].transform.childCount; i++)
+        {
+            print(i);
+            Actividades[i] = Lugares[x].transform.GetChild(i).gameObject;
+        }
+
         //Indico el Lugar que se ha escogido
         for (int i = 0; i < Zonas.Length; i++)
         {
             Zonas[i].SetActive(false);
         }
-        Lugares[Lugar].SetActive(true);
-
-
-        //Cojo a los hijos del Lugar selecionado para saber las actividades que hay que dar para la seleción
-        for (int i = 0; i < Lugares[Lugar].transform.childCount; i++)
-        {
-            Actividades[i] = Lugares[Lugar].transform.GetChild(i).gameObject;
-        }
-
+        //la zona no pude volver a selecionarse
+        Zonas[Lugar].SetActive(true);
+        Zonas[Lugar].GetComponent<SpriteRenderer>().enabled = false;
+        Zonas[Lugar].GetComponent<Lugares>().enabled = false;
+        Zonas[Lugar].GetComponent<BoxCollider2D>().enabled = false;
     }
 
     public void IrAActividad(int Act)
     {
      y = Act;
 
+        
         for (int i = 0; i < Actividades.Length; i++)
         {
             Actividades[i].SetActive(false);
@@ -66,6 +77,7 @@ public class JuegoActividadesRemake : MonoBehaviour
 
        
     }
+
 
     void Update()
     {

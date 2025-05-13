@@ -9,16 +9,22 @@ public class Juego : MonoBehaviour
     public GameObject[] ObjetosCorrectos;
 
     public GameObject PadreObjtos;
+
     public GameObject[] ObjetosAleatorios;
 
+    public GameObject[] ObjetosAlmacenados;
+
     public bool[] Ocupado;
+
+    public int cuentas;
 
     int conteo;
 
     int ConteoInterno;
     void Start()
     {
-        
+        ObjetosAlmacenados = new GameObject[ObjetosAleatorios.Length];
+        cuentas = 0;
     }
 
     public void EmpezarJuego()
@@ -26,33 +32,24 @@ public class Juego : MonoBehaviour
         //Pongo los bools necesacios para cada lugar de instancia
         Ocupado = new bool[LugarDeInstancia.Length];
 
-        //Cuentos todos los Objetos aleatorios que va ha ver
-        ObjetosAleatorios = new GameObject[PadreObjtos.transform.childCount];
-
+        //Cuanto el listado de objetos correctos para saber cuanto pasos hay que hacer
         conteo = ObjetosCorrectos.Length;
 
-        //Setea todos los sprites aleatorios eliminiando los correctos
-        for (int i = 0; i < PadreObjtos.transform.childCount; i++)
-        {
-            ObjetosAleatorios[i-1] = PadreObjtos.transform.GetChild(i-1).gameObject;
-
-            for (int j = 0; ObjetosCorrectos.Length > j; j++) 
-            {
-                if (ObjetosCorrectos[j-1].GetComponent<Sprite>() == ObjetosAleatorios[i].GetComponent<Sprite>())
-                {
-                    ObjetosAleatorios[i - 1] = null;
-                }
-            }
-        }
+        Xogo();
     }
 
     public void Xogo()
     {
         if (conteo >= 1)
         {
+            for(int i = 0; i < Ocupado.Length; i++) 
+            {
+             Ocupado[i] = false;
+            
+            }
             int LAle = Random.Range(0, LugarDeInstancia.Length);
 
-            Instantiate(ObjetosCorrectos[conteo - 1], LugarDeInstancia[LAle].transform);
+            Instantiate(ObjetosCorrectos[conteo - 1].AddComponent<Orden>(), LugarDeInstancia[LAle].transform.position, Quaternion.identity);
 
             Ocupado[LAle] = true;
 
@@ -60,14 +57,20 @@ public class Juego : MonoBehaviour
             {
                 if (Ocupado[i] == false)
                 {
-                
-                    ConteoInterno = Random.Range(0,ObjetosAleatorios.Length);
 
-                    StartCoroutine(si(i));
+                    do {
 
-                    Instantiate(ObjetosAleatorios[ConteoInterno], LugarDeInstancia[i].transform);
+                        ConteoInterno = Random.Range(0, ObjetosAleatorios.Length);
+
+                    } while (ObjetosAleatorios[ConteoInterno]==null);
+
+                   ObjetosAlmacenados[cuentas] = Instantiate(ObjetosAleatorios[ConteoInterno], LugarDeInstancia[i].transform.position,Quaternion.identity);
 
                     ObjetosAleatorios[ConteoInterno] = null;
+
+                    Ocupado[i] = true;
+
+                    cuentas++;
                 }
             }
         }
@@ -78,31 +81,18 @@ public class Juego : MonoBehaviour
         }
     }
 
-    IEnumerator si(int i)
+    public void Correcto()
     {
-        if (ObjetosAleatorios[ConteoInterno].gameObject == null)
+        int i;
+        i = 0;
+        do
         {
-            if (ObjetosAleatorios.Length - (4 * (i + 1)) >= ConteoInterno)
-            {
-
-                ConteoInterno -= 4 * (i + 1);
-
-            }
-            else if (ConteoInterno >= 4)
-            {
-
-                ConteoInterno += 4 * (i + 1);
-
-            }
-        }
-
-        yield return null;
-
-        if (ObjetosAleatorios[ConteoInterno]==null) 
-        {
-            StartCoroutine(si(i));
-        }
+            Destroy(ObjetosAlmacenados[i]);
+            i++;
+        } while (i < ObjetosAlmacenados.Length);
         
+        conteo--;
+        Xogo();
     }
     void Update()
     {

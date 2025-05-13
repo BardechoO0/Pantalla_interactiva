@@ -8670,33 +8670,9 @@ MonoBehaviour:
   - {fileID: 21280155}
   - {fileID: 975913379}
   - {fileID: 617621556}
-  ObjetosCorrectos:
-  - {fileID: 1003905722}
-  - {fileID: 1975890485}
-  - {fileID: 1616147846}
-  - {fileID: 727350873}
+  ObjetosCorrectos: []
   PadreObjtos: {fileID: 239702590}
-  ObjetosAleatorios:
-  - {fileID: 443641208}
-  - {fileID: 2057099320}
-  - {fileID: 1716687680}
-  - {fileID: 1261546586}
-  - {fileID: 443641208}
-  - {fileID: 1495809395}
-  - {fileID: 424342271}
-  - {fileID: 681634180}
-  - {fileID: 1592723162}
-  - {fileID: 1365340437}
-  - {fileID: 677595236}
-  - {fileID: 1226313363}
-  - {fileID: 2024307091}
-  - {fileID: 942014613}
-  - {fileID: 1545167407}
-  - {fileID: 443296746}
-  - {fileID: 952041154}
-  - {fileID: 1034847794}
-  - {fileID: 944680445}
-  - {fileID: 177976882}
+  ObjetosAleatorios: []
   ObjetosAlmacenados: []
   Ocupado: 
   cuentas: 0

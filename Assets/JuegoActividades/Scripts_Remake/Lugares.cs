@@ -9,7 +9,53 @@ public class Lugares : MonoBehaviour
     int w;
 
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Aquí comparo  los gameobjecto de el colisionador y el colisionado para saber que tengo que hacer
+        if (this.gameObject.tag == "Cocina" && collision.gameObject.tag == "Player")
+        {
+            w = 0;
+
+            JAR.IrALugar(w);
+
+        }
+        else if (this.gameObject.tag == "Salon" && collision.gameObject.tag == "Player")
+        {
+            w = 1;
+
+            JAR.IrALugar(w);
+
+        }
+        else if (this.gameObject.tag == "Social" && collision.gameObject.tag == "Player")
+        {
+            w = 2;
+
+            JAR.IrALugar(w);
+
+        }
+        else if (this.gameObject.tag == "Bano" && collision.gameObject.tag == "Player")
+        {
+            w = 3;
+
+            JAR.IrALugar(w);
+
+        }
+        else if (this.gameObject.tag == "Habitacion" && collision.gameObject.tag == "Player")
+        {
+            w = 4;
+
+            JAR.IrALugar(w);
+
+        }
+        else if (this.gameObject.tag == "Taller" && collision.gameObject.tag == "Player")
+        {
+            w = 5;
+
+            JAR.IrALugar(w);
+
+        }
+    }
+   /* private void OnCollisionEnter2D(Collision2D collision)
     {
         // Aquí comparo  los gameobjecto de el colisionador y el colisionado para saber que tengo que hacer
         if (this.gameObject.tag == "Cocina" && collision.gameObject.tag == "Player")
@@ -55,6 +101,8 @@ public class Lugares : MonoBehaviour
         }
         
     }
+   */
+
 
     // Update is called once per frame
     void Update()
