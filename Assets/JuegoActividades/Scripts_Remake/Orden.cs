@@ -1,22 +1,44 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor.Timeline.Actions;
 using UnityEngine;
 
 public class Orden : MonoBehaviour
 {
     [SerializeField] Juego Jg;
+    public AudioSource Ac;
+    public TextMeshProUGUI Texto;
+
+    public string Oracion;
+
+    public bool ElCorrecto;
     void Start()
     {
-        Jg = FindAnyObjectByType<Juego>();
+        if (ElCorrecto)
+        {
+            Jg = FindAnyObjectByType<Juego>();
+            Ac = this.gameObject.GetComponent<AudioSource>();
+            Texto.enabled = true;
+            
+            Texto.text = Oracion;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("Waka");
-        if (other.gameObject.tag == "Player")
-        {
-            Jg.Correcto();
-            Destroy(this.gameObject);
+        
+       if (ElCorrecto){
+            if (other.gameObject.tag == "Player")
+            {
+                Texto.enabled = false;
+                Ac.GetComponent<AudioSource>().Stop();
+                Texto.enabled = false;
+
+                Jg.Correcto();
+                Destroy(this.gameObject);
+            }
         }
     }
     void Update()

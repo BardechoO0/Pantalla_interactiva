@@ -17,8 +17,10 @@ public class JuegoActividadesRemake : MonoBehaviour
     public GameObject[] Actividades;
 
     //  Conica    Salon     Social      Bano    Habitacion      Taller
-    //     0        1          2          3          4             5
+    //     0        1          2          3         4              5
 
+
+    //Int para guardar parametros;
     int x;
     int y;
     void Start()
@@ -35,14 +37,14 @@ public class JuegoActividadesRemake : MonoBehaviour
 
     public void IrALugar(int Lugar)
     {
+        //Guardo el int Lugar
         x = Lugar;
         print(x);
-        
-        
+
+        //Desocualto el lugar de la actividad y consigo sus hijos.
         Lugares[x].SetActive(true);
-
-
         Actividades = new GameObject[Lugares[x].transform.childCount];
+
         //Cojo a los hijos del Lugar selecionado para saber las actividades que hay que dar para la seleción
         for (int i = 0; i < Lugares[x].transform.childCount; i++)
         {
@@ -55,23 +57,27 @@ public class JuegoActividadesRemake : MonoBehaviour
         {
             Zonas[i].SetActive(false);
         }
-        //la zona no pude volver a selecionarse
+
+        //La zona no pude volver a selecionarse
         Zonas[Lugar].SetActive(true);
         Zonas[Lugar].GetComponent<SpriteRenderer>().enabled = false;
         Zonas[Lugar].GetComponent<Lugares>().enabled = false;
         Zonas[Lugar].GetComponent<BoxCollider2D>().enabled = false;
     }
 
+    // Selecionar el juego elegido
     public void IrAActividad(int Act)
     {
      y = Act;
 
-        
+         //Oculto las demas actividades
         for (int i = 0; i < Actividades.Length; i++)
         {
             Actividades[i].SetActive(false);
         }
 
+
+        //Desoculto la acitividad selecionada
         Actividades[Act].SetActive(true);
         Actividades[Act].GetComponent<Juego>().EmpezarJuego();
 
