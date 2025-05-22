@@ -25,6 +25,8 @@ public class Juego : MonoBehaviour
     public GameObject[] LugarDeInstanciaVic;
     public TextMeshProUGUI Recordatorio;
     public string Texto;
+    public AudioSource RecordatorioAuditivo;
+    public GameObject PantallaVic;
     void Start()
     {
         //Igualo la cantidad de objetos almacenados con la de los Objetos erroneos (ObjetosAleatorios)
@@ -40,6 +42,7 @@ public class Juego : MonoBehaviour
         //Cuanto el listado de objetos correctos para saber cuanto pasos hay que hacer
         conteo = ObjetosCorrectos.Length;
 
+        PantallaVic.SetActive(false);
         Xogo();
     }
 
@@ -87,12 +90,17 @@ public class Juego : MonoBehaviour
             }
         }
         else if (conteo <= 0) 
-        { 
+        {
+            Recordatorio.text = " ";
          for (int i = ObjetosCorrectos.Length; i>0;i--)
             {
                 Instantiate(ObjetosCorrectos[i-1], LugarDeInstanciaVic[i-1].transform.position, Quaternion.identity);
+               Recordatorio.enabled = true;
+                Recordatorio.text += ObjetosCorrectos[i - 1].GetComponent<Orden>().Oracion + ". ";
+                
             }
-        
+            RecordatorioAuditivo.Play();
+            PantallaVic.SetActive(true);
         }
     }
 

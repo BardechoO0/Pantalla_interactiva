@@ -83,10 +83,4 @@ public class JuegoActividadesRemake : MonoBehaviour
 
        
     }
-
-
-    void Update()
-    {
-        
-    }
 }
