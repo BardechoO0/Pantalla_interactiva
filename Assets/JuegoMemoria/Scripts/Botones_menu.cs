@@ -13,6 +13,10 @@ public class Botones_menu : MonoBehaviour
 
     public TMP_InputField Tiempo_botones;
 
+    public Toggle Recordar;
+
+    public Toggle Ver;
+
     [SerializeField] SimonDice Em;
 
     public GameObject ajustes;

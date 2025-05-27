@@ -120,7 +120,11 @@ public class SimonDice : MonoBehaviour
         {
             StartCoroutine(Conteo());
             listaDeNumerosEnemigos[conteo1] = botonSelecinado;
-            objetos_memoria_enemigos[conteo1] = Instantiate(objetosDeMemoria[botonSelecinado-1], memoria_enemigos[conteo1].gameObject.transform.position, Quaternion.identity);
+
+            if(Bt.Ver.isOn == true || Bt.Recordar.isOn == true){
+                objetos_memoria_enemigos[conteo1] = Instantiate(objetosDeMemoria[botonSelecinado - 1], memoria_enemigos[conteo1].gameObject.transform.position, Quaternion.identity);
+                print("THE ENEMY ASCENDED BEYOND YOUR CONTROL;");
+            }
         }
         else
         {
@@ -135,29 +139,51 @@ public class SimonDice : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-
-        //Esto no tiene sentido y se puede ahorar pasos pero me hizo bastante gracia y se queda así
-
-        t = Tempo;
-        t--;
-        Varra_tiempo.value = t;
-
-        imagen_Varra_tiempo.GetComponent<Image>().sprite = reloj[UnityEngine.Random.Range(1,4)];
-
-        Tempo = t;
-
-        if (Tempo <= 0)
+        if (Bt.Ver.isOn == true)
         {
-            Empezar(); 
-            panel_aliados.SetActive(false);
-            panel_enemigo.SetActive(true);
-            objeto_Varra_tiempo.SetActive(false);
+            //Esto no tiene sentido y se puede ahorar pasos pero me hizo bastante gracia y se queda así
+
+            t = Tempo;
+            t--;
+            Varra_tiempo.value = t;
+
+            imagen_Varra_tiempo.GetComponent<Image>().sprite = reloj[UnityEngine.Random.Range(1,4)];
+
+            Tempo = t;
+
+            if (Tempo <= 0)
+            {
+                if (Bt.Recordar.isOn == false)
+                {
+
+                    for (int i = 0; i < objetos_memoria_enemigos.Length; i++)
+                    {
+                        print("The Croods - Smash And Grab [Best part loop] grug music");
+                        Destroy(objetos_memoria_enemigos[i]);
+                    }
+                }
+
+                Empezar();
+                panel_aliados.SetActive(false);
+                panel_enemigo.SetActive(true);
+                objeto_Varra_tiempo.SetActive(false);
+
+               
+            }
+            else
+            {
+
+
+                StartCoroutine(tiempo(Tempo));
+
+            }
         }
         else
         {
-            
-
-            StartCoroutine(tiempo(Tempo));
+            Empezar();
+            panel_aliados.SetActive(false);
+            panel_enemigo.SetActive(true);
+            objeto_Varra_tiempo.SetActive(false);
         }
 
     }
@@ -358,9 +384,5 @@ public class SimonDice : MonoBehaviour
             checker();
             print("Perdí mi mano izquierda y me duele todavía ¡Ya te vas a mejorar!");
         }
-    }
-    void Update()
-    {
-        
     }
 }
