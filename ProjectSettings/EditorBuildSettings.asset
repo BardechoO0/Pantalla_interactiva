@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JuegoMemoria.unity
     guid: c3686e4ff3dcb0845924d2983b79fc39
+  - enabled: 1
+    path: Assets/Scenes/JuegoPuzzle.unity
+    guid: d0a34751bcedf5645865f240e1115ce7
   m_configObjects: {}

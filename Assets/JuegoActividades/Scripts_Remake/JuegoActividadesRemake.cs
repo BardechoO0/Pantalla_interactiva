@@ -20,6 +20,7 @@ public class JuegoActividadesRemake : MonoBehaviour
     //     0        1          2          3         4              5
 
 
+
     //Int para guardar parametros;
     int x;
     int y;

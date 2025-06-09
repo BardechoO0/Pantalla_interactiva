@@ -57,6 +57,11 @@ TagManager:
   - Act4
   - Act5
   - Act6
+  - pieza 1
+  - pieza 2
+  - pieza 3
+  - pieza 4
+  - pieza 5
   layers:
   - Default
   - TransparentFX
