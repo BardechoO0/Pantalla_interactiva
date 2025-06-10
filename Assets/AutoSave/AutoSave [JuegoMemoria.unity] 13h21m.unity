@@ -962,7 +962,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<<< HEAD:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h21m.unity
   m_AnchoredPosition: {x: -1.68, y: -4.08}
+========
+  m_AnchoredPosition: {x: -1.68, y: -2.8203526}
+>>>>>>>> b6bb3c8aa58e96a34adcabdcb0f7533d68c6ee41:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h47m.unity
   m_SizeDelta: {x: 53, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &105848793
@@ -4631,7 +4635,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<<< HEAD:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h21m.unity
   m_AnchoredPosition: {x: -5.001, y: -4.786}
+========
+  m_AnchoredPosition: {x: -5.001, y: -3.84}
+>>>>>>>> b6bb3c8aa58e96a34adcabdcb0f7533d68c6ee41:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h47m.unity
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &679854556
@@ -5142,7 +5150,11 @@ RectTransform:
   m_GameObject: {fileID: 851147930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<<< HEAD:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h21m.unity
   m_LocalScale: {x: 0.92544246, y: 4.119303, z: 1.2852113}
+========
+  m_LocalScale: {x: 0.92544246, y: 4.119303, z: 1}
+>>>>>>>> b6bb3c8aa58e96a34adcabdcb0f7533d68c6ee41:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h47m.unity
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1900029693}
@@ -5396,7 +5408,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<<< HEAD:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h21m.unity
   m_AnchoredPosition: {x: -1.68, y: -2.5244122}
+========
+  m_AnchoredPosition: {x: -1.68, y: -1.2647649}
+>>>>>>>> b6bb3c8aa58e96a34adcabdcb0f7533d68c6ee41:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h47m.unity
   m_SizeDelta: {x: 53, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &936416232
@@ -7539,7 +7555,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<<< HEAD:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h21m.unity
   m_AnchoredPosition: {x: -5.0511127, y: -3.283}
+========
+  m_AnchoredPosition: {x: -5.0511127, y: -4.96}
+>>>>>>>> b6bb3c8aa58e96a34adcabdcb0f7533d68c6ee41:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h47m.unity
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1233541490
@@ -8579,7 +8599,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<<< HEAD:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h21m.unity
   m_AnchoredPosition: {x: -1.68, y: -1.1034622}
+========
+  m_AnchoredPosition: {x: -1.68, y: 0.15618503}
+>>>>>>>> b6bb3c8aa58e96a34adcabdcb0f7533d68c6ee41:Assets/AutoSave/AutoSave [JuegoMemoria.unity] 13h47m.unity
   m_SizeDelta: {x: 53, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1423092292
@@ -8766,7 +8790,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.4396424, y: -2.8796473}
+  m_AnchoredPosition: {x: -3.4396424, y: -1.62}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1436221145
