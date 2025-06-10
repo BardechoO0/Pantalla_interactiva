@@ -8,10 +8,6 @@ public class EscogerActividades : MonoBehaviour
     int w;
 
     public bool PrimeraVez;
-    void Start()
-    {
-        
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Comprebo si es la primra vez que pasan po aquí
