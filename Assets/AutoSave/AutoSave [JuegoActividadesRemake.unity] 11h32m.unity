@@ -623,7 +623,7 @@ PrefabInstance:
     - target: {fileID: 8017395692349125786, guid: e424b82c5df40534ba29a378759896e8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 109da3974fec5614692e7b93080a76fe, type: 3}
+      objectReference: {fileID: 21300000, guid: 9aa17a791366c2b44b902e01970616e1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e424b82c5df40534ba29a378759896e8, type: 3}
 --- !u!4 &38308295 stripped
@@ -10422,7 +10422,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 25
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &898098722
 RectTransform:
@@ -11371,10 +11371,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8017395692349125786, guid: 8ba79c253c290684b8246a3e60a3eb77, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: bca1124bc3c70d7429ce92b2408739a9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ba79c253c290684b8246a3e60a3eb77, type: 3}
 --- !u!4 &969900756 stripped
@@ -30587,7 +30583,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
