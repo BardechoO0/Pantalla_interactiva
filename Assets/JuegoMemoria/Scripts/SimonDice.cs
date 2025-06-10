@@ -65,7 +65,7 @@ public class SimonDice : MonoBehaviour
     void Start()
     {
 
-        print("https://packaged-media.redd.it/fdhasfw8udfe1/pb/m2-res_1280p.mp4?m=DASHPlaylist.mpd&v=1&e=1746021600&s=e11b5b68ec0f0e202075d97fab89ab2669d297ec");
+       // print("https://packaged-media.redd.it/fdhasfw8udfe1/pb/m2-res_1280p.mp4?m=DASHPlaylist.mpd&v=1&e=1746021600&s=e11b5b68ec0f0e202075d97fab89ab2669d297ec");
     }
 
     public void Empezar_2()
@@ -78,7 +78,7 @@ public class SimonDice : MonoBehaviour
 
         for(int x = 0; x <= Juego.Length-1; x++)
         {
-            print("baka,baka,baka");
+           // print("baka,baka,baka");
             Juego[x].SetActive(true);
         }
 
@@ -123,14 +123,14 @@ public class SimonDice : MonoBehaviour
 
             if(Bt.Ver.isOn == true || Bt.Recordar.isOn == true){
                 objetos_memoria_enemigos[conteo1] = Instantiate(objetosDeMemoria[botonSelecinado - 1], memoria_enemigos[conteo1].gameObject.transform.position, Quaternion.identity);
-                print("THE ENEMY ASCENDED BEYOND YOUR CONTROL;");
+               // print("THE ENEMY ASCENDED BEYOND YOUR CONTROL;");
             }
         }
         else
         {
             objeto_Varra_tiempo.SetActive(true);
             StartCoroutine(tiempo(Tempo));
-            print("Porque te tatuansti");
+          //  print("Porque te tatuansti");
         }
 
         
@@ -158,7 +158,7 @@ public class SimonDice : MonoBehaviour
 
                     for (int i = 0; i < objetos_memoria_enemigos.Length; i++)
                     {
-                        print("The Croods - Smash And Grab [Best part loop] grug music");
+                       // print("The Croods - Smash And Grab [Best part loop] grug music");
                         Destroy(objetos_memoria_enemigos[i]);
                     }
                 }
@@ -213,7 +213,7 @@ public class SimonDice : MonoBehaviour
         }
         else 
         {
-            print("Ella me dice ola y yo le digo godbye");
+            //print("Ella me dice ola y yo le digo godbye");
         }
         
         yield return new WaitForSeconds(Tiempo_botnes);
@@ -244,7 +244,7 @@ public class SimonDice : MonoBehaviour
         {
             if (listaDeNumerosAlidaos[i] == listaDeNumerosEnemigos[i])
             {
-                print("Teto>>>>>>>Miku");
+               // print("Teto>>>>>>>Miku");
             }
             else
             {
@@ -259,11 +259,11 @@ public class SimonDice : MonoBehaviour
 
         if (EstaBien)
         {
-            Debug.Log("El print esta bien basado");
+           // Debug.Log("El print esta bien basado");
 
             for (int x = 0; x <= Juego.Length - 1; x++)
             {
-                print("Gyro, Gyro, Gyro Zeppeli");
+                //print("Gyro, Gyro, Gyro Zeppeli");
                 Juego[x].SetActive(false);
             }
 
@@ -293,7 +293,7 @@ public class SimonDice : MonoBehaviour
 
         for(int i = fail;i <= listaDeNumerosAlidaos.Length-1; i++)
         {
-            print("Miku, Miku, You can call me Miku");
+           // print("Miku, Miku, You can call me Miku");
             listaDeNumerosAlidaos[i] = 0;
             Destroy(objetos_memoria_aliados[i]);
         }
@@ -316,7 +316,7 @@ public class SimonDice : MonoBehaviour
         if (conteo2 == conteo1)
         {
             checker();
-            print("Y allá en el tambo todo el mundo me decía ¡Ya te vas a mejorar!");
+            //print("Y allá en el tambo todo el mundo me decía ¡Ya te vas a mejorar!");
         }
     }
 
@@ -338,7 +338,7 @@ public class SimonDice : MonoBehaviour
         if (conteo2 == conteo1)
         {
             checker();
-            print("Y en la familia todo el mundo me decía ¡Ya te vas a mejorar!");
+            //print("Y en la familia todo el mundo me decía ¡Ya te vas a mejorar!");
         }
     }
 
@@ -360,7 +360,7 @@ public class SimonDice : MonoBehaviour
         if (conteo2 == conteo1)
         {
             checker();
-            print("Ya perdí la paciencia en la lobotomía ¡Ya te vas a mejorar!");
+           // print("Ya perdí la paciencia en la lobotomía ¡Ya te vas a mejorar!");
         }
     }
 
@@ -382,7 +382,7 @@ public class SimonDice : MonoBehaviour
         if (conteo2 == conteo1)
         {
             checker();
-            print("Perdí mi mano izquierda y me duele todavía ¡Ya te vas a mejorar!");
+           // print("Perdí mi mano izquierda y me duele todavía ¡Ya te vas a mejorar!");
         }
     }
 }

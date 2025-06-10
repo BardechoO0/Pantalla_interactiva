@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 4399967}
   - component: {fileID: 4399966}
   - component: {fileID: 4399965}
+  - component: {fileID: 4399968}
   m_Layer: 5
   m_Name: Button_06
   m_TagString: Untagged
@@ -184,8 +185,8 @@ RectTransform:
   m_GameObject: {fileID: 4399963}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.34840626, y: 1.8117125, z: 1.1149}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.4440002, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 6
@@ -301,6 +302,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4399963}
   m_CullTransparentMesh: 1
+--- !u!114 &4399968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4399963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &5222621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,7 +1188,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000038146973, y: 0.0000076293945}
@@ -1309,7 +1325,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0000076293945}
@@ -1659,7 +1675,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000019073486, y: 0.0000076293945}
@@ -1930,7 +1946,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000019073486, y: 0.0000076293945}
@@ -2000,6 +2016,7 @@ GameObject:
   - component: {fileID: 159810186}
   - component: {fileID: 159810185}
   - component: {fileID: 159810184}
+  - component: {fileID: 159810187}
   m_Layer: 5
   m_Name: Button_08
   m_TagString: Untagged
@@ -2016,8 +2033,8 @@ RectTransform:
   m_GameObject: {fileID: 159810182}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35115626, y: 1.8260125, z: 1.1237}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.444, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 8
@@ -2133,6 +2150,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159810182}
   m_CullTransparentMesh: 1
+--- !u!114 &159810187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159810182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &171188136
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,6 +2208,7 @@ GameObject:
   - component: {fileID: 175135442}
   - component: {fileID: 175135441}
   - component: {fileID: 175135440}
+  - component: {fileID: 175135443}
   m_Layer: 5
   m_Name: Button_16
   m_TagString: Untagged
@@ -2192,8 +2225,8 @@ RectTransform:
   m_GameObject: {fileID: 175135438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.44509375, y: 2.3144875, z: 1.4243}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.4440002, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 16
@@ -2309,6 +2342,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175135438}
   m_CullTransparentMesh: 1
+--- !u!114 &175135443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175135438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.5, y: 0.4}
+  m_UseGraphicAlpha: 1
 --- !u!1 &177147375
 GameObject:
   m_ObjectHideFlags: 0
@@ -2388,7 +2436,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2525,7 +2573,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3672,7 +3720,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0000076293945, y: 0}
@@ -3842,7 +3890,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4734,7 +4782,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000019073486, y: -0.0000076293945}
@@ -5301,7 +5349,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0000019073486}
@@ -5574,7 +5622,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.000015258789}
@@ -6198,6 +6246,7 @@ GameObject:
   - component: {fileID: 627856250}
   - component: {fileID: 627856249}
   - component: {fileID: 627856248}
+  - component: {fileID: 627856251}
   m_Layer: 5
   m_Name: Button_09
   m_TagString: Untagged
@@ -6214,8 +6263,8 @@ RectTransform:
   m_GameObject: {fileID: 627856246}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35115626, y: 1.8260125, z: 1.1237}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.444, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 9
@@ -6331,6 +6380,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627856246}
   m_CullTransparentMesh: 1
+--- !u!114 &627856251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627856246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &636413876
 GameObject:
   m_ObjectHideFlags: 0
@@ -6410,7 +6474,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.000015258789}
@@ -6724,7 +6788,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0000009536743, y: 0}
@@ -7270,7 +7334,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.78}
@@ -7407,7 +7471,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7511,6 +7575,7 @@ GameObject:
   - component: {fileID: 797444547}
   - component: {fileID: 797444546}
   - component: {fileID: 797444545}
+  - component: {fileID: 797444548}
   m_Layer: 5
   m_Name: Button_02
   m_TagString: Untagged
@@ -7527,8 +7592,8 @@ RectTransform:
   m_GameObject: {fileID: 797444543}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.34840626, y: 1.8117125, z: 1.1149}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.4440002, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 2
@@ -7644,6 +7709,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797444543}
   m_CullTransparentMesh: 1
+--- !u!114 &797444548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797444543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.8, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &801412566
 GameObject:
   m_ObjectHideFlags: 0
@@ -7789,6 +7869,7 @@ GameObject:
   - component: {fileID: 801773726}
   - component: {fileID: 801773725}
   - component: {fileID: 801773724}
+  - component: {fileID: 801773727}
   m_Layer: 5
   m_Name: Button_11
   m_TagString: Untagged
@@ -7805,8 +7886,8 @@ RectTransform:
   m_GameObject: {fileID: 801773722}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35115626, y: 1.8260125, z: 1.1237}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.444, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 11
@@ -7922,6 +8003,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801773722}
   m_CullTransparentMesh: 1
+--- !u!114 &801773727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801773722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &803758296
 GameObject:
   m_ObjectHideFlags: 0
@@ -8577,7 +8673,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000019073486, y: 0}
@@ -9673,7 +9769,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000076293945, y: 0.0000076293945}
@@ -9810,7 +9906,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -9880,6 +9976,7 @@ GameObject:
   - component: {fileID: 919121354}
   - component: {fileID: 919121353}
   - component: {fileID: 919121352}
+  - component: {fileID: 919121355}
   m_Layer: 5
   m_Name: Button_03
   m_TagString: Untagged
@@ -9896,8 +9993,8 @@ RectTransform:
   m_GameObject: {fileID: 919121350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.34840626, y: 1.8117125, z: 1.1149}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.4440002, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 3
@@ -10013,6 +10110,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919121350}
   m_CullTransparentMesh: 1
+--- !u!114 &919121355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919121350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.89, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &929192799
 GameObject:
   m_ObjectHideFlags: 0
@@ -10071,7 +10183,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0000009536743, y: 0.0000038146973}
@@ -10436,7 +10548,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.66}
@@ -10573,7 +10685,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000019073486, y: -1.78}
@@ -10710,7 +10822,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000076293945, y: 0}
@@ -10847,7 +10959,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000019073486, y: -0.0000076293945}
@@ -11052,7 +11164,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0000076293945, y: 3.85}
@@ -11122,6 +11234,7 @@ GameObject:
   - component: {fileID: 1048352651}
   - component: {fileID: 1048352650}
   - component: {fileID: 1048352649}
+  - component: {fileID: 1048352652}
   m_Layer: 5
   m_Name: Button_14
   m_TagString: Untagged
@@ -11138,8 +11251,8 @@ RectTransform:
   m_GameObject: {fileID: 1048352647}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35115626, y: 1.8260125, z: 1.1237}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.444, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 14
@@ -11255,6 +11368,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048352647}
   m_CullTransparentMesh: 1
+--- !u!114 &1048352652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048352647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1083403486
 GameObject:
   m_ObjectHideFlags: 0
@@ -11313,7 +11441,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0000009536743, y: 0}
@@ -11669,7 +11797,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.0000038146973}
@@ -12562,7 +12690,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -1.35, y: -1.81}
@@ -12699,7 +12827,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.000015258789}
@@ -12968,6 +13096,7 @@ GameObject:
   - component: {fileID: 1207121866}
   - component: {fileID: 1207121865}
   - component: {fileID: 1207121864}
+  - component: {fileID: 1207121867}
   m_Layer: 5
   m_Name: Button_05
   m_TagString: Untagged
@@ -12984,8 +13113,8 @@ RectTransform:
   m_GameObject: {fileID: 1207121862}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.34840626, y: 1.8117125, z: 1.1149}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.4440002, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 5
@@ -13101,6 +13230,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207121862}
   m_CullTransparentMesh: 1
+--- !u!114 &1207121867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207121862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1223382853
 GameObject:
   m_ObjectHideFlags: 0
@@ -13380,7 +13524,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Volver al menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 26dd1a48e54ed6848bd090955f4e8cc1, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -13444,7 +13588,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1229572252
@@ -13534,7 +13678,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -3.5}
@@ -13808,7 +13952,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -14000,7 +14144,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.76, y: -0.7}
@@ -14645,7 +14789,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0000019073486, y: -4.63}
@@ -14782,7 +14926,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -15951,7 +16095,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000019073486, y: 0.0000076293945}
@@ -16379,7 +16523,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0000076293945, y: 0.0000038146973}
@@ -16528,7 +16672,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jugar de nuevo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 26dd1a48e54ed6848bd090955f4e8cc1, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -16592,7 +16736,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1418693829
@@ -16957,6 +17101,7 @@ GameObject:
   - component: {fileID: 1452431523}
   - component: {fileID: 1452431522}
   - component: {fileID: 1452431521}
+  - component: {fileID: 1452431524}
   m_Layer: 5
   m_Name: Button_15
   m_TagString: Untagged
@@ -16973,8 +17118,8 @@ RectTransform:
   m_GameObject: {fileID: 1452431519}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35115626, y: 1.8260125, z: 1.1237}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.444, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 15
@@ -17090,6 +17235,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452431519}
   m_CullTransparentMesh: 1
+--- !u!114 &1452431524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452431519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1471834579
 GameObject:
   m_ObjectHideFlags: 0
@@ -17169,7 +17329,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000019073486, y: 0}
@@ -17576,7 +17736,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -17713,7 +17873,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.0000076293945}
@@ -17884,7 +18044,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000038146973, y: -0.0000076293945}
@@ -18021,7 +18181,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -18414,7 +18574,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.0000076293945}
@@ -18572,7 +18732,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000019073486, y: 0}
@@ -19010,7 +19170,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.0000076293945}
@@ -19193,7 +19353,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.84, y: -1.12}
@@ -20046,6 +20206,7 @@ GameObject:
   - component: {fileID: 1677091672}
   - component: {fileID: 1677091671}
   - component: {fileID: 1677091670}
+  - component: {fileID: 1677091673}
   m_Layer: 5
   m_Name: Button_13
   m_TagString: Untagged
@@ -20062,8 +20223,8 @@ RectTransform:
   m_GameObject: {fileID: 1677091668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35115626, y: 1.8260125, z: 1.1237}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.444, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 13
@@ -20179,6 +20340,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677091668}
   m_CullTransparentMesh: 1
+--- !u!114 &1677091673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677091668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1689229697
 GameObject:
   m_ObjectHideFlags: 0
@@ -20638,7 +20814,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000019073486, y: 0.0000038146973}
@@ -21243,7 +21419,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.000015258789}
@@ -21346,6 +21522,7 @@ GameObject:
   - component: {fileID: 1797587939}
   - component: {fileID: 1797587938}
   - component: {fileID: 1797587937}
+  - component: {fileID: 1797587940}
   m_Layer: 5
   m_Name: Button_00
   m_TagString: Untagged
@@ -21362,8 +21539,8 @@ RectTransform:
   m_GameObject: {fileID: 1797587935}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.34840626, y: 1.8117125, z: 1.1149}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.4440002, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 0
@@ -21479,6 +21656,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797587935}
   m_CullTransparentMesh: 1
+--- !u!114 &1797587940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797587935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.8, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1800987598
 GameObject:
   m_ObjectHideFlags: 0
@@ -21491,6 +21683,7 @@ GameObject:
   - component: {fileID: 1800987602}
   - component: {fileID: 1800987601}
   - component: {fileID: 1800987600}
+  - component: {fileID: 1800987603}
   m_Layer: 5
   m_Name: Button_12
   m_TagString: Untagged
@@ -21507,8 +21700,8 @@ RectTransform:
   m_GameObject: {fileID: 1800987598}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35115626, y: 1.8260125, z: 1.1237}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.444, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 12
@@ -21624,6 +21817,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800987598}
   m_CullTransparentMesh: 1
+--- !u!114 &1800987603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800987598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1810891205
 GameObject:
   m_ObjectHideFlags: 0
@@ -22542,7 +22750,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -1.95}
@@ -22612,6 +22820,7 @@ GameObject:
   - component: {fileID: 1897612947}
   - component: {fileID: 1897612946}
   - component: {fileID: 1897612945}
+  - component: {fileID: 1897612948}
   m_Layer: 5
   m_Name: Button_01
   m_TagString: Untagged
@@ -22628,8 +22837,8 @@ RectTransform:
   m_GameObject: {fileID: 1897612943}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.34840626, y: 1.8117125, z: 1.1149}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.4440002, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 1
@@ -22745,6 +22954,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897612943}
   m_CullTransparentMesh: 1
+--- !u!114 &1897612948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897612943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.5, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1906459185
 GameObject:
   m_ObjectHideFlags: 0
@@ -22824,7 +23048,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0000076293945}
@@ -23724,6 +23948,7 @@ GameObject:
   - component: {fileID: 1968202319}
   - component: {fileID: 1968202318}
   - component: {fileID: 1968202317}
+  - component: {fileID: 1968202320}
   m_Layer: 5
   m_Name: Button_10
   m_TagString: Untagged
@@ -23740,8 +23965,8 @@ RectTransform:
   m_GameObject: {fileID: 1968202315}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35115626, y: 1.8260125, z: 1.1237}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.444, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 10
@@ -23857,6 +24082,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968202315}
   m_CullTransparentMesh: 1
+--- !u!114 &1968202320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968202315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1968518878
 GameObject:
   m_ObjectHideFlags: 0
@@ -24200,6 +24440,7 @@ GameObject:
   - component: {fileID: 1987532264}
   - component: {fileID: 1987532263}
   - component: {fileID: 1987532262}
+  - component: {fileID: 1987532265}
   m_Layer: 5
   m_Name: Button_07
   m_TagString: Untagged
@@ -24216,8 +24457,8 @@ RectTransform:
   m_GameObject: {fileID: 1987532260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.34840626, y: 1.8117125, z: 1.1149}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.4440002, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 7
@@ -24333,6 +24574,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987532260}
   m_CullTransparentMesh: 1
+--- !u!114 &1987532265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987532260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1991031229
 GameObject:
   m_ObjectHideFlags: 0
@@ -24412,7 +24668,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0000076293945}
@@ -24583,7 +24839,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.0000076293945}
@@ -24720,7 +24976,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.000015258789}
@@ -25484,6 +25740,7 @@ GameObject:
   - component: {fileID: 2061246224}
   - component: {fileID: 2061246223}
   - component: {fileID: 2061246222}
+  - component: {fileID: 2061246225}
   m_Layer: 5
   m_Name: Button_04
   m_TagString: Untagged
@@ -25500,8 +25757,8 @@ RectTransform:
   m_GameObject: {fileID: 2061246220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.34840626, y: 1.8117125, z: 1.1149}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.47, y: 2.4440002, z: 1.5040001}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1715080332}
   m_RootOrder: 4
@@ -25617,6 +25874,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061246220}
   m_CullTransparentMesh: 1
+--- !u!114 &2061246225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061246220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0.9, y: 0.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2065581585
 GameObject:
   m_ObjectHideFlags: 0
