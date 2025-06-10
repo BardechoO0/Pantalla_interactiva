@@ -58,6 +58,8 @@ public class EscogerActividades : MonoBehaviour
             }
 
             PrimeraVez = true;
+
+            this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 
