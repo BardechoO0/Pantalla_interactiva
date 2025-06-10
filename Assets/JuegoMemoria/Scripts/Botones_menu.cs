@@ -75,15 +75,4 @@ public class Botones_menu : MonoBehaviour
             X = !false;
         }
     }
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

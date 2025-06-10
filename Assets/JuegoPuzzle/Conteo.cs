@@ -6,33 +6,45 @@ public class Conteo : MonoBehaviour
 {
     public int piezascunata;
     public int necesarias;
-
+    public GameObject PantallaVic;
+    public GameObject ajustes;
+    bool X;
     public AudioSource As;
     void Start()
     {
-        
+        X= true;    
     }
-    public void empezar()
+    public void Empezar()
     {
         necesarias++;
     }
 
-    public void coantar() 
+    public void Coantar() 
     {
         As.Play();
         piezascunata++;
 
         if(piezascunata == necesarias)
         {
-            print("Tus muertos");
+          PantallaVic.SetActive(true);
         }
     
     
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Ajustes()
     {
-        
+        if (X)
+        {
+            ajustes.SetActive(true);
+
+            X = false;
+        }
+        else if (!X)
+        {
+            ajustes.SetActive(!true);
+
+            X = !false;
+        }
     }
 }
