@@ -435,6 +435,140 @@ Transform:
   m_Father: {fileID: 471586621}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &35359514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 35359515}
+  - component: {fileID: 35359518}
+  - component: {fileID: 35359517}
+  - component: {fileID: 35359516}
+  m_Layer: 5
+  m_Name: volver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &35359515
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35359514}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 945725477}
+  m_Father: {fileID: 920627711}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -19}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &35359516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35359514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 35359517}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1755037187}
+        m_TargetAssemblyTypeName: Conteo, Assembly-CSharp
+        m_MethodName: Ajustes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &35359517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35359514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &35359518
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35359514}
+  m_CullTransparentMesh: 1
 --- !u!1001 &35454683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -525,6 +659,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3306549942052206291, guid: c10ca250dc7416440afe78538a1ebbe3, type: 3}
   m_PrefabInstance: {fileID: 35454683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &36449708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36449709}
+  - component: {fileID: 36449712}
+  - component: {fileID: 36449711}
+  - component: {fileID: 36449710}
+  m_Layer: 5
+  m_Name: menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &36449709
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36449708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1232596262}
+  m_Father: {fileID: 920627711}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 36}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &36449710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36449708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 36449711}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1755037186}
+        m_TargetAssemblyTypeName: CambioDeEscena, Assembly-CSharp
+        m_MethodName: CambioDeEscena_2
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &36449711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36449708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &36449712
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36449708}
+  m_CullTransparentMesh: 1
 --- !u!1001 &38308294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -651,6 +919,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coge el cepillo de dientes
   ElCorrecto: 0
 --- !u!82 &38308301
@@ -1260,6 +1529,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Tiras los restos de las u\xF1as"
   ElCorrecto: 0
 --- !u!82 &94512851
@@ -1472,6 +1742,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas la cama
   ElCorrecto: 0
 --- !u!82 &96190547
@@ -1833,6 +2104,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Friega el suelo del cocina
   ElCorrecto: 0
 --- !u!82 &149181292
@@ -2387,6 +2659,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Extiendela por la cara
   ElCorrecto: 0
 --- !u!82 &210188611
@@ -2840,6 +3113,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges el mando de la television
   ElCorrecto: 0
 --- !u!82 &245853554
@@ -3076,6 +3350,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Compras las entradas del cine
   ElCorrecto: 0
 --- !u!82 &252413225
@@ -3581,6 +3856,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Llamas a tus amigos para jugar al futbol
   ElCorrecto: 0
 --- !u!82 &255025699
@@ -3789,6 +4065,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Cortas las u\xF1as con cuidado"
   ElCorrecto: 0
 --- !u!82 &255464676
@@ -3985,6 +4262,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te echas crema para despues de afeitar
   ElCorrecto: 0
 --- !u!82 &267242407
@@ -4277,6 +4555,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges la regadera
   ElCorrecto: 0
 --- !u!82 &296890402
@@ -4481,6 +4760,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te pones los pantalones
   ElCorrecto: 0
 --- !u!82 &361330712
@@ -4775,6 +5055,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Dibujas un arbol
   ElCorrecto: 0
 --- !u!82 &380134887
@@ -5192,6 +5473,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Coge el cortau\xF1as"
   ElCorrecto: 0
 --- !u!82 &411560109
@@ -5393,6 +5675,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te lavas la cara
   ElCorrecto: 0
 --- !u!82 &441587740
@@ -5925,6 +6208,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te calzas los zapatos
   ElCorrecto: 0
 --- !u!82 &504356713
@@ -6023,6 +6307,139 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &510310829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510310830}
+  - component: {fileID: 510310833}
+  - component: {fileID: 510310832}
+  - component: {fileID: 510310831}
+  m_Layer: 5
+  m_Name: Ajustes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &510310830
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510310829}
+  m_LocalRotation: {x: -0, y: -0, z: -0.8607838, w: 0.5089708}
+  m_LocalPosition: {x: 0, y: 0, z: 208.09254}
+  m_LocalScale: {x: 0.8757961, y: 4.552777, z: 2.801185}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 898098722}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -118.809}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 400, y: 225}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &510310831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510310829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 510310832}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1755037187}
+        m_TargetAssemblyTypeName: Conteo, Assembly-CSharp
+        m_MethodName: Ajustes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &510310832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510310829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1550741887, guid: b1ecb2c004a9d7146a30c409f13742a0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &510310833
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510310829}
+  m_CullTransparentMesh: 1
 --- !u!1001 &554977915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6149,6 +6566,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas a tu coche con un faro roto
   ElCorrecto: 0
 --- !u!82 &554977922
@@ -6773,6 +7191,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te sientas en la mesa
   ElCorrecto: 0
 --- !u!82 &616444964
@@ -7040,6 +7459,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te sientas en tu butaca del cine
   ElCorrecto: 0
 --- !u!82 &651733083
@@ -7243,6 +7663,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Ve al lavabo
   ElCorrecto: 0
 --- !u!82 &655513295
@@ -7467,6 +7888,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Ves la pelicula
   ElCorrecto: 0
 --- !u!82 &668964272
@@ -8440,7 +8862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &754680425
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8597,6 +9019,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: ponte un poco en las manos
   ElCorrecto: 0
 --- !u!82 &755484683
@@ -9114,6 +9537,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Compras las entradas para el circo
   ElCorrecto: 0
 --- !u!82 &814004710
@@ -9595,6 +10019,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Le echas jabon y agua
   ElCorrecto: 0
 --- !u!82 &830267509
@@ -9927,6 +10352,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas a la silla
   ElCorrecto: 0
 --- !u!82 &877077125
@@ -10139,6 +10565,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Escupe la espuma restante
   ElCorrecto: 0
 --- !u!82 &882623354
@@ -10347,6 +10774,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: 'Coges la lechuga '
   ElCorrecto: 0
 --- !u!82 &885281062
@@ -10539,6 +10967,8 @@ RectTransform:
   m_Children:
   - {fileID: 129157898}
   - {fileID: 863518428}
+  - {fileID: 920627711}
+  - {fileID: 510310830}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10685,6 +11115,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Os dividis en dos equipos de baloncesto
   ElCorrecto: 0
 --- !u!82 &902176059
@@ -10908,6 +11339,45 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!1 &920627710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920627711}
+  m_Layer: 5
+  m_Name: Pantalla_ajustes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &920627711
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920627710}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 213.64987}
+  m_LocalScale: {x: 1.1145039, y: 1.1145039, z: 1.1145039}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1337909838}
+  - {fileID: 36449709}
+  - {fileID: 35359515}
+  m_Father: {fileID: 898098722}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.19917, y: -0.2}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &928756591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11034,6 +11504,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges las herramientas del coche
   ElCorrecto: 0
 --- !u!82 &928756598
@@ -11282,6 +11753,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas a la television
   ElCorrecto: 0
 --- !u!82 &944680450
@@ -11380,6 +11852,141 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &945725476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 945725477}
+  - component: {fileID: 945725479}
+  - component: {fileID: 945725478}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &945725477
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945725476}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35359515}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &945725478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945725476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: retomar
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &945725479
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945725476}
+  m_CullTransparentMesh: 1
 --- !u!1 &952041154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2150281847554302479, guid: 124d00387cc60c54d8b3062b4221ced5, type: 3}
@@ -11503,6 +12110,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Ponle pasta y cepillate
   ElCorrecto: 0
 --- !u!82 &969900762
@@ -11739,6 +12347,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Compras algo para comer en el circo
   ElCorrecto: 0
 --- !u!82 &971881564
@@ -11925,6 +12534,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Y sirves la comida en el plato
   ElCorrecto: 0
 --- !u!82 &1003905727
@@ -12182,6 +12792,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Abres el juguete
   ElCorrecto: 0
 --- !u!82 &1019766544
@@ -12460,6 +13071,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Jugais al baloncesto
   ElCorrecto: 0
 --- !u!82 &1047897672
@@ -12656,6 +13268,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Friega el suelo del ba\xF1o"
   ElCorrecto: 0
 --- !u!82 &1058619754
@@ -13622,6 +14235,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te sientas en tu asiento de las gradas del circo
   ElCorrecto: 0
 --- !u!82 &1087994950
@@ -13858,6 +14472,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Preparas la maleta
   ElCorrecto: 0
 --- !u!82 &1090961160
@@ -14363,6 +14978,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Sigues las instrucciones
   ElCorrecto: 0
 --- !u!82 &1105544749
@@ -15018,6 +15634,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te afeitas con cuidado
   ElCorrecto: 0
 --- !u!82 &1153807045
@@ -15326,6 +15943,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Cierras el juguete
   ElCorrecto: 0
 --- !u!82 &1171037408
@@ -15513,6 +16131,141 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1232596261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1232596262}
+  - component: {fileID: 1232596264}
+  - component: {fileID: 1232596263}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1232596262
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232596261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 36449709}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1232596263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232596261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Menu
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1232596264
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232596261}
+  m_CullTransparentMesh: 1
 --- !u!1 &1259057086
 GameObject:
   m_ObjectHideFlags: 0
@@ -15925,6 +16678,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Pones el pan en el plato
   ElCorrecto: 0
 --- !u!82 &1265214133
@@ -16149,6 +16903,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: ves el circo
   ElCorrecto: 0
 --- !u!82 &1271445247
@@ -16361,6 +17116,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Dejar la planta al sol
   ElCorrecto: 0
 --- !u!82 &1276580424
@@ -16842,6 +17598,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Escurre el exceso de agua
   ElCorrecto: 0
 --- !u!82 &1299745034
@@ -17323,6 +18080,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Moja la fregona
   ElCorrecto: 0
 --- !u!82 &1311046925
@@ -17527,6 +18285,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te pones la camisa
   ElCorrecto: 0
 --- !u!82 &1324050471
@@ -17625,6 +18384,82 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1337909837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337909838}
+  - component: {fileID: 1337909840}
+  - component: {fileID: 1337909839}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1337909838
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337909837}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 920627711}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 700, y: 349.78543}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1337909839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337909837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1337909840
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337909837}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1339091587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17751,6 +18586,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges el destornillador
   ElCorrecto: 0
 --- !u!82 &1339091594
@@ -17954,6 +18790,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Abres la caja del lego
   ElCorrecto: 0
 --- !u!82 &1347498386
@@ -18173,6 +19010,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Friegas el suelo del salon
   ElCorrecto: 0
 --- !u!82 &1349328817
@@ -18381,6 +19219,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Apagas la luz
   ElCorrecto: 0
 --- !u!82 &1349523594
@@ -18585,6 +19424,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Riegas la planta
   ElCorrecto: 0
 --- !u!82 &1351685026
@@ -18809,6 +19649,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas a tu coche sucio
   ElCorrecto: 0
 --- !u!82 &1357148665
@@ -18927,6 +19768,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coge la crema hidratante
   ElCorrecto: 0
 --- !u!82 &1365340442
@@ -19420,6 +20262,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Montas el sandwich
   ElCorrecto: 0
 --- !u!82 &1380215967
@@ -19656,6 +20499,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Compras las palomitas
   ElCorrecto: 0
 --- !u!82 &1381164352
@@ -19875,6 +20719,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Le echas jab\xF3n"
   ElCorrecto: 0
 --- !u!82 &1394654853
@@ -20071,6 +20916,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Echal\xE1 en la cara"
   ElCorrecto: 0
 --- !u!82 &1396983956
@@ -20290,6 +21136,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Arreglas el coche
   ElCorrecto: 0
 --- !u!82 &1411529661
@@ -20651,6 +21498,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Compras los billetes de avion
   ElCorrecto: 0
 --- !u!82 &1429280454
@@ -20863,6 +21711,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Frotas el plato sucio con el estropajo
   ElCorrecto: 0
 --- !u!82 &1490676421
@@ -21067,6 +21916,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Cierras los ojos y duermes
   ElCorrecto: 0
 --- !u!82 &1495780843
@@ -21316,6 +22166,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Pones el plato en la mesa
   ElCorrecto: 0
 --- !u!82 &1536498949
@@ -21529,6 +22380,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Admiras tu lego
   ElCorrecto: 0
 --- !u!82 &1559447966
@@ -22029,6 +22881,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Preparas el lomo
   ElCorrecto: 0
 --- !u!82 &1572035764
@@ -22248,6 +23101,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: 'Vas a la terminal '
   ElCorrecto: 0
 --- !u!82 &1589372847
@@ -22366,6 +23220,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges un bol para la ensalada
   ElCorrecto: 0
 --- !u!82 &1592723167
@@ -22871,6 +23726,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Subes al avion
   ElCorrecto: 0
 --- !u!82 &1609940268
@@ -23172,6 +24028,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges un estropajo
   ElCorrecto: 0
 --- !u!82 &1617446329
@@ -23661,6 +24518,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te sientas en el sofa
   ElCorrecto: 0
 --- !u!82 &1628821114
@@ -23897,6 +24755,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges la pelota de baloncesto
   ElCorrecto: 0
 --- !u!82 &1629294804
@@ -24189,6 +25048,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Pones un tomate
   ElCorrecto: 0
 --- !u!82 &1651356339
@@ -24425,6 +25285,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Os dividis en dos equipos de futbol
   ElCorrecto: 0
 --- !u!82 &1656520307
@@ -25055,6 +25916,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Acabas con abrillantador
   ElCorrecto: 0
 --- !u!82 &1680749172
@@ -25246,6 +26108,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te pones esmupa de afeitar en la cara
   ElCorrecto: 0
 --- !u!82 &1693667647
@@ -25446,6 +26309,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Texto de ejemplo
   ElCorrecto: 0
 --- !u!82 &1698938237
@@ -25649,6 +26513,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Llenas de agua la regadera
   ElCorrecto: 0
 --- !u!82 &1709764829
@@ -25857,6 +26722,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te quitas los calcetines
   ElCorrecto: 0
 --- !u!82 &1711478733
@@ -26166,6 +27032,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Jugais al futbol
   ElCorrecto: 0
 --- !u!82 &1729552398
@@ -26370,6 +27237,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Haces los deberes de matematicas
   ElCorrecto: 0
 --- !u!82 &1731733828
@@ -26760,6 +27628,8 @@ GameObject:
   - component: {fileID: 1755037185}
   - component: {fileID: 1755037184}
   - component: {fileID: 1755037186}
+  - component: {fileID: 1755037187}
+  - component: {fileID: 1755037188}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -26819,6 +27689,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebd0c4d661629d64db693554348f678a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1755037187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755037183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eebdda7d1cc75c48a8b76f1e9cf2bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  piezascunata: 0
+  necesarias: 23423
+  PantallaVic: {fileID: 0}
+  ajustes: {fileID: 920627710}
+  As: {fileID: 0}
+--- !u!114 &1755037188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755037183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44be386b2c9e304459a9d8cb515822e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1755701994
@@ -26931,6 +27830,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Lees las instrucciones
   ElCorrecto: 0
 --- !u!82 &1755702001
@@ -27135,6 +28035,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges alpiz y papel
   ElCorrecto: 0
 --- !u!82 &1763448906
@@ -27343,6 +28244,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Lees el libro
   ElCorrecto: 0
 --- !u!82 &1763918262
@@ -27562,6 +28464,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges las herramientas de madera
   ElCorrecto: 0
 --- !u!82 &1789244435
@@ -27786,6 +28689,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Pones las pilas nuevas
   ElCorrecto: 0
 --- !u!82 &1791881072
@@ -28022,6 +28926,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges la pelotas de futbol
   ElCorrecto: 0
 --- !u!82 &1806598549
@@ -28269,7 +29174,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.8, y: 9.37}
+    oldSize: {x: 10.8, y: 9.35}
     newSize: {x: 10.8, y: 9.37}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -28515,6 +29420,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te sientas en la mesa
   ElCorrecto: 0
 --- !u!82 &1841541922
@@ -28735,6 +29641,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Montas el mueblo
   ElCorrecto: 0
 --- !u!82 &1848485138
@@ -28950,6 +29857,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Friegas el suelo del taller
   ElCorrecto: 0
 --- !u!82 &1851497978
@@ -29455,6 +30363,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Preparas las tablas
   ElCorrecto: 0
 --- !u!82 &1865496378
@@ -29940,6 +30849,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te pones la ropa interior
   ElCorrecto: 0
 --- !u!82 &1870261737
@@ -30140,6 +31050,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges un plato sucio
   ElCorrecto: 0
 --- !u!82 &1913450728
@@ -30364,6 +31275,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges las piezas nuevas
   ElCorrecto: 0
 --- !u!82 &1927668631
@@ -30567,6 +31479,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Ahora los cubiertos
   ElCorrecto: 0
 --- !u!82 &1934043305
@@ -31004,6 +31917,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Llamas a tus amigos para jugar al baloncesto
   ElCorrecto: 0
 --- !u!82 &1958877046
@@ -31357,6 +32271,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Echas vinagre
   ElCorrecto: 0
 --- !u!82 &1970682540
@@ -31475,6 +32390,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Colocas un vaso de agua
   ElCorrecto: 0
 --- !u!82 &1975890490
@@ -32155,6 +33071,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Enciendes la l\xE1mpara"
   ElCorrecto: 0
 --- !u!82 &2024307096
@@ -32363,6 +33280,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te pones el pijama
   ElCorrecto: 0
 --- !u!82 &2032170326
@@ -32616,6 +33534,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Aclaras con agua
   ElCorrecto: 0
 --- !u!82 &2057099325
@@ -32828,6 +33747,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coge el cubo de la fregona con agua
   ElCorrecto: 0
 --- !u!82 &2067090972
@@ -33602,6 +34522,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Enciendes y metes un disco en el dvd
   ElCorrecto: 0
 --- !u!82 &2114736865
@@ -33847,6 +34768,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas a la silla
   ElCorrecto: 0
 --- !u!82 &2146460397
@@ -34046,6 +34968,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Montas el lego
   ElCorrecto: 0
 --- !u!82 &2146986825

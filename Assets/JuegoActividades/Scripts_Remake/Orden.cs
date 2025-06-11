@@ -6,6 +6,7 @@ public class Orden : MonoBehaviour
     [SerializeField] Juego Jg;
     public AudioSource Ac;
     public TextMeshProUGUI Texto;
+    public GameObject panel;
 
     public string Oracion;
 
@@ -17,6 +18,7 @@ public class Orden : MonoBehaviour
             Jg = FindAnyObjectByType<Juego>();
             Ac = this.gameObject.GetComponent<AudioSource>();
             Texto.enabled = true;
+            panel.SetActive(true);
             
             Texto.text = Oracion;
         }
@@ -29,6 +31,7 @@ public class Orden : MonoBehaviour
             if (other.gameObject.tag == "Player")
             {
                 Texto.enabled = false;
+                panel.SetActive(false);
                 Ac.GetComponent<AudioSource>().Stop();
                 Texto.enabled = false;
 

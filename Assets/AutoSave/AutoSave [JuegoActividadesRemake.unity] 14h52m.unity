@@ -435,6 +435,140 @@ Transform:
   m_Father: {fileID: 471586621}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &35359514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 35359515}
+  - component: {fileID: 35359518}
+  - component: {fileID: 35359517}
+  - component: {fileID: 35359516}
+  m_Layer: 5
+  m_Name: volver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &35359515
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35359514}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 945725477}
+  m_Father: {fileID: 920627711}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -19}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &35359516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35359514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 35359517}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1755037187}
+        m_TargetAssemblyTypeName: Conteo, Assembly-CSharp
+        m_MethodName: Ajustes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &35359517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35359514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &35359518
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35359514}
+  m_CullTransparentMesh: 1
 --- !u!1001 &35454683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -525,6 +659,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3306549942052206291, guid: c10ca250dc7416440afe78538a1ebbe3, type: 3}
   m_PrefabInstance: {fileID: 35454683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &36449708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36449709}
+  - component: {fileID: 36449712}
+  - component: {fileID: 36449711}
+  - component: {fileID: 36449710}
+  m_Layer: 5
+  m_Name: menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &36449709
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36449708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1232596262}
+  m_Father: {fileID: 920627711}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 36}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &36449710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36449708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 36449711}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CambioDeEscena, Assembly-CSharp
+        m_MethodName: CambioDeEscena_2
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &36449711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36449708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &36449712
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36449708}
+  m_CullTransparentMesh: 1
 --- !u!1001 &38308294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -651,6 +919,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coge el cepillo de dientes
   ElCorrecto: 0
 --- !u!82 &38308301
@@ -1113,6 +1382,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.00009536743
       objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: 1887c36d2ce00f041ad1dec8b5b2ecf2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f57a978f8b030f144a1277f762d3afb2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887c36d2ce00f041ad1dec8b5b2ecf2, type: 3}
 --- !u!4 &58653204 stripped
@@ -1256,6 +1529,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Tiras los restos de las u\xF1as"
   ElCorrecto: 0
 --- !u!82 &94512851
@@ -1468,6 +1742,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas la cama
   ElCorrecto: 0
 --- !u!82 &96190547
@@ -1709,6 +1984,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 754680425}
   - {fileID: 1059032327}
   m_Father: {fileID: 898098722}
   m_RootOrder: 0
@@ -1790,6 +2066,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8017395692349125786, guid: 34c8e4abe497fb0408c524a3d2898030, type: 3}
+      propertyPath: m_Size.x
+      value: 10.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: 34c8e4abe497fb0408c524a3d2898030, type: 3}
+      propertyPath: m_Size.y
+      value: 10.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: 34c8e4abe497fb0408c524a3d2898030, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 827308de930e9ad418c70bd6515a5ede, type: 3}
@@ -1820,6 +2104,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Friega el suelo del cocina
   ElCorrecto: 0
 --- !u!82 &149181292
@@ -1945,7 +2230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154970422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.77, y: -6.49, z: -193.38528}
+  m_LocalPosition: {x: -8.1, y: -3.23, z: -193.38528}
   m_LocalScale: {x: 0.41576698, y: 0.41576698, z: 0.41576698}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2374,6 +2659,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Extiendela por la cara
   ElCorrecto: 0
 --- !u!82 &210188611
@@ -2796,6 +3082,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.00009536743
       objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: f8647c6f87c223443a3ab7ec04054bab, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b8e01901b3975b749b5733af6beaf888, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8647c6f87c223443a3ab7ec04054bab, type: 3}
 --- !u!4 &245853548 stripped
@@ -2823,6 +3113,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges el mando de la television
   ElCorrecto: 0
 --- !u!82 &245853554
@@ -3059,6 +3350,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Compras las entradas del cine
   ElCorrecto: 0
 --- !u!82 &252413225
@@ -3564,6 +3856,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Llamas a tus amigos para jugar al futbol
   ElCorrecto: 0
 --- !u!82 &255025699
@@ -3772,6 +4065,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Cortas las u\xF1as con cuidado"
   ElCorrecto: 0
 --- !u!82 &255464676
@@ -3968,6 +4262,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te echas crema para despues de afeitar
   ElCorrecto: 0
 --- !u!82 &267242407
@@ -4260,6 +4555,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges la regadera
   ElCorrecto: 0
 --- !u!82 &296890402
@@ -4464,6 +4760,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te pones los pantalones
   ElCorrecto: 0
 --- !u!82 &361330712
@@ -4758,6 +5055,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Dibujas un arbol
   ElCorrecto: 0
 --- !u!82 &380134887
@@ -4883,7 +5181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380973732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.81, y: -6.502, z: -193.38528}
+  m_LocalPosition: {x: -3.01, y: -6.502, z: -193.38528}
   m_LocalScale: {x: 0.24695402, y: 0.24695402, z: 0.24695402}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5175,6 +5473,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Coge el cortau\xF1as"
   ElCorrecto: 0
 --- !u!82 &411560109
@@ -5376,6 +5675,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te lavas la cara
   ElCorrecto: 0
 --- !u!82 &441587740
@@ -5513,7 +5813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470920819}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.52, y: -0.976, z: -167.81238}
+  m_LocalPosition: {x: 8.2300005, y: -0.976, z: -167.81238}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5566,7 +5866,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10.8, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5661,7 +5961,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 10.8, y: 10.8}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 10.8, y: 10.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5908,6 +6208,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te calzas los zapatos
   ElCorrecto: 0
 --- !u!82 &504356713
@@ -6006,6 +6307,139 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &510310829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510310830}
+  - component: {fileID: 510310833}
+  - component: {fileID: 510310832}
+  - component: {fileID: 510310831}
+  m_Layer: 5
+  m_Name: Ajustes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &510310830
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510310829}
+  m_LocalRotation: {x: -0, y: -0, z: -0.8607838, w: 0.5089708}
+  m_LocalPosition: {x: 0, y: 0, z: 208.09254}
+  m_LocalScale: {x: 0.8757961, y: 4.552777, z: 2.801185}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 898098722}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -118.809}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 400, y: 225}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &510310831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510310829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 510310832}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1755037187}
+        m_TargetAssemblyTypeName: Conteo, Assembly-CSharp
+        m_MethodName: Ajustes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &510310832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510310829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1550741887, guid: b1ecb2c004a9d7146a30c409f13742a0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &510310833
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510310829}
+  m_CullTransparentMesh: 1
 --- !u!1001 &554977915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6132,6 +6566,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas a tu coche con un faro roto
   ElCorrecto: 0
 --- !u!82 &554977922
@@ -6756,6 +7191,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te sientas en la mesa
   ElCorrecto: 0
 --- !u!82 &616444964
@@ -7023,6 +7459,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te sientas en tu butaca del cine
   ElCorrecto: 0
 --- !u!82 &651733083
@@ -7226,6 +7663,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Ve al lavabo
   ElCorrecto: 0
 --- !u!82 &655513295
@@ -7341,23 +7779,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 9c42d40629b815948ab50280fa475e3a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.21000002
+      value: 0.1986772
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 9c42d40629b815948ab50280fa475e3a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.21000002
+      value: 0.1986772
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 9c42d40629b815948ab50280fa475e3a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.21000002
+      value: 0.1986772
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 9c42d40629b815948ab50280fa475e3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -707.96
+      value: -707.97
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 9c42d40629b815948ab50280fa475e3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -349.15
+      value: -349.25
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 9c42d40629b815948ab50280fa475e3a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7450,6 +7888,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Ves la pelicula
   ElCorrecto: 0
 --- !u!82 &668964272
@@ -7587,7 +8026,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714343525}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.58, y: -0.93000007, z: -167.81238}
+  m_LocalPosition: {x: 8.54, y: -0.93000007, z: -167.81238}
   m_LocalScale: {x: 0.13, y: 0.13, z: 0.13}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -7868,7 +8307,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718297786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.55, y: -0.94, z: -167.81238}
+  m_LocalPosition: {x: 2.3400002, y: -0.94, z: -167.81238}
   m_LocalScale: {x: 0.2, y: 0.19742307, z: 2.2343192}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -8015,7 +8454,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.8, y: 10.8}
+    oldSize: {x: 10.31, y: 3.54}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8406,6 +8845,82 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &754680424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 754680425}
+  - component: {fileID: 754680427}
+  - component: {fileID: 754680426}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &754680425
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754680424}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5425926, y: 0.30359134, z: 0.19555}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 129157898}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 167}
+  m_SizeDelta: {x: 700, y: 349.91788}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &754680426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754680424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.33333334}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &754680427
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754680424}
+  m_CullTransparentMesh: 1
 --- !u!1001 &755484676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8504,6 +9019,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: ponte un poco en las manos
   ElCorrecto: 0
 --- !u!82 &755484683
@@ -9021,6 +9537,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Compras las entradas para el circo
   ElCorrecto: 0
 --- !u!82 &814004710
@@ -9471,6 +9988,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: cf932f8c7cfcdd5439dede3cd881a408, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 00106e4a9d119524ba41935968080536, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf932f8c7cfcdd5439dede3cd881a408, type: 3}
 --- !u!4 &830267503 stripped
@@ -9498,6 +10019,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Le echas jabon y agua
   ElCorrecto: 0
 --- !u!82 &830267509
@@ -9799,6 +10321,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: 857de6ebd684a9248b601cdbde68564f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 29e50336b23087840973704a02b88b74, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 857de6ebd684a9248b601cdbde68564f, type: 3}
 --- !u!4 &877077119 stripped
@@ -9826,6 +10352,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas a la silla
   ElCorrecto: 0
 --- !u!82 &877077125
@@ -10038,6 +10565,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Escupe la espuma restante
   ElCorrecto: 0
 --- !u!82 &882623354
@@ -10246,6 +10774,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: 'Coges la lechuga '
   ElCorrecto: 0
 --- !u!82 &885281062
@@ -10438,6 +10967,8 @@ RectTransform:
   m_Children:
   - {fileID: 129157898}
   - {fileID: 863518428}
+  - {fileID: 920627711}
+  - {fileID: 510310830}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10584,6 +11115,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Os dividis en dos equipos de baloncesto
   ElCorrecto: 0
 --- !u!82 &902176059
@@ -10709,7 +11241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916692308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.99, y: -6.522, z: -193.38528}
+  m_LocalPosition: {x: 6.72, y: -3.43, z: -193.38528}
   m_LocalScale: {x: 0.21236186, y: 0.21236186, z: 0.21236186}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10807,6 +11339,45 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 10.8}
   m_EdgeRadius: 0
+--- !u!1 &920627710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920627711}
+  m_Layer: 5
+  m_Name: Pantalla_ajustes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &920627711
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920627710}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 213.64987}
+  m_LocalScale: {x: 1.1145039, y: 1.1145039, z: 1.1145039}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1337909838}
+  - {fileID: 36449709}
+  - {fileID: 35359515}
+  m_Father: {fileID: 898098722}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.19917, y: -0.2}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &928756591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10933,6 +11504,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges las herramientas del coche
   ElCorrecto: 0
 --- !u!82 &928756598
@@ -11181,6 +11753,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas a la television
   ElCorrecto: 0
 --- !u!82 &944680450
@@ -11279,6 +11852,141 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &945725476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 945725477}
+  - component: {fileID: 945725479}
+  - component: {fileID: 945725478}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &945725477
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945725476}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 35359515}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &945725478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945725476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: retomar
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &945725479
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945725476}
+  m_CullTransparentMesh: 1
 --- !u!1 &952041154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2150281847554302479, guid: 124d00387cc60c54d8b3062b4221ced5, type: 3}
@@ -11402,6 +12110,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Ponle pasta y cepillate
   ElCorrecto: 0
 --- !u!82 &969900762
@@ -11638,6 +12347,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Compras algo para comer en el circo
   ElCorrecto: 0
 --- !u!82 &971881564
@@ -11824,6 +12534,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Y sirves la comida en el plato
   ElCorrecto: 0
 --- !u!82 &1003905727
@@ -12081,6 +12792,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Abres el juguete
   ElCorrecto: 0
 --- !u!82 &1019766544
@@ -12359,6 +13071,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Jugais al baloncesto
   ElCorrecto: 0
 --- !u!82 &1047897672
@@ -12555,6 +13268,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Friega el suelo del ba\xF1o"
   ElCorrecto: 0
 --- !u!82 &1058619754
@@ -12684,11 +13398,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 129157898}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -63, y: 170.8}
+  m_AnchoredPosition: {x: -0, y: 181}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1059032328
@@ -12738,14 +13452,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7.54
-  m_fontSizeBase: 7.54
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -12774,7 +13488,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 3.473648, z: 0, w: 10.917175}
+  m_margin: {x: -3.7510834, y: 3.473648, z: -6.564316, w: 10.917175}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13404,19 +14118,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 5b7f295e8f1e3b3438308959153b3084, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.21000002
+      value: 0.1946164
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 5b7f295e8f1e3b3438308959153b3084, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.21000002
+      value: 0.1946164
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 5b7f295e8f1e3b3438308959153b3084, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.21000002
+      value: 0.1946164
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 5b7f295e8f1e3b3438308959153b3084, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -709.998
+      value: -710
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 5b7f295e8f1e3b3438308959153b3084, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13521,6 +14235,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te sientas en tu asiento de las gradas del circo
   ElCorrecto: 0
 --- !u!82 &1087994950
@@ -13757,6 +14472,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Preparas la maleta
   ElCorrecto: 0
 --- !u!82 &1090961160
@@ -13884,7 +14600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102458049}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.96, y: -0.96, z: -167.81238}
+  m_LocalPosition: {x: 0.59, y: -0.96, z: -167.81238}
   m_LocalScale: {x: 0.15, y: 0.17142858, z: 0.17142858}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -13911,7 +14627,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 2.0292332
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -14230,7 +14946,7 @@ PrefabInstance:
     - target: {fileID: 8017395692349125786, guid: 7783d6135ce58ed48a24fea12013f525, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8c4cf6e6ded10c4498b2350879f75564, type: 3}
+      objectReference: {fileID: 21300000, guid: e1c3d293e483c82409f94c3ba8fedd6d, type: 3}
     - target: {fileID: 8017395692349125786, guid: 7783d6135ce58ed48a24fea12013f525, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -14262,6 +14978,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Sigues las instrucciones
   ElCorrecto: 0
 --- !u!82 &1105544749
@@ -14435,7 +15152,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.18, y: 11.88211}
+  m_Size: {x: 3.82, y: 5.88}
   m_EdgeRadius: 0
 --- !u!212 &1130846204
 SpriteRenderer:
@@ -14917,6 +15634,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te afeitas con cuidado
   ElCorrecto: 0
 --- !u!82 &1153807045
@@ -15089,7 +15807,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -98
   m_Sprite: {fileID: 21300000, guid: 9926f71d4802bfc468d6b6e25035d942, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.57627267, g: 0.69559354, b: 0.6981132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15225,6 +15943,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Cierras el juguete
   ElCorrecto: 0
 --- !u!82 &1171037408
@@ -15412,6 +16131,141 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1232596261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1232596262}
+  - component: {fileID: 1232596264}
+  - component: {fileID: 1232596263}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1232596262
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232596261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 36449709}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1232596263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232596261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Menu
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1232596264
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232596261}
+  m_CullTransparentMesh: 1
 --- !u!1 &1259057086
 GameObject:
   m_ObjectHideFlags: 0
@@ -15441,7 +16295,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259057086}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.45, y: -0.963, z: -167.81238}
+  m_LocalPosition: {x: -2.4899998, y: -0.963, z: -167.81238}
   m_LocalScale: {x: 0.17, y: 0.17870452, z: 1.6360903}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -15782,6 +16636,10 @@ PrefabInstance:
       value: 0.000045776367
       objectReference: {fileID: 0}
     - target: {fileID: 8017395692349125786, guid: e6b166c4893bb5343a0573237ba7d16d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 275492529da765b43878169d01a9d77c, type: 3}
+    - target: {fileID: 8017395692349125786, guid: e6b166c4893bb5343a0573237ba7d16d, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -15820,6 +16678,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Pones el pan en el plato
   ElCorrecto: 0
 --- !u!82 &1265214133
@@ -15935,15 +16794,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 3963a3326cfc1c34bb30ff1dbdfce1c2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.21000002
+      value: 0.19559735
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 3963a3326cfc1c34bb30ff1dbdfce1c2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.21000002
+      value: 0.19559735
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 3963a3326cfc1c34bb30ff1dbdfce1c2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.21000002
+      value: 0.19559735
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 3963a3326cfc1c34bb30ff1dbdfce1c2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16044,6 +16903,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: ves el circo
   ElCorrecto: 0
 --- !u!82 &1271445247
@@ -16256,6 +17116,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Dejar la planta al sol
   ElCorrecto: 0
 --- !u!82 &1276580424
@@ -16383,7 +17244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286356662}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.57, y: -0.976, z: -167.81238}
+  m_LocalPosition: {x: 5.18, y: -0.976, z: -167.81238}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -16530,7 +17391,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.8, y: 10.8}
+    oldSize: {x: 10.8, y: 9.44}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -16737,6 +17598,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Escurre el exceso de agua
   ElCorrecto: 0
 --- !u!82 &1299745034
@@ -16984,7 +17846,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.8, y: 10.8}
+    oldSize: {x: 10.8, y: 6.67}
     newSize: {x: 10.8, y: 10.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -17218,6 +18080,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Moja la fregona
   ElCorrecto: 0
 --- !u!82 &1311046925
@@ -17422,6 +18285,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te pones la camisa
   ElCorrecto: 0
 --- !u!82 &1324050471
@@ -17520,6 +18384,82 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1337909837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337909838}
+  - component: {fileID: 1337909840}
+  - component: {fileID: 1337909839}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1337909838
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337909837}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 920627711}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 700, y: 349.78543}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1337909839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337909837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1337909840
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337909837}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1339091587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17646,6 +18586,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges el destornillador
   ElCorrecto: 0
 --- !u!82 &1339091594
@@ -17849,6 +18790,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Abres la caja del lego
   ElCorrecto: 0
 --- !u!82 &1347498386
@@ -18041,7 +18983,7 @@ PrefabInstance:
     - target: {fileID: 8017395692349125786, guid: 7e5fd8d0ba300f6429d2652745f6388d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e55cabf5cf9d9bc438fb9ab44d071b0a, type: 3}
+      objectReference: {fileID: 21300000, guid: 79474b489a211a645b03e2eada2b94aa, type: 3}
     - target: {fileID: 8017395692349125786, guid: 7e5fd8d0ba300f6429d2652745f6388d, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -18068,6 +19010,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Friegas el suelo del salon
   ElCorrecto: 0
 --- !u!82 &1349328817
@@ -18276,6 +19219,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Apagas la luz
   ElCorrecto: 0
 --- !u!82 &1349523594
@@ -18480,6 +19424,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Riegas la planta
   ElCorrecto: 0
 --- !u!82 &1351685026
@@ -18704,6 +19649,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas a tu coche sucio
   ElCorrecto: 0
 --- !u!82 &1357148665
@@ -18822,6 +19768,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coge la crema hidratante
   ElCorrecto: 0
 --- !u!82 &1365340442
@@ -19273,6 +20220,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8017395692349125786, guid: e0d62b91660c8324293f8dec4e692249, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a3a2f5e65bdb42a409962c68f031d3e0, type: 3}
+    - target: {fileID: 8017395692349125786, guid: e0d62b91660c8324293f8dec4e692249, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -19311,6 +20262,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Montas el sandwich
   ElCorrecto: 0
 --- !u!82 &1380215967
@@ -19547,6 +20499,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Compras las palomitas
   ElCorrecto: 0
 --- !u!82 &1381164352
@@ -19766,6 +20719,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Le echas jab\xF3n"
   ElCorrecto: 0
 --- !u!82 &1394654853
@@ -19962,6 +20916,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Echal\xE1 en la cara"
   ElCorrecto: 0
 --- !u!82 &1396983956
@@ -20181,6 +21136,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Arreglas el coche
   ElCorrecto: 0
 --- !u!82 &1411529661
@@ -20306,7 +21262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413487784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.93, y: -6.4519997, z: -193.38528}
+  m_LocalPosition: {x: 1.68, y: -6.4519997, z: -193.38528}
   m_LocalScale: {x: 0.1157118, y: 0.1157118, z: 0.1157118}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20542,6 +21498,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Compras los billetes de avion
   ElCorrecto: 0
 --- !u!82 &1429280454
@@ -20723,6 +21680,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: b5daae5839e4567428dce9896178cf21, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 157676e6b50a3724b8d0c3622a5346b7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5daae5839e4567428dce9896178cf21, type: 3}
 --- !u!4 &1490676415 stripped
@@ -20750,6 +21711,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Frotas el plato sucio con el estropajo
   ElCorrecto: 0
 --- !u!82 &1490676421
@@ -20954,6 +21916,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Cierras los ojos y duermes
   ElCorrecto: 0
 --- !u!82 &1495780843
@@ -21203,6 +22166,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Pones el plato en la mesa
   ElCorrecto: 0
 --- !u!82 &1536498949
@@ -21416,6 +22380,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Admiras tu lego
   ElCorrecto: 0
 --- !u!82 &1559447966
@@ -21879,6 +22844,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8017395692349125786, guid: f82cab4a57f628b4f81db938712ae6ae, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e181dbc3817b2d642999084f7d95deb5, type: 3}
+    - target: {fileID: 8017395692349125786, guid: f82cab4a57f628b4f81db938712ae6ae, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -21912,6 +22881,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Preparas el lomo
   ElCorrecto: 0
 --- !u!82 &1572035764
@@ -22131,6 +23101,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: 'Vas a la terminal '
   ElCorrecto: 0
 --- !u!82 &1589372847
@@ -22249,6 +23220,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges un bol para la ensalada
   ElCorrecto: 0
 --- !u!82 &1592723167
@@ -22496,7 +23468,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.8, y: 10.8}
+    oldSize: {x: 7.91, y: 5.05}
     newSize: {x: 10.8, y: 9.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -22645,19 +23617,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 63a39e37ea2d70e4b8e45c3604f71f85, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.21000002
+      value: 0.1986772
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 63a39e37ea2d70e4b8e45c3604f71f85, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.21000002
+      value: 0.1986772
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 63a39e37ea2d70e4b8e45c3604f71f85, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.21000002
+      value: 0.1986772
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 63a39e37ea2d70e4b8e45c3604f71f85, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -707.96
+      value: -707.97
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 63a39e37ea2d70e4b8e45c3604f71f85, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22754,6 +23726,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Subes al avion
   ElCorrecto: 0
 --- !u!82 &1609940268
@@ -23024,6 +23997,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.000022888184
       objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: 09daa95c18d301345ba7d3df38c137aa, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4f9d70c5135ce3740a2025476e228683, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09daa95c18d301345ba7d3df38c137aa, type: 3}
 --- !u!4 &1617446323 stripped
@@ -23051,6 +24028,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges un estropajo
   ElCorrecto: 0
 --- !u!82 &1617446329
@@ -23509,6 +24487,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: 97a0769c891b17d45849add21027b183, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 89c25f9795b82b741a58467a48663b0e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97a0769c891b17d45849add21027b183, type: 3}
 --- !u!4 &1628821108 stripped
@@ -23536,6 +24518,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te sientas en el sofa
   ElCorrecto: 0
 --- !u!82 &1628821114
@@ -23772,6 +24755,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges la pelota de baloncesto
   ElCorrecto: 0
 --- !u!82 &1629294804
@@ -24064,6 +25048,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Pones un tomate
   ElCorrecto: 0
 --- !u!82 &1651356339
@@ -24300,6 +25285,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Os dividis en dos equipos de futbol
   ElCorrecto: 0
 --- !u!82 &1656520307
@@ -24930,6 +25916,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Acabas con abrillantador
   ElCorrecto: 0
 --- !u!82 &1680749172
@@ -25121,6 +26108,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te pones esmupa de afeitar en la cara
   ElCorrecto: 0
 --- !u!82 &1693667647
@@ -25321,6 +26309,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Texto de ejemplo
   ElCorrecto: 0
 --- !u!82 &1698938237
@@ -25524,6 +26513,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Llenas de agua la regadera
   ElCorrecto: 0
 --- !u!82 &1709764829
@@ -25732,6 +26722,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te quitas los calcetines
   ElCorrecto: 0
 --- !u!82 &1711478733
@@ -25932,23 +26923,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 53c0aa3435ebeca4c831660bbb2bc14e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.21000002
+      value: 0.1986772
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 53c0aa3435ebeca4c831660bbb2bc14e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.21000002
+      value: 0.1986772
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 53c0aa3435ebeca4c831660bbb2bc14e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.21000002
+      value: 0.1986772
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 53c0aa3435ebeca4c831660bbb2bc14e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -707.99
+      value: -707.98
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 53c0aa3435ebeca4c831660bbb2bc14e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -353.13
+      value: -353.03
       objectReference: {fileID: 0}
     - target: {fileID: 3306549942052206291, guid: 53c0aa3435ebeca4c831660bbb2bc14e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26041,6 +27032,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Jugais al futbol
   ElCorrecto: 0
 --- !u!82 &1729552398
@@ -26245,6 +27237,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Haces los deberes de matematicas
   ElCorrecto: 0
 --- !u!82 &1731733828
@@ -26372,8 +27365,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736768052}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.57, y: -0.952, z: -167.81238}
-  m_LocalScale: {x: 0.2, y: 0.22857141, z: 0.22857141}
+  m_LocalPosition: {x: -0.16999996, y: -0.952, z: -167.81238}
+  m_LocalScale: {x: 0.25304002, y: 0.28918856, z: 0.28918856}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1535339384}
@@ -26635,6 +27628,7 @@ GameObject:
   - component: {fileID: 1755037185}
   - component: {fileID: 1755037184}
   - component: {fileID: 1755037186}
+  - component: {fileID: 1755037187}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -26696,6 +27690,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebd0c4d661629d64db693554348f678a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1755037187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755037183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eebdda7d1cc75c48a8b76f1e9cf2bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  piezascunata: 0
+  necesarias: 23423
+  PantallaVic: {fileID: 0}
+  ajustes: {fileID: 920627710}
+  As: {fileID: 0}
 --- !u!1001 &1755701994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26806,6 +27817,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Lees las instrucciones
   ElCorrecto: 0
 --- !u!82 &1755702001
@@ -27010,6 +28022,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges alpiz y papel
   ElCorrecto: 0
 --- !u!82 &1763448906
@@ -27218,6 +28231,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Lees el libro
   ElCorrecto: 0
 --- !u!82 &1763918262
@@ -27410,7 +28424,7 @@ PrefabInstance:
     - target: {fileID: 8017395692349125786, guid: 8b4d178e291ce91438f09a14ae15a4f9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c2996eadcb10cd94e9f95215900daa56, type: 3}
+      objectReference: {fileID: 21300000, guid: 8b7fdb75ee733084d9787ed33a43136a, type: 3}
     - target: {fileID: 8017395692349125786, guid: 8b4d178e291ce91438f09a14ae15a4f9, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -27437,6 +28451,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges las herramientas de madera
   ElCorrecto: 0
 --- !u!82 &1789244435
@@ -27661,6 +28676,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Pones las pilas nuevas
   ElCorrecto: 0
 --- !u!82 &1791881072
@@ -27897,6 +28913,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges la pelotas de futbol
   ElCorrecto: 0
 --- !u!82 &1806598549
@@ -28144,7 +29161,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.8, y: 9.37}
+    oldSize: {x: 10.8, y: 9.35}
     newSize: {x: 10.8, y: 9.37}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -28359,6 +29376,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.00011444092
       objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: 3a7b98311b432264294496e702c1e8d4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 10686fb6225b3824bb4dbefbdf5f0378, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a7b98311b432264294496e702c1e8d4, type: 3}
 --- !u!4 &1841541916 stripped
@@ -28386,6 +29407,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te sientas en la mesa
   ElCorrecto: 0
 --- !u!82 &1841541922
@@ -28574,7 +29596,7 @@ PrefabInstance:
     - target: {fileID: 8017395692349125786, guid: 4de9e8a82e0c3cb4393830b0f37a7c81, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: cd794b56d5fa8a24980813fb9d70ad13, type: 3}
+      objectReference: {fileID: 21300000, guid: ca92bcfc4b865074e8e9b1968ef1e3d9, type: 3}
     - target: {fileID: 8017395692349125786, guid: 4de9e8a82e0c3cb4393830b0f37a7c81, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -28606,6 +29628,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Montas el mueblo
   ElCorrecto: 0
 --- !u!82 &1848485138
@@ -28821,6 +29844,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Friegas el suelo del taller
   ElCorrecto: 0
 --- !u!82 &1851497978
@@ -28948,7 +29972,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863098696}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.07, y: -0.94, z: -167.81238}
+  m_LocalPosition: {x: 3.5, y: -0.94, z: -167.81238}
   m_LocalScale: {x: 0.14, y: 0.18585, z: 1.5640235}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -29294,7 +30318,7 @@ PrefabInstance:
     - target: {fileID: 8017395692349125786, guid: 0e526b1952552e54ba8a27b31f1c3ad7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ac5cf0c4eb99e8a46b26cacc054cfaac, type: 3}
+      objectReference: {fileID: 21300000, guid: 8b3d4c6aba2fca04080758c23be18235, type: 3}
     - target: {fileID: 8017395692349125786, guid: 0e526b1952552e54ba8a27b31f1c3ad7, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -29326,6 +30350,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Preparas las tablas
   ElCorrecto: 0
 --- !u!82 &1865496378
@@ -29453,7 +30478,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865624088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.59, y: -0.91, z: -167.81238}
+  m_LocalPosition: {x: 6.55, y: -0.91, z: -167.81238}
   m_LocalScale: {x: 0.11, y: 0.11, z: 0.11}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -29811,6 +30836,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te pones la ropa interior
   ElCorrecto: 0
 --- !u!82 &1870261737
@@ -29980,6 +31006,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: 0ad0c4c0e9ee14f498ea1ebc40fcbf46, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d82bf6e1ae930b4b9f1452879e16033, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ad0c4c0e9ee14f498ea1ebc40fcbf46, type: 3}
 --- !u!4 &1913450722 stripped
@@ -30007,6 +31037,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges un plato sucio
   ElCorrecto: 0
 --- !u!82 &1913450728
@@ -30231,6 +31262,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coges las piezas nuevas
   ElCorrecto: 0
 --- !u!82 &1927668631
@@ -30434,6 +31466,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Ahora los cubiertos
   ElCorrecto: 0
 --- !u!82 &1934043305
@@ -30871,6 +31904,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Llamas a tus amigos para jugar al baloncesto
   ElCorrecto: 0
 --- !u!82 &1958877046
@@ -31224,6 +32258,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Echas vinagre
   ElCorrecto: 0
 --- !u!82 &1970682540
@@ -31342,6 +32377,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Colocas un vaso de agua
   ElCorrecto: 0
 --- !u!82 &1975890490
@@ -31469,8 +32505,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987551873}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.45, y: -0.96, z: -167.81238}
-  m_LocalScale: {x: 0.11000001, y: 0.11563235, z: 1.0586467}
+  m_LocalPosition: {x: -2.74, y: -0.96, z: -167.81238}
+  m_LocalScale: {x: 0.14208701, y: 0.14936231, z: 1.3674539}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1535339384}
@@ -32022,6 +33058,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: "Enciendes la l\xE1mpara"
   ElCorrecto: 0
 --- !u!82 &2024307096
@@ -32230,6 +33267,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Te pones el pijama
   ElCorrecto: 0
 --- !u!82 &2032170326
@@ -32483,6 +33521,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Aclaras con agua
   ElCorrecto: 0
 --- !u!82 &2057099325
@@ -32695,6 +33734,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Coge el cubo de la fregona con agua
   ElCorrecto: 0
 --- !u!82 &2067090972
@@ -32973,7 +34013,7 @@ MonoBehaviour:
   ObjetosCorrectos:
   - {fileID: 1047897667}
   - {fileID: 902176054}
-  - {fileID: 1047897667}
+  - {fileID: 1629294799}
   - {fileID: 677595236}
   ObjetosAleatorios:
   - {fileID: 814004705}
@@ -33438,6 +34478,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8017395692349125786, guid: 710d30642782dc7428a5465956c7e66e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8f9f43ac38bb2c1448cba6a65a03bf71, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 710d30642782dc7428a5465956c7e66e, type: 3}
 --- !u!4 &2114736859 stripped
@@ -33465,6 +34509,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Enciendes y metes un disco en el dvd
   ElCorrecto: 0
 --- !u!82 &2114736865
@@ -33710,6 +34755,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Vas a la silla
   ElCorrecto: 0
 --- !u!82 &2146460397
@@ -33909,6 +34955,7 @@ MonoBehaviour:
   Jg: {fileID: 0}
   Ac: {fileID: 0}
   Texto: {fileID: 1059032328}
+  panel: {fileID: 754680424}
   Oracion: Montas el lego
   ElCorrecto: 0
 --- !u!82 &2146986825
