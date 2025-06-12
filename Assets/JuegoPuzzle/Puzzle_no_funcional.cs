@@ -1,12 +1,11 @@
 
-using System.Collections;
-using Unity.VisualScripting;
+
 using UnityEngine;
-using UnityEngine.Windows.WebCam;
+
 public class Puzzle : MonoBehaviour
 {
 
-    public WebCamTexture webCamera;
+  /*  public WebCamTexture webCamera;
 
     public Material webCameraTexture;
 
@@ -167,7 +166,7 @@ public class Puzzle : MonoBehaviour
         {
             tomarFoto();
         }
-    }
+    }*/
 }
 
 
